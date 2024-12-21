@@ -13,6 +13,9 @@
 }
 
 @media (max-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
     .games{
         display: block;
         justify-content: none;
