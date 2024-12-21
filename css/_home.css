@@ -1,0 +1,282 @@
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+  
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+} 
+
+@keyframes FadeIn{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes FadeOut{
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+/*NavBar*/
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0px;
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+}
+  
+.nav {
+    height: 78px;
+    width: 100%;
+    background-color: black;
+    border-bottom: white 3px solid;
+    position: sticky;
+    top: 0;
+}
+  
+.nav > .nav-header {
+    display: inline;
+}
+  
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+  
+.nav > .nav-btn {
+    display: none;
+}
+  
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 28px;
+}
+  
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 20px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+  
+.nav > .nav-links > a:hover {
+    background-color: rgba(90, 90, 90, 0.3);
+}
+  
+.nav > #nav-check {
+    display: none;
+}
+  
+@media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding-top: 28px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #000000;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > .nav-links > img {
+        display: block;
+        width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+}
+
+.seeMore{
+    border: white 3px solid;
+    background-color: black;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    transform: scale(1.5);
+    animation: AnimationButtonOff 0ms linear;
+    z-index: -1;
+}
+
+.seeMore:hover{
+    animation: AnimationButtonOn 500ms forwards;
+    cursor: pointer;
+}
+
+.seeMore:hover::after{
+    animation: AnimationButtonOff 500ms linear;
+    cursor: default;
+}
+
+@keyframes AnimationButtonOn{
+    0%{
+        background-color: black;
+        color: white;
+    }
+    100%{
+        background-color: white;
+        color: black;
+    }
+}
+
+@keyframes AnimationButtonOff{
+    0%{
+        background-color: white;
+        color: black;
+    }
+    100%{
+        background-color: black;
+        color: white;
+    }
+}
+
+.releaseNotes{
+    border: white 3px solid;
+    background-color: black;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    transform: scale(1.5);
+    animation: AnimationButtonOff 0ms linear;
+    margin-right: 120px;
+}
+
+.releaseNotes2{
+    border: white 3px solid;
+    background-color: black;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    transform: scale(1.5);
+    animation: AnimationButtonOff 0ms linear;
+    margin-right: 0pxx;
+}
+
+.iconGame{
+    float: left;
+}
+
+.iconGame2{
+    float: right;
+}
+
+.S3{
+    padding-left: 100px;
+}
+
+.depsS3{
+    padding-left: 70px;
+}
+
+@media (max-width:600px) {
+    .releaseNotes, .releaseNotes2{
+        margin-right: 0px;
+    }
+    .iconGame{
+        float: none;
+        margin-left: -50px;
+    }
+    .iconGame2{
+        float: none;
+        margin-left: -65px;
+    }
+    .S3{
+        padding-left: 0px;
+    }
+    .depsS3{
+        padding-left: 0px;
+    }
+}
+
+.releaseNotes:hover{
+    animation: AnimationButtonOn 500ms forwards;
+    cursor: pointer;
+}
+
+.releaseNotes:hover::after{
+    animation: AnimationButtonOff 500ms linear;
+    cursor: default;
+}
+
+.releaseNotes2:hover{
+    animation: AnimationButtonOn 500ms forwards;
+    cursor: pointer;
+}
+
+.releaseNotes2:hover::after{
+    animation: AnimationButtonOff 500ms linear;
+    cursor: default;
+}
+
+.hereText{
+    -webkit-text-fill-color: transparent; 
+    background: linear-gradient(0deg, red, rgba(190, 132, 24, 0.57)); 
+    -webkit-background-clip: text;
+    animation: animTextUp 1s ease-in-out forwards;
+}
+
+@keyframes animTextUp{
+    0%{
+        font-size: 240px;
+    }
+    100%{
+        font-size: 120px;
+    }
+}

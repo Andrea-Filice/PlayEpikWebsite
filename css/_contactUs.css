@@ -1,0 +1,24 @@
+.itch{
+    -webkit-text-fill-color: transparent; 
+    background: linear-gradient(20deg, red, rgb(241, 97, 97)); 
+    -webkit-background-clip: text;
+}
+
+.tiktok{
+    -webkit-text-fill-color: transparent; 
+    background: linear-gradient(20deg, rgb(70, 54, 54), rgb(135, 21, 135)); 
+    -webkit-background-clip: text;
+}
+
+.instagram{
+    -webkit-text-fill-color: transparent; 
+    background: linear-gradient(20deg, rgb(251, 255, 0), rgb(255, 6, 168)); 
+    -webkit-background-clip: text;
+}
+
+
+.discord{
+    -webkit-text-fill-color: transparent; 
+    background: linear-gradient(20deg, rgb(0, 238, 255), rgb(77, 6, 255)); 
+    -webkit-background-clip: text;
+}

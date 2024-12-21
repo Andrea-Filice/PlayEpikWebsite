@@ -1,0 +1,25 @@
+.smartPhone{
+    display: none;
+}
+
+.buttons{
+    display: block;
+}
+
+ul{
+    padding-left: 200px; 
+    padding-right: 200px;
+}
+
+@media (max-width:600px){
+    .smartPhone{
+        display: block;
+    }
+    .buttons{
+        display: none;
+    }
+    ul{
+        padding-left: 0px; 
+        padding-right: 0px;
+    }
+}

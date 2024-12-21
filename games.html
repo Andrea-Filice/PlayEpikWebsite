@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Website Settings-->
+        <title>Play Epik Inc - Games</title>
+        <link rel="icon" type="img/png" href="img/_logo.png">
+        <link rel="stylesheet" href="css/_home.css">
+        <link rel="stylesheet" href="css/_games.css">
+        <script src="js/home.js"></script>
+        <script src="js/openPages.js"></script>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Fonts-->
+        <!--Inter Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <!--Space Grotesk-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-color: black;" onload="OnLoad()">
+        <center>
+            <div id="loaderLayer" style="display: block; margin-top: 350px;">
+                <span class="loader"></span>
+            </div>
+        </center>
+        <center>
+            <div id="mainLayer" style="display: none;">
+                <div class="nav" style="z-index: 100;">
+                    <input type="checkbox" id="nav-check">
+                    <div class="nav-header">
+                    </div>
+                    <div class="nav-btn">
+                      <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </label>
+                    </div>
+                    <img src="img/_logo.png" alt="" style="height: 75px; width: 75px; float: left;">
+                    <div class="nav-links">
+                      <a href="index.html">Home</a>
+                      <a href="games.html">Games</a>
+                      <a href="contactUs.html">Contact us</a>
+                    </div>
+                </div>
+                <div class="start">
+                    <h1 style="color: white; font-family: 'Space Grotesk', sans-serif; font-size: 120px;">HERE ALL THE <br> <p style="display: inline; font-weight: 100;" class="special">✳︎</p>  <p style="display: inline;" class="hereText">CREATIONS.</p></h1>
+                    <h2 style="color: white; font-family: 'Space Grotesk', sans-serif; font-size: 50px; font-weight: 300; margin-top: -25px;">Here you can find every Play Epik games!</h2>
+                </div>
+                <br> <br> <br> <br>
+                <hr color="white" style="border: white 3px solid;">
+                <br> <br> <br> <br>
+                <div class="games">
+                    <div class="game" style="display: inline;">
+                        <div class="games">
+                            <div class="game">
+                                <div class="game-item">
+                                    <img src="img/_logoSquareRoyale.png" alt="" style="height: 200px;">
+                                    <h1 style="color: white;">SQUARE ROYALE</h1>
+                                    <button class="seeMore" onclick="OpenSquareRoyale()">Discover</button>
+                                </div>
+                                <br> <br>
+                                <div class="game-item">
+                                    <img src="img/_iconS1COurseOfDeath.png" alt="" style="height: 200px;">
+                                    <h1 style="color: white;">COURSE OF DEATH</h1>
+                                    <button class="seeMore" onclick="OpenCourseOfDeath()">Discover</button>
+                                </div>
+                                <br> <br>
+                                <div class="game-item">
+                                    <img src="img/_logoRunners.png" alt="" style="height: 200px;">
+                                    <h1 style="color: white;">RUNNERS</h1>
+                                    <button class="seeMore" onclick="OpenRunners()">Discover</button>
+                                </div>
+                                <br> <br>
+                                <div class="game-item">
+                                    <img src="img/_logoCubeInvasion.png" alt="" style="height: 200px;">
+                                    <h1 style="color: white;">CUBE INVASION</h1>
+                                    <button class="seeMore" onclick="OpenCubeInvasion()">Discover</button>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <br>
+                </div>
+                <br> <br> <br> <br>
+                <div class="game-item2">
+                    <img src="img/_logoCodeUnlocker.png" alt="" style="height: 200px;">
+                    <h1 style="color: white;">CODE UNLOCKER</h1>
+                    <button class="seeMore" onclick="OpenCodeUnlocker()">Discover</button>
+                </div>
+                <br> <br> <br>
+                <footer>
+                    <div class="footer" style="background-color: rgb(24, 24, 24);">
+                        <h3 style="color: white;">&copy; Play Epik Incorporation</h3>
+                        <h3 style="color: white;"><a href="https://play-epik-incorporation.itch.io" style="color: white;">View on itch.io</a></h3>
+                        <div class="iconSocial" style="display: inline;">
+                            <a href="https://www.youtube.com/channel/UCRFhqL8LmWNj_4-3AdYESzA"style="color: transparent;"><img src="img/_iconYoutube.png" alt="" style="height: 50px; width: 50px;"></a>
+                            <a href="https://www.instagram.com/playepikinc/"style="color: transparent;">&nbsp; &nbsp; &nbsp;<img src="img/_iconInstagram.png" alt="" style="height: 50px; width: 50px;"></a>
+                            <a href="https://www.tiktok.com/@play.epik.inc?is_from_webapp=1&sender_device=pc"style="color: transparent;">&nbsp; &nbsp; &nbsp;<img src="img/_iconTikTok.png" alt="" style="height: 50px; width: 50px;"></a>
+                            <a href="https://discord.gg/nKBrSqnNuD" style="color: transparent;">&nbsp; &nbsp; &nbsp;<img src="img/_iconDiscord.png" alt="" style="height: 50px; width: 50px;"></a>
+                        </div>
+                        <br> <br> <br>
+                    </div>
+                </footer>
+            </div>
+        </center>
+    </body>
+</html>

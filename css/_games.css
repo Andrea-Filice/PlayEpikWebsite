@@ -1,0 +1,24 @@
+.games {
+    display: flex;
+    justify-content: center; 
+}
+
+.game{
+    display: flex;
+    gap: 20px;
+}
+
+.game-item {
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    .games{
+        display: block;
+        justify-content: none;
+    }
+    .game{
+        display: block;
+        gap: 0px;
+    }
+}
