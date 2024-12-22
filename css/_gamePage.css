@@ -11,6 +11,10 @@ ul{
     padding-right: 200px;
 }
 
+img{
+    height: 400px;
+}
+
 @media (max-width:600px){
     body{
         overflow-x: hidden;
@@ -24,5 +28,8 @@ ul{
     ul{
         padding-left: 0px; 
         padding-right: 0px;
+    }
+    img{
+        height: 200px;
     }
 }
