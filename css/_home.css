@@ -94,6 +94,9 @@ body {
 }
   
 @media (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -141,9 +144,6 @@ body {
     .nav > #nav-check:checked ~ .nav-links {
       height: calc(100vh - 50px);
       overflow-y: auto;
-    }
-    body{
-        overflow-x: hidden;
     }
 }
 
