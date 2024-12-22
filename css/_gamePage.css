@@ -15,6 +15,14 @@ img{
     height: 400px;
 }
 
+.hereText{
+    font-size: 120px;
+}
+
+.deps{
+    font-size: 80px;
+}
+
 @media (max-width:600px){
     body{
         overflow-x: hidden;
@@ -31,5 +39,11 @@ img{
     }
     img{
         height: 200px;
+    }
+    .hereText{
+        font-size: 70px;
+    }
+    .deps{
+        font-size: 60px;
     }
 }
