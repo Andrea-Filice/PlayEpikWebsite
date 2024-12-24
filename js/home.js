@@ -12,3 +12,7 @@ function SetActiveLayer(){
 function OpenGames(){
     window.location.href = "games.html";
 }
+
+function BackToTop(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}

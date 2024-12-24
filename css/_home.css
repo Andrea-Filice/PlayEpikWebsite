@@ -228,6 +228,16 @@ body {
     padding-left: 70px;
 }
 
+.images-Gifts, .rarity{
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.gift{
+    padding-left: 70px;
+}
+
 @media (max-width:600px) {
     .releaseNotes, .releaseNotes2{
         margin-right: 0px;
@@ -244,6 +254,13 @@ body {
         padding-left: 0px;
     }
     .depsS3{
+        padding-left: 0px;
+    }
+    .images-Gifts, .rarity{
+        display: block;
+        text-align: center;
+    }
+    .gift{
         padding-left: 0px;
     }
 }
@@ -283,3 +300,51 @@ body {
         font-size: 120px;
     }
 }
+
+/*Back to top hover*/
+
+.backToTop:hover{
+    cursor: pointer;
+}
+
+.backToTop:hover::after{
+    cursor: default;
+}
+
+/*Animation Merry Christmas*/
+
+.scrollAnim{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 10vh;
+}
+
+.scroll{
+    white-space: nowrap;
+}
+
+.scroll div{
+    display: flex;
+    gap: 2em;
+}
+
+.scroll p{
+    font-size: 2em;
+    margin-bottom: 15px;
+    line-height: 10px;
+}
+
+.rightToLeft{
+    animation: rightToLeft 10s infinite linear;
+}
+
+@keyframes rightToLeft{
+    from{
+        transform: translateX(-50%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
