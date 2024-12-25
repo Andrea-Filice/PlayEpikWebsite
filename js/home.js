@@ -16,3 +16,7 @@ function OpenGames(){
 function BackToTop(){
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+function OpenServerStatus(){
+    window.location.href = "serverStatus.html";
+}

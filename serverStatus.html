@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Website Settings-->
+        <title>Server Status - Play Epik Incorporation</title>
+        <link rel="icon" type="img/png" href="img/_logo.png">
+        <link rel="stylesheet" href="css/_home.css">
+        <link rel="stylesheet" href="css/_serverStatus.css">
+        <script src="js/home.js"></script>
+        <script src="js/openPages.js"></script>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Fonts-->
+        <!--Inter Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <!--Space Grotesk-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-color: black;" onload="OnLoad()">
+        <center>
+            <div id="loaderLayer" style="display: block; margin-top: 350px;">
+                <span class="loader"></span>
+            </div>
+        </center>
+        <center>
+            <div id="mainLayer" style="display: none; overflow-x: hidden;">
+                <div class="navigationBar" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                    <a href="index.html"><img src="img/_iconHome.png" alt="" style="height: 50px;"></a>
+                    <a href="index.html" style="text-decoration: none;"><h1 style="color: white; display: inline;">BACK HOME</h1></a>
+                </div>
+                <hr color="white" style="border: white 1px solid;">
+                <div class="server-status-intro">
+                    <h1 style="color: white; font-size: 120px;">SERVER STATUS</h1>
+                    <h2 style="color: white; font-weight: 300; margin-top: -75px;">Here you can find the current status of our servers.</h2>
+                    <h2 style="color: green;">ALL SERVERS ARE UP AND RUNNING.</h2>
+                </div>
+                <br> <br> <br>
+                <hr color="white" style="border: white 1px solid;">
+                <br> <br> <br>
+                <div class="servers">
+                    <h1 style="color: white; font-size: 80px;">SERVERS:</h1>
+                    <div class="course-of-death" style="display: flex; justify-content: center; align-items: center;">
+                        <span class="dot"></span>
+                        <h1 style="color: white; padding-left: 20px;">COURSE OF DEATH (<p style="display: inline; color: green; font-weight: 400;">no issues found</p>).</h1>
+                    </div>
+                    <div class="square-royale" style="display: flex; justify-content: center; align-items: center;">
+                        <span class="dot"></span>
+                        <h1 style="color: white; padding-left: 20px;">SQUARE ROYALE (<p style="display: inline; color: green; font-weight: 400;">no issues found</p>).</h1>
+                    </div>
+                    <div class="epik-account" style="display: flex; justify-content: center; align-items: center;">
+                        <span class="dot"></span>
+                        <h1 style="color: white; padding-left: 20px;">EPIK ACCOUNT (<p style="display: inline; color: white; font-weight: 400;">inactive</p>).</h1>
+                    </div>
+                    <div class="itch" style="display: flex; justify-content: center; align-items: center;">
+                        <span class="dot"></span>
+                        <h1 style="color: white; padding-left: 20px;">ITCH PAGE (<p style="display: inline; color: green; font-weight: 400;">no issues found</p>).</h1>
+                    </div>
+                    <div class="gamejolt" style="display: flex; justify-content: center; align-items: center;">
+                        <span class="dot"></span>
+                        <h1 style="color: white; padding-left: 20px;">GAMEJOLT PAGE (<p style="display: inline; color: green; font-weight: 400;">no issues found</p>).</h1>
+                    </div>
+                    <div class="website" style="display: flex; justify-content: center; align-items: center;">
+                        <span class="dot"></span>
+                        <h1 style="color: white; padding-left: 20px;">PLAY EPIK WEBSITE (<p style="display: inline; color: green; font-weight: 400;">no issues found</p>).</h1>
+                    </div>
+                </div>
+                <br> <br> <br>
+                <footer>
+                    <div class="footer" style="background-color: rgb(24, 24, 24);">
+                        <h3 style="color: white;">&copy; Play Epik Incorporation</h3>
+                        <h3 style="color: white;"><a href="https://play-epik-incorporation.itch.io" style="color: white;">View on itch.io</a></h3>
+                        <h3 style="color: white;" onclick="BackToTop()" class="backToTop"><u>Back to top</u></h3>
+                        <div class="iconSocial" style="display: inline;">
+                            <a href="https://www.youtube.com/channel/UCRFhqL8LmWNj_4-3AdYESzA"style="color: transparent;"><img src="img/_iconYoutube.png" alt="" style="height: 50px; width: 50px;"></a>
+                            <a href="https://www.instagram.com/playepikinc/"style="color: transparent;">&nbsp; &nbsp; &nbsp;<img src="img/_iconInstagram.png" alt="" style="height: 50px; width: 50px;"></a>
+                            <a href="https://www.tiktok.com/@play.epik.inc?is_from_webapp=1&sender_device=pc"style="color: transparent;">&nbsp; &nbsp; &nbsp;<img src="img/_iconTikTok.png" alt="" style="height: 50px; width: 50px;"></a>
+                            <a href="https://discord.gg/nKBrSqnNuD" style="color: transparent;">&nbsp; &nbsp; &nbsp;<img src="img/_iconDiscord.png" alt="" style="height: 50px; width: 50px;"></a>
+                        </div>
+                        <br> <br> <br>
+                    </div>
+                </footer>
+            </div>
+        </center>
+    </body>
+</html>
