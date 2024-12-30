@@ -41,7 +41,7 @@
 .website > .dot {
     height: 25px;
     width: 25px;
-    background-color: yellow;
+    background-color: green;
     border-radius: 50%;
     display: inline-block;
 }
