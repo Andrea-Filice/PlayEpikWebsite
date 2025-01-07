@@ -17,7 +17,7 @@
 .epik-account > .dot {
     height: 25px;
     width: 25px;
-    background-color: white;
+    background-color: yellow;
     border-radius: 50%;
     display: inline-block;
 }
