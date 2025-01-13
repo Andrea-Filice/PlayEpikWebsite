@@ -287,9 +287,16 @@ body {
 
 .hereText{
     -webkit-text-fill-color: transparent; 
-    background: linear-gradient(0deg, red, rgba(190, 132, 24, 0.57)); 
+    background-image: linear-gradient(to right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8);
+    background-size: 200% auto;
     -webkit-background-clip: text;
-    animation: animTextUp 1s ease-in-out forwards;
+    animation: gradient 8s linear infinite;
+}
+
+@keyframes gradient {
+    to {
+        background-position: 200% center
+    }
 }
 
 @keyframes animTextUp{
