@@ -92,6 +92,10 @@ body {
 .nav > #nav-check {
     display: none;
 }
+
+.gameTitle{
+    font-size: 120px;
+}
   
 @media (max-width:600px) {
     body{
@@ -144,6 +148,9 @@ body {
     .nav > #nav-check:checked ~ .nav-links {
       height: calc(100vh - 50px);
       overflow-y: auto;
+    }
+    .gameTitle{
+        font-size: 80px;
     }
 }
 
@@ -246,6 +253,10 @@ body {
     font-size: 80px;
 }
 
+.smallDeps{
+    font-size: 50px;
+}
+
 @media (max-width:600px) {
     .releaseNotes, .releaseNotes2{
         margin-right: 0px;
@@ -280,6 +291,13 @@ body {
     .hereText{
         font-size: 85px;
     }
+    .smallDeps{
+        font-size: 25px;
+    }
+}
+
+.start{
+    margin-top: -150px;
 }
 
 .releaseNotes:hover{
@@ -303,6 +321,14 @@ body {
 }
 
 .hereText{
+    -webkit-text-fill-color: transparent; 
+    background-image: linear-gradient(to right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    animation: gradient 8s linear infinite;
+}
+
+.gameTitle{
     -webkit-text-fill-color: transparent; 
     background-image: linear-gradient(to right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8);
     background-size: 200% auto;
