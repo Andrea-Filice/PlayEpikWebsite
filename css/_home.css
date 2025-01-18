@@ -238,6 +238,14 @@ body {
     padding-left: 70px;
 }
 
+.startText{
+    font-size: 120px;
+}
+
+.troubleshoot{
+    font-size: 80px;
+}
+
 @media (max-width:600px) {
     .releaseNotes, .releaseNotes2{
         margin-right: 0px;
@@ -262,6 +270,15 @@ body {
     }
     .gift{
         padding-left: 0px;
+    }
+    .startText{
+        font-size: 100px;
+    }
+    .troubleshoot{
+        font-size: 40px;
+    }
+    .hereText{
+        font-size: 85px;
     }
 }
 
