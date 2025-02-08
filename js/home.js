@@ -40,3 +40,19 @@ function OpenSquareRoyaleRN(){
     sessionStorage.setItem("scrollToReleaseNotes", "true");
     window.location.href = "squareRoyale.html";
 }
+
+function OpenX(){
+    window.location.href = "https://x.com/play_epikinc";
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        backToTopBtn.style.display = "block";
+        backToTopBtn.style.animation = "animationIn 0.5s linear forwards";
+    } else {
+        backToTopBtn.style.animation = "animationOut 0.5s linear forwards";
+    }
+}

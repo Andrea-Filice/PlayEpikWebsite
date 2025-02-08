@@ -386,7 +386,7 @@ body {
 }
 
 .rightToLeft{
-    animation: rightToLeft 10s infinite linear;
+    animation: rightToLeft 12s infinite linear;
 }
 
 @keyframes rightToLeft{
@@ -400,4 +400,44 @@ body {
 
 h2{
     font-family: 'Inter', sans-serif;
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: white 3px solid;
+    background-color: black;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+@keyframes animationIn{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes animationOut{
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+#backToTopBtn:hover{
+    animation: animationIn 500ms forwards;
+}
+
+#backToTopBtn:hover::after{
+    animation: animationOut 500ms linear;
 }
