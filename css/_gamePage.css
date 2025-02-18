@@ -24,6 +24,18 @@ img{
     font-size: 80px;
 }
 
+.troubleshoot{
+    font-size: 80px;
+}
+
+.depsTroubleshoot{
+    margin-top: -40px;
+}
+
+#codeUnlocker{
+    font-size: 120px;
+}
+
 @media (max-width:600px){
     body{
         overflow-x: hidden;
@@ -35,8 +47,8 @@ img{
         display: none;
     }
     ul{
-        padding-left: 0px; 
-        padding-right: 0px;
+        padding-left: 10px; 
+        padding-right: 10px;
     }
     img{
         height: 200px;
@@ -47,5 +59,16 @@ img{
     }
     .deps{
         font-size: 60px;
+    }
+    .troubleshoot{
+        font-size: 35px;
+    }
+    .depsTroubleshoot{
+        margin-top: -0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #codeUnlocker{
+        font-size: 70px;
     }
 }

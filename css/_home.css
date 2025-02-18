@@ -257,6 +257,22 @@ body {
     font-size: 50px;
 }
 
+#creations{
+    font-size: 120px;
+}
+
+#contact{
+    font-size: 120px;
+}
+
+#team{
+    font-size: 120px;
+}
+
+#ideas{
+    font-size: 120px;
+}
+
 @media (max-width:600px) {
     .releaseNotes, .releaseNotes2{
         margin-right: 0px;
@@ -293,6 +309,18 @@ body {
     }
     .smallDeps{
         font-size: 25px;
+    }
+    #creations{
+        font-size: 65px;
+    }
+    #contact{
+        font-size: 75px;
+    }
+    #team{
+        font-size: 120px;
+    }
+    #ideas{
+        font-size: 75px;
     }
 }
 
@@ -440,4 +468,21 @@ h2{
 
 #backToTopBtn:hover::after{
     animation: animationOut 500ms linear;
+}
+
+.newsIndex{
+    font-size: 80px;
+}
+
+.licenseText{
+    font-size: 100px;
+}
+
+@media (max-width: 600px){
+    .newsIndex{
+        font-size: 60px;
+    }
+    .licenseText{
+        font-size: 75px;
+    }
 }

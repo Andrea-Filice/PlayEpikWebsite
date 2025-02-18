@@ -45,3 +45,27 @@
     border-radius: 50%;
     display: inline-block;
 }
+
+.serverStatusText{
+    font-size: 120px;
+}
+
+.deps{
+    margin-top: -75px;
+}
+
+.downTimes{
+    font-size: 80px;
+}
+
+@media (max-width:600px){
+    .serverStatusText{
+        font-size: 80px;
+    }
+    .deps{
+        margin-top: -40px;
+    }
+    .downTimes{
+        font-size: 60px;
+    }
+}

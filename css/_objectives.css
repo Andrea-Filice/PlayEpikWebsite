@@ -158,3 +158,41 @@ span{
 h2{
   font-weight: 300;
 }
+
+.counter{
+  font-size: 165px;
+}
+
+.counter2{
+  font-size: 165px;
+}
+
+.counter3{
+  font-size: 165px;
+}
+
+.counter4{
+  font-size: 165px;
+}
+
+.numbersText{
+  font-size: 85px;
+}
+
+@media (max-width: 600px){
+  .counter{
+    font-size: 120px;
+  }
+  .counter2{
+    font-size: 120px;
+  }
+  .counter3{
+    font-size: 120px;
+  }
+  .counter4{
+    font-size: 120px;
+  }
+  .numbersText{
+    font-size: 75px;
+  }
+}
