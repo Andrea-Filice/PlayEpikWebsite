@@ -25,7 +25,7 @@ function BackToTop(){
 }
 
 function OpenServerStatus(){
-    window.location.href = "serverStatus.html";
+    window.location.href = "https://serverstatus-playepik.netlify.app/";
 }
 
 //OPEN RELEASE NOTES

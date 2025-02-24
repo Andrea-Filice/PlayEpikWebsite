@@ -45,7 +45,7 @@
     --num: 0;
   }
   to {
-    --num: 2795;
+    --num: 2811;
   }
 }
 
@@ -54,7 +54,7 @@
     --num: 0;
   }
   to {
-    --num: 102;
+    --num: 105;
   }
 }
 
@@ -130,7 +130,7 @@ span{
 	height: 30px;
 	width: 27px;
 	/* border: 2.5px solid #FF1EAD; */
-	border: 2.35px solid white;
+	border: 5.5px solid white;
 	border-radius: 14px;
 	box-shadow:
 		0 0 2px #fff,
