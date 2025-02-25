@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <!--Website Settings-->
-        <title>Play Epik Inc - Home</title>
-        <link rel="icon" type="img/png" href="img/_logo.png">
-        <link rel="stylesheet" href="css/_home.css">
-        <meta name="UTF characters" http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Fonts-->
-        <!--Inter Font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin rel="preload">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-        <!--Space Grotesk-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin rel="preload">
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-        <!--Clash Display-->
-        <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap" rel="stylesheet">
-    </head>
-    <body style="background-color: black;" onload="OnLoad()">
-        <center>
-            <div id="loaderLayer" style="display: block; margin-top: 350px;">
-                <span class="loader"></span>
-            </div>
-        </center>
-        <center>
-            <div id="mainLayer" style="display: none; overflow-x: hidden;">
-                <div class="nav" style="z-index: 100;">
-                    <input type="checkbox" id="nav-check">
-                    <div class="nav-header">
-                    </div>
-                    <div class="nav-btn">
-                      <label for="nav-check">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </label>
-                    </div>
-                    <a href="index.html"><img src="img/_logo.png" alt="" style="height: 75px; width: 75px; float: left;"></a>
-                    <div class="nav-links">
-                      <a href="index.html">Home</a>
-                      <a href="games.html">Games</a>
-                      <a href="contactUs.html">Contact us</a>
-                    </div>
+<head>
+    <!--Website Settings-->
+    <title>Play Epik Inc - Home</title>
+    <link rel="icon" type="img/png" href="img/_logo.png">
+    <link rel="stylesheet" href="css/_home.min.css">
+    <meta name="UTF characters" http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <!--Inter Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!--Space Grotesk-->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!--Clash Display-->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: black;" onload="OnLoad()">
+    <center>
+        <div id="loaderLayer" style="display: block; margin-top: 350px;">
+            <span class="loader"></span>
+        </div>
+    </center>
+    <center>
+        <div id="mainLayer" style="display: none; overflow-x: hidden;">
+            <div class="nav" style="z-index: 100;">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
                 </div>
-                <!--<div class="scrollAnim">
+                <div class="nav-btn">
+                  <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                </div>
+                <a href="index.html"><img src="img/_logo.png" alt="" style="height: 75px; width: 75px; float: left;"></a>
+                <div class="nav-links">
+                  <a href="index.html">Home</a>
+                  <a href="games.html">Games</a>
+                  <a href="contactUs.html">Contact us</a>
+                </div>
+            </div>
+            <!--<div class="scrollAnim">
                     <div class="scroll">
                         <div class="rightToLeft">
                             <p style="color: white; font-family: 'Clash Display', sans-serif;">MULTIPLAYER IS HERE! - DOWNLOAD SQUARE ROYALE 0.5.0 NOW! - MULTIPLAYER IS HERE! - DOWNLOAD SQUARE ROYALE 0.5.0 NOW! - MULTIPLAYER IS HERE! - DOWNLOAD SQUARE ROYALE 0.5.0 NOW!- MULTIPLAYER IS HERE! - </p>
@@ -53,55 +51,55 @@
                     </div>
                 </div>
                 <hr color="white" style="border: white 1px solid;">-->
-                <div class="startIndex">
-                    <h1 style="color: white; font-family: 'Clash Display', sans-serif;" class="startText" id="ideas">IDEAS STARTING FROM <br> <p style="display: inline; font-weight: 100;" class="special">✳︎</p>  <p style="display: inline;" class="hereText">HERE.</p></h1>
-                    <h2 style="color: white; font-size: 50px; margin-top: -25px; font-family: 'Clash Display', sans-serif; font-weight: 300;">See all our <b>Objectives</b> and <b>Games.</b></h2>
-                    <button class="seeMore" onclick="OpenGames()">See More</button>
+            <div class="startIndex">
+                <h1 style="color: white; font-family: 'Clash Display', sans-serif;" class="startText" id="ideas">IDEAS STARTING FROM <br> <p style="display: inline; font-weight: 100;" class="special">✳︎</p>  <p style="display: inline;" class="hereText">HERE.</p></h1>
+                <h2 style="color: white; font-size: 50px; margin-top: -25px; font-family: 'Clash Display', sans-serif; font-weight: 300;">See all our <b>Objectives</b> and <b>Games.</b></h2>
+                <button class="seeMore" onclick="OpenGames()">See More</button>
+            </div>
+            <br> <br> <br> <br>
+            <hr color="white" style="border: white 3px solid;">
+            <br> <br> <br> <br>
+            <div class="articles">
+                <h1 style="color: white; font-family: 'Space Grotesk', sans-serif;" class="newsIndex">✳︎ SEE SOME RECENT<p style="display: inline; font-style: oblique;">NEWS</p></h1>
+                <div class="article-1" style="margin-top: 100px; text-align: center;">
+                    <h1 style="color: white; font-size: 50px; font-family: 'Clash Display', sans-serif; font-weight: 800;">SQUARE ROYALE MULTIPLAYER IS HERE!</h1>
+                    <h2 style="color: white; font-weight: 300; position: relative;">Square Royale 0.5.0 is out now with new <b>MULTIPLAYER MODE</b> and <br>&nbsp; some <b>NEW MAPS,</b> read the RELEASE NOTES in our website!</h2>
+                    <button class="seeMore" onclick="OpenSquareRoyaleRN()">Read release notes!</button>
                 </div>
-                <br> <br> <br> <br>
-                <hr color="white" style="border: white 3px solid;">
-                <br> <br> <br> <br>
-                <div class="articles">
-                    <h1 style="color: white; font-family: 'Space Grotesk', sans-serif;" class="newsIndex">✳︎ SEE SOME RECENT<p style="display: inline; font-style: oblique;">NEWS</p></h1>
-                    <div class="article-1" style="margin-top: 100px; text-align: center;">
-                        <h1 style="color: white; font-size: 50px; font-family: 'Clash Display', sans-serif; font-weight: 800;">SQUARE ROYALE MULTIPLAYER IS HERE!</h1>
-                        <h2 style="color: white; font-weight: 300; position: relative;">Square Royale 0.5.0 is out now with new <b>MULTIPLAYER MODE</b> and <br>&nbsp; some <b>NEW MAPS,</b> read the RELEASE NOTES in our website!</h2>
-                        <button class="seeMore" onclick="OpenSquareRoyaleRN()">Read release notes!</button>
+                <br> <br> <br>
+                <div class="article-2" style="text-align: center;">
+                    <h1 style="color: white; font-size: 50px; font-family: 'Clash Display', sans-serif; font-weight: 800;">SEASON 4 OF COURSE OF DEATH <br> IS HERE!</h1>
+                    <h2 style="color: white; font-weight: 300; position: relative;">Season 4 of Course Of Death is avaible now! <b>GLITCH</b><br>&nbsp; <b>BRAWL</b>! Go play it NOW!</h2>
+                    <button class="seeMore" onclick="OpenCourseOfDeathRN()">Read Release notes!</button>
+                </div>
+            </div>
+            <br>
+            <div class="troubleshooting" style="text-align: center;">
+                <h1 style="color: white;" class="troubleshoot">✳︎ TROUBLESHOOTING: </h1>
+                <br>
+                <h2 style="color: white; font-weight: 300; margin-top: -40px;">Do you have any problem with our games? Check SERVER STATUS page!</h2>
+                <button class="seeMore" onclick="OpenServerStatus()">Server Status</button>
+            </div>
+            <br> <br> <br> 
+            <footer>
+                <div class="footer" style="background-color: rgb(24, 24, 24);">
+                    <h3 style="color: white;">&copy; Play Epik Incorporation</h3>
+                    <h3 style="color: white;"><a href="https://play-epik-incorporation.itch.io" style="color: white;">View on itch.io</a></h3>
+                    <h3 style="color: white;" class="license"><a href="license.html" style="text-decoration: none; color: white;"><u>License</u></a></h3>
+                    <div class="iconSocial" style="display: inline;">
+                        <a href="https://www.youtube.com/channel/UCRFhqL8LmWNj_4-3AdYESzA"style="color: transparent;" aria-label="Youtube"><img src="img/_iconYoutube.png" alt="" style="height: 50px; width: 50px;"></a>
+                        <a href="https://www.instagram.com/playepikinc/"style="color: transparent;" aria-label="Instagram">&nbsp; &nbsp; &nbsp;<img src="img/_iconInstagram.png" alt="" style="height: 50px; width: 50px;"></a>
+                        <a href="https://www.tiktok.com/@play.epik.inc?is_from_webapp=1&sender_device=pc"style="color: transparent;" aria-label="Tiktok">&nbsp; &nbsp; &nbsp;<img src="img/_iconTikTok.png" alt="" style="height: 50px; width: 50px;"></a>
+                        <a href="https://discord.gg/nKBrSqnNuD" style="color: transparent;" aria-label="Discord">&nbsp; &nbsp; &nbsp;<img src="img/_iconDiscord.png" alt="" style="height: 50px; width: 50px;"></a>
+                        <a href="https://x.com/play_epikinc" style="color: transparent;" aria-label="X">&nbsp; &nbsp; &nbsp;<img src="img/_iconX.png" alt="" style="height: 50px; width: 50px;"></a>
                     </div>
                     <br> <br> <br>
-                    <div class="article-2" style="text-align: center;">
-                        <h1 style="color: white; font-size: 50px; font-family: 'Clash Display', sans-serif; font-weight: 800;">SEASON 4 OF COURSE OF DEATH <br> IS HERE!</h1>
-                        <h2 style="color: white; font-weight: 300; position: relative;">Season 4 of Course Of Death is avaible now! <b>GLITCH</b><br>&nbsp; <b>BRAWL</b>! Go play it NOW!</h2>
-                        <button class="seeMore" onclick="OpenCourseOfDeathRN()">Read Release notes!</button>
-                    </div>
                 </div>
-                <br>
-                <div class="troubleshooting" style="text-align: center;">
-                    <h1 style="color: white;" class="troubleshoot">✳︎ TROUBLESHOOTING: </h1>
-                    <br>
-                    <h2 style="color: white; font-weight: 300; margin-top: -40px;">Do you have any problem with our games? Check SERVER STATUS page!</h2>
-                    <button class="seeMore" onclick="OpenServerStatus()">Server Status</button>
-                </div>
-                <br> <br> <br> 
-                <footer>
-                    <div class="footer" style="background-color: rgb(24, 24, 24);">
-                        <h3 style="color: white;">&copy; Play Epik Incorporation</h3>
-                        <h3 style="color: white;"><a href="https://play-epik-incorporation.itch.io" style="color: white;">View on itch.io</a></h3>
-                        <h3 style="color: white;" class="license"><a href="license.html" style="text-decoration: none; color: white;"><u>License</u></a></h3>
-                        <div class="iconSocial" style="display: inline;">
-                            <a href="https://www.youtube.com/channel/UCRFhqL8LmWNj_4-3AdYESzA"style="color: transparent;" aria-label="Youtube"><img src="img/_iconYoutube.png" alt="" style="height: 50px; width: 50px;"></a>
-                            <a href="https://www.instagram.com/playepikinc/"style="color: transparent;" aria-label="Instagram">&nbsp; &nbsp; &nbsp;<img src="img/_iconInstagram.png" alt="" style="height: 50px; width: 50px;"></a>
-                            <a href="https://www.tiktok.com/@play.epik.inc?is_from_webapp=1&sender_device=pc"style="color: transparent;" aria-label="Tiktok">&nbsp; &nbsp; &nbsp;<img src="img/_iconTikTok.png" alt="" style="height: 50px; width: 50px;"></a>
-                            <a href="https://discord.gg/nKBrSqnNuD" style="color: transparent;" aria-label="Discord">&nbsp; &nbsp; &nbsp;<img src="img/_iconDiscord.png" alt="" style="height: 50px; width: 50px;"></a>
-                            <a href="https://x.com/play_epikinc" style="color: transparent;" aria-label="X">&nbsp; &nbsp; &nbsp;<img src="img/_iconX.png" alt="" style="height: 50px; width: 50px;"></a>
-                        </div>
-                        <br> <br> <br>
-                    </div>
-                </footer>
-            </div>
-        </center>
-        <button id="backToTopBtn" class="seeMore" onclick="BackToTop()">↑</button>
-        <script src="js/home.js"></script>
-        <script src="js/openPages.js"></script>
-    </body>
+            </footer>
+        </div>
+    </center>
+    <button id="backToTopBtn" class="seeMore" onclick="BackToTop()">↑</button>
+    <script src="js/home.min.js" defer></script>
+    <script src="js/openPages.min.js" defer></script>
+</body>
 </html>
