@@ -1,8 +1,8 @@
 {
     "dependencies": {
         "epikLauncherVersion": "1.2.0",
-        "squareRoyaleVersion": "0.5.0",
-        "courseOfDeathVersion": "2.4.0",
+        "squareRoyaleVersion": "0.5.2",
+        "courseOfDeathVersion": "2.4.1",
         "punVersion": "2.49"
     }
 }
