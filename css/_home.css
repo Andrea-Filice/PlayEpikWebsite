@@ -86,7 +86,12 @@ body {
 }
   
 .nav > .nav-links > a:hover {
-    background-color: rgba(90, 90, 90, 0.3);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent; 
+    background-image: linear-gradient(to right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    animation: gradient 8s linear infinite;
 }
   
 .nav > #nav-check {
