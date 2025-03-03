@@ -2,14 +2,21 @@
     // Usare IntelliSense per informazioni sui possibili attributi.
     // Al passaggio del mouse vengono visualizzate le descrizioni degli attributi esistenti.
     // Per altre informazioni, visitare: https://go.microsoft.com/fwlink/?linkid=830387
+
+    //CONFIGs:
     "version": "0.2.0",
     "configurations": [
-
         {
             "type": "chrome",
             "request": "launch",
             "name": "Debug",
             "file": "c:\\Users\\filic\\Oggetti 3D\\PlayEpikWebsite\\index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Debug ServerStatus",
+            "file": "c:\\Users\\filic\\Oggetti 3D\\PlayEpikWebsite\\PlayEpikServerStatus\\index.html"
         }
     ]
 }

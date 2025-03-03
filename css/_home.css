@@ -36,7 +36,7 @@
     }
 }
 
-/*NavBar*/
+/*NAVBAR*/
 
 * {
     box-sizing: border-box;
@@ -240,16 +240,6 @@ body {
     padding-left: 70px;
 }
 
-.images-Gifts, .rarity{
-    display: flex;
-    justify-content: center; /* Centra orizzontalmente */
-    align-items: center; /* Centra verticalmente */
-}
-
-.gift{
-    padding-left: 70px;
-}
-
 .startText{
     font-size: 120px;
 }
@@ -262,19 +252,7 @@ body {
     font-size: 50px;
 }
 
-#creations{
-    font-size: 120px;
-}
-
-#contact{
-    font-size: 120px;
-}
-
-#team{
-    font-size: 120px;
-}
-
-#ideas{
+#creations, #contact, #team, #ideas{
     font-size: 120px;
 }
 
@@ -318,14 +296,11 @@ body {
     #creations{
         font-size: 65px;
     }
-    #contact{
+    #contact, #ideas{
         font-size: 75px;
     }
     #team{
         font-size: 120px;
-    }
-    #ideas{
-        font-size: 75px;
     }
 }
 
@@ -384,7 +359,7 @@ body {
     }
 }
 
-/*Back to top hover*/
+/*BACK TO TOP BUTTON*/
 
 .backToTop:hover{
     cursor: pointer;
@@ -394,7 +369,7 @@ body {
     cursor: default;
 }
 
-/*Animation Merry Christmas*/
+/*SCROLLTO ANIMATION*/
 
 .scrollAnim{
     display: flex;
@@ -489,5 +464,45 @@ h2{
     }
     .licenseText{
         font-size: 75px;
+    }
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    padding: 0 20px;
+    margin-top: -20px;
+}
+
+.article {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.article-image img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.article-text {
+    text-align: center;
+    color: white;
+}
+
+.article-text h1, .article-text h2 {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .article {
+        grid-template-columns: 1fr;
     }
 }

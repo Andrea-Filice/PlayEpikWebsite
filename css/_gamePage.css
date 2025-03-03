@@ -20,11 +20,7 @@ img{
     font-size: 120px;
 }
 
-.deps{
-    font-size: 80px;
-}
-
-.troubleshoot{
+.deps, .troubleshoot{
     font-size: 80px;
 }
 

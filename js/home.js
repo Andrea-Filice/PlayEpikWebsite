@@ -1,19 +1,17 @@
 var scrollToReleaseNotes = false;
 
 function OnLoad(){
-    document.getElementById("loaderLayer").style.animation = "FadeOut 1s linear";
-    document.getElementById("mainLayer").style.animation = "FadeIn 1s linear";
-    setTimeout(SetActiveLayer, 1000);
-}
-
-function SetActiveLayer(){
-    const scrollToReleaseNotes = sessionStorage.getItem("scrollToReleaseNotes") === "true";
-    document.getElementById("loaderLayer").style.display = "none";
-    document.getElementById("mainLayer").style.display = "block";
-    if (scrollToReleaseNotes) {
-        document.getElementById("release").scrollIntoView({ behavior: "smooth" });
-        sessionStorage.removeItem("scrollToReleaseNotes")
-    }
+    document.getElementById("loaderLayer").style.animation = "FadeOut 1s linear forwards";
+    document.getElementById("mainLayer").style.animation = "FadeIn 1s linear forwards";
+    setTimeout(() =>{
+        const scrollToReleaseNotes = sessionStorage.getItem("scrollToReleaseNotes") === "true";
+        document.getElementById("loaderLayer").style.display = "none";
+        document.getElementById("mainLayer").style.display = "block";
+        if (scrollToReleaseNotes) {
+            document.getElementById("release").scrollIntoView({ behavior: "smooth" });
+            sessionStorage.removeItem("scrollToReleaseNotes")
+        }
+    }, 1000);
 }
 
 function OpenGames(){
@@ -30,7 +28,6 @@ function OpenServerStatus(){
 
 //OPEN RELEASE NOTES
 
-
 function OpenCourseOfDeathRN(){
     sessionStorage.setItem("scrollToReleaseNotes", "true");
     window.location.href = "courseOfDeath.html";
@@ -41,13 +38,7 @@ function OpenSquareRoyaleRN(){
     window.location.href = "squareRoyale.html";
 }
 
-function OpenX(){
-    window.location.href = "https://x.com/play_epikinc";
-}
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
+window.onscroll = () =>{
     const backToTopBtn = document.getElementById("backToTopBtn");
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         backToTopBtn.style.display = "block";
@@ -55,4 +46,4 @@ function scrollFunction() {
     } else {
         backToTopBtn.style.animation = "animationOut 0.5s linear forwards";
     }
-}
+};
