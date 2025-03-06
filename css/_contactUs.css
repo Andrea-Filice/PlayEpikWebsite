@@ -4,6 +4,12 @@
     -webkit-background-clip: text;
 }
 
+.gamejolt{
+    -webkit-text-fill-color: transparent; 
+    background: linear-gradient(20deg, rgb(43, 255, 28), rgb(2, 97, 11)); 
+    -webkit-background-clip: text;
+}
+
 .tiktok{
     -webkit-text-fill-color: transparent; 
     background: linear-gradient(20deg, rgb(70, 54, 54), rgb(135, 21, 135)); 

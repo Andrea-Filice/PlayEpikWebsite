@@ -256,6 +256,10 @@ body {
     font-size: 120px;
 }
 
+.antiCheat{
+    font-size: 24px;
+}
+
 @media (max-width:600px) {
     .releaseNotes, .releaseNotes2{
         margin-right: 0px;
@@ -301,6 +305,9 @@ body {
     }
     #team{
         font-size: 120px;
+    }
+    .antiCheat{
+        font-size: 20px;
     }
 }
 
@@ -506,3 +513,10 @@ h2{
         grid-template-columns: 1fr;
     }
 }
+
+/*OVERFLOW*/
+
+html {
+    scrollbar-color: #888 black;
+    scrollbar-width: auto;
+  }
