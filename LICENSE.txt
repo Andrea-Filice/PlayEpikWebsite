@@ -1,0 +1,47 @@
+END-USER LICENSE FOR PLAY EPIK GAMES USE (last update: 06/03/25)
+
+0. UPDATES AND PATCHES
+1. IN-GAME PURCHASES
+2. PRIVACY AND DATA SECURITY
+3. GAME RESOURCES AND SOUNDS
+4. SERVERS AND MATCHMAKING
+5. FEEDBACK AND SUGGESTIONS
+
+0. UPDATES AND PATCHES
+Play Epik VideoGames receives updates to fix some problem within the game or security patches on its servers, and that's why we would like to better explain how to update Play Epik VideoGames to the latest version in the right way, below we will point out the steps.
+
+(1- Visit our itch site (play-epik-incorporatio.itch.io) and download the right package for your computer, to see if your machine has a 64-bit or 32-bit processor, WINDOWS 11/10 : Device Settings > System > Go all the way down and find the "system information" item > find the "System Type" item and that's where you can find out if your computer has a 64-bit or 32-bit processor.
+
+(2- If you have another version of the product installed, uninstall the previous version first and then start the installer of the new version.
+
+(3- If you have not installed any version prior you can proceed with opening the end named ("SetupX" or "GameNameSetupX") + device bit, following the information on the screen you will be able to install the videoGame.
+
+
+
+1. IN-GAME PURCHASES.
+Within Course of Death and Square Royale you have a store where you can buy customizations for your game profile.
+Any item purchased CANNOT BE REPLACED OR SUBJECTED TO REFUND (ALSO WITH REAL MONEY).
+THE SALE OF FILES CONTAINING ONLINE GAME DATA IS ALSO PROHIBITED.
+
+2. PRIVACY AND DATA SECURITY
+Play Epik uses Third Party Cookies to collect data about the device with which you are playing the game, the data in question will be stated below.
+
+(1- DATA ON THE MOTHER CARD (CPU X32 or X64, Cores) | USAGE: To improve the user experience into the videogame.
+(2- DATA ABOUT THE GRAPHIC CARD (Card Type, Manufacture) | USAGE: To adapt the game for a better experience.
+(3- WINDOWS VERSION (DirectX) | USAGE: Adaptation of the game concerning the code.
+(4- .NET CORE VERSION | USAGE: To check if you can play the game (minimum requirements).
+
+GAME DATA IS FORBIDDEN FOR ONLINE SALE.
+THE GAME DATA IS ENCRYPTED IN CHARACTERS THAT ONLY THE GAME CODE CAN DE-ENCRYPT.
+
+3. GAME RESOURCES AND SOUNDS
+ALL GAME RESOURCES AND SOUNDS ARE COPYRIGHTED BY PLAY EPIK, INCORPORATION.
+FOR STREAMERS: YOU MAY USE WITH PERMISSION THE GAME IMAGES AND SOUNDS WITHOUT RISKING FINES REGARDING COPYRIGHT.
+ALL IMAGES AND SOUNDS WERE CREATED AND EDITED BY PLAY EPIK, INCORPORATION.
+ALL RIGHTS RESERVED.
+
+4. SERVERS AND MATCHMAKING
+Course of Death and Square Royale are MULTIPLAYER games where you will connect to a server and play with other players, YOUR PERSONAL DATA WILL NOT BE TRANSMITTED TO THE SERVER OR TO OTHER PLAYERS! THEY ARE NOT NECESSARY FOR CONNECTION AND PLAY.
+
+5. FEEDBACK AND SUGGESTIONS
+If you would like to help make our games better for you and the rest of the players, we are very glad, which is why we encourage you to leave a comment under our site (play-epik-incorporation.itch.io/{gamename}) for any clarifications or bug finds scattered throughout the game, Thank you.
