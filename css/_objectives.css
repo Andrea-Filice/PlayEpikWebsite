@@ -42,7 +42,7 @@
 
 @keyframes counter {
   from {--num: 0;}
-  to {--num: 2821;}
+  to {--num: 2840;}
 }
 
 @keyframes counter2 {
