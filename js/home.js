@@ -1,49 +1,59 @@
-var scrollToReleaseNotes = false;
+let scrollToReleaseNotes = false;
 
-function OnLoad(){
+function OnLoad() {
     document.getElementById("loaderLayer").style.animation = "FadeOut 1s linear forwards";
     document.getElementById("mainLayer").style.animation = "FadeIn 1s linear forwards";
-    setTimeout(() =>{
+    setTimeout(() => {
         const scrollToReleaseNotes = sessionStorage.getItem("scrollToReleaseNotes") === "true";
         document.getElementById("loaderLayer").style.display = "none";
         document.getElementById("mainLayer").style.display = "block";
         if (scrollToReleaseNotes) {
             document.getElementById("release").scrollIntoView({ behavior: "smooth" });
-            sessionStorage.removeItem("scrollToReleaseNotes")
+            sessionStorage.removeItem("scrollToReleaseNotes");
         }
     }, 1000);
+    const seeMoreButtons = document.querySelectorAll('.seeMore');
+    seeMoreButtons.forEach(button => {
+        button.addEventListener('mouseleave', () => {
+            button.style.animation = 'AnimationButtonOff 200ms forwards';
+        });
+        button.addEventListener('mouseenter', () => {
+            button.style.animation = 'AnimationButtonOn 500ms forwards';
+        });
+    });
 }
 
-function OpenGames(){
-    window.location.href = "games.html";
+function BackToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function BackToTop(){
-    window.scrollTo({top: 0, behavior: 'smooth'});
-}
-
-function OpenServerStatus(){
+function OpenServerStatus() {
     window.location.href = "https://serverstatus-playepik.netlify.app/";
 }
 
 //OPEN RELEASE NOTES
-
-function OpenCourseOfDeathRN(){
+function OpenCourseOfDeathRN() {
     sessionStorage.setItem("scrollToReleaseNotes", "true");
     window.location.href = "courseOfDeath.html";
 }
 
-function OpenSquareRoyaleRN(){
+function OpenSquareRoyaleRN() {
     sessionStorage.setItem("scrollToReleaseNotes", "true");
     window.location.href = "squareRoyale.html";
 }
 
-window.onscroll = () =>{
+window.onscroll = () => {
     const backToTopBtn = document.getElementById("backToTopBtn");
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         backToTopBtn.style.display = "block";
         backToTopBtn.style.animation = "animationIn 0.5s linear forwards";
     } else {
         backToTopBtn.style.animation = "animationOut 0.5s linear forwards";
+    }
+    if(document.body.scrollTo > 400 || document.documentElement.scrollTop > 400 && document.getElementById("article1") != null){
+        document.getElementById("article1").style.animation = "scaleIn 0.5s forwards";
+    }
+    if(document.body.scrollTo > 600 || document.documentElement.scrollTop > 600 && document.getElementById("article2") != null){
+        document.getElementById("article2").style.animation = "scaleIn 0.5s forwards";
     }
 };

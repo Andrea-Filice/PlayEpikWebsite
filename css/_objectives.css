@@ -85,8 +85,6 @@ span{
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-  
-  	
 	@media(max-width: 600px){ transform: scale(.65); }
 }
 
@@ -129,7 +127,6 @@ h2{
 	box-shadow:
 		0 0 2px #fff,
 		inset 0 0 2px #fff;
-
 	animation: letter 3s ease-in-out infinite alternate;
 }
 

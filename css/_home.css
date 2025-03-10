@@ -36,8 +36,18 @@
     }
 }
 
-/*NAVBAR*/
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
+/*NAVBAR*/
 * {
     box-sizing: border-box;
 }
@@ -101,102 +111,42 @@ body {
 .gameTitle{
     font-size: 120px;
 }
-  
-@media (max-width:600px) {
-    body{
-        overflow-x: hidden;
-    }
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding-top: 28px;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
-      cursor: pointer;
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
-    }
-    .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #000000;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
-    }
-    .nav > .nav-links > a {
-      display: block;
-      width: 100%;
-    }
-    .nav > .nav-links > img {
-        display: block;
-        width: 100%;
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
-    .gameTitle{
-        font-size: 80px;
-    }
-}
 
-.seeMore{
+.seeMore {
     border: white 3px solid;
     background-color: black;
     color: white;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 300;
     transform: scale(1.5);
-    animation: AnimationButtonOff 0ms linear;
     z-index: -1;
 }
 
 .seeMore:hover{
-    animation: AnimationButtonOn 500ms forwards;
     cursor: pointer;
 }
 
 .seeMore:hover::after{
-    animation: AnimationButtonOff 500ms linear;
     cursor: default;
 }
 
-@keyframes AnimationButtonOn{
-    0%{
+@keyframes AnimationButtonOn {
+    0% {
         background-color: black;
         color: white;
     }
-    100%{
+    100% {
         background-color: white;
         color: black;
     }
 }
 
-@keyframes AnimationButtonOff{
-    0%{
+@keyframes AnimationButtonOff {
+    0% {
         background-color: white;
         color: black;
     }
-    100%{
+    100% {
         background-color: black;
         color: white;
     }
@@ -260,7 +210,69 @@ body {
     font-size: 24px;
 }
 
+.newsIndex{
+    font-size: 80px;
+}
+
+.licenseText{
+    font-size: 100px;
+}
+  
 @media (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding-top: 28px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #000000;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > .nav-links > img {
+        display: block;
+        width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+    .gameTitle{
+        font-size: 80px;
+    }
     .releaseNotes, .releaseNotes2{
         margin-right: 0px;
     }
@@ -308,6 +320,12 @@ body {
     }
     .antiCheat{
         font-size: 20px;
+    }
+    .newsIndex{
+        font-size: 60px;
+    }
+    .licenseText{
+        font-size: 75px;
     }
 }
 
@@ -367,7 +385,6 @@ body {
 }
 
 /*BACK TO TOP BUTTON*/
-
 .backToTop:hover{
     cursor: pointer;
 }
@@ -377,7 +394,6 @@ body {
 }
 
 /*SCROLLTO ANIMATION*/
-
 .scrollAnim{
     display: flex;
     align-items: center;
@@ -428,6 +444,7 @@ h2{
     color: white;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 300;
+    transform: scale(1.5);
     cursor: pointer;
 }
 
@@ -455,23 +472,6 @@ h2{
 
 #backToTopBtn:hover::after{
     animation: animationOut 500ms linear;
-}
-
-.newsIndex{
-    font-size: 80px;
-}
-
-.licenseText{
-    font-size: 100px;
-}
-
-@media (max-width: 600px){
-    .newsIndex{
-        font-size: 60px;
-    }
-    .licenseText{
-        font-size: 75px;
-    }
 }
 
 .articles {
@@ -515,8 +515,16 @@ h2{
 }
 
 /*OVERFLOW*/
-
 html {
     scrollbar-color: #888 black;
     scrollbar-width: auto;
+}
+
+.startIndex, .start{
+    opacity: 0;
+    animation: scaleIn 0.5s forwards;
+}
+
+#article1, #article2{
+    transform: scale(0.8);
 }
