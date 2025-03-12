@@ -32,14 +32,10 @@ function OpenServerStatus() {
 }
 
 //OPEN RELEASE NOTES
-function OpenCourseOfDeathRN() {
-    sessionStorage.setItem("scrollToReleaseNotes", "true");
-    window.location.href = "courseOfDeath.html";
-}
 
-function OpenSquareRoyaleRN() {
+function OpenReleaseNotes(link){
     sessionStorage.setItem("scrollToReleaseNotes", "true");
-    window.location.href = "squareRoyale.html";
+    window.location.href = link;
 }
 
 window.onscroll = () => {

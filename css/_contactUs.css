@@ -12,7 +12,7 @@
 
 .tiktok{
     -webkit-text-fill-color: transparent; 
-    background: linear-gradient(20deg, rgb(70, 54, 54), rgb(135, 21, 135)); 
+    background: linear-gradient(20deg, #69C9D0, #EE1D52); 
     -webkit-background-clip: text;
 }
 
