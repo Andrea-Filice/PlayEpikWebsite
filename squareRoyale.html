@@ -22,7 +22,7 @@
         <!--Clash Display-->
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap" rel="stylesheet">
     </head>
-    <body style="background-color: black;" onload="OnLoad()">
+    <body style="background-color: black;" onload="OnLoad(), load('SquareRoyale')">
         <center>
             <div id="loaderLayer" style="display: block; margin-top: 350px;">
                 <span class="loader"></span>
@@ -78,7 +78,7 @@
                     </video>
                     <br>
                     <br>
-                    <button class="seeMore" style="transform: scale(2);" onclick="OpenTrailer(1)">Watch Trailer</button>
+                    <button class="seeMore" style="transform: scale(2);" onclick="OpenTrailer(1)">Watch full trailer</button>
                 </div>
                 <br>
                 <div class="depscription">
@@ -97,42 +97,48 @@
                 </div>
                 <div class="images">
                     <h1 style="color: white; font-size: 80px;">IMAGES</h1>
-                    <img src="img/SquareRoyaleImages/Img1.webp" alt="">
-                    <img src="img/SquareRoyaleImages/Img2.webp" alt="">
-                    <img src="img/SquareRoyaleImages/Img3.webp" alt="">
-                    <img src="img/SquareRoyaleImages/Img4.webp" alt="" id="release">
+                    <img src="img/SquareRoyaleImages/Img1.webp" draggable="false" onclick="showModal(0)">
+                    <img src="img/SquareRoyaleImages/Img2.webp" draggable="false" onclick="showModal(1)">
+                    <img src="img/SquareRoyaleImages/Img3.webp" draggable="false" onclick="showModal(2)">
+                    <img src="img/SquareRoyaleImages/Img4.webp" draggable="false" onclick="showModal(3)">
+                </div>
+                <div id="modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="imgModal">
+                    <div id="caption"></div>
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
                 </div>
                 <div class="release-notes" id="release-notes" style="text-align: center;">
-                    <h1 style="color: white; font-size: 80px;">RELEASE NOTES</h1>
-                    <h2 style="color: white; font-weight: 300; font-style: italic;">Latest version: 0.6.0 (March 3 2025)</h2>
+                    <h1 style="color: white; font-size: 80px;" id="release">RELEASE NOTES</h1>
+                    <h2 style="color: white; font-weight: 300; font-style: italic;">Latest version: 0.6.1 (March 17 2025)</h2>
                     <div class="release">
                         <h1 style="color: white;">WELCOME BACK PLAYERS!</h1>
-                        <h2 style="color: white; font-weight: 300; padding-left: 40px; padding-left: 40px;">In this release, we add <b>New Feautures</b> and there are some <b>Bug Fixes</b>, but let's into details: </h2>
+                        <h2 style="color: white; font-weight: 300; padding-left: 40px; padding-left: 40px;">In this release, we fix <b>Some Bugs</b> and there are some <b>Bug Fixes</b>, but let's into details: </h2>
+                        <ul style="color: white; font-weight: 300; font-size: larger;">
+                            <li>[FIX] Fixed some Display Bugs in Skins layer.</li>
+                            <li>[REMOVED] Removed the button for refresh main menu music.</li>
+                            <li>[FIX] Fixed depscription of some pop-ups.</li>
+                            <li>[FIX] Fixed some Animations with Multiplayer and Singleplayer buttons.</li>
+                            <li>[FIX] Fixed Nickname characters limit.</li>
+                            <li>[FIX] Fixed Chrouching power-up.</li>
+                            <li>[PERFORMANCE] Smoother lava animations.</li>
+                        </ul>
+                        <h2 style="color: white; font-weight: 300; font-style: italic;">Total issues fixed: 10 (someone is not on the list), <b>CVE-2025031710</b>.</h2>
+                        <h1 style="color: white; font-size: 50px;">RECENT BIG UPDATE:</h1>
+                        <h2 style="color: white; margin-top: -40px; font-style: italic;">Square Royale (0.6.0)</h2>
                         <ul style="color: white; font-weight: 300; font-size: larger;">
                             <li>[ADD] Added 3 NEW MAPS FOR MULTIPLAYER MODE!</li>
                             <li>[ADD] NEW GRAPHICS FOR LAVA! Now is much realistic and have a smoother movement.</li>
                             <li>[FIX] Fixed bug in MatchMaking Settings, now is redesigned better.</li>
                             <li>[FIX] Fixed incorrect behaviour for retire XP Points.</li>
                         </ul>
-                        <h2 style="color: white; font-weight: 300; font-style: italic;">Total issues fixed: 6 (someone is not on the list), <b>CVE-202503036</b>.</h2>
-                        <!--<h1 style="color: white; font-size: 50px;">RECENT BIG UPDATE:</h1>
-                        <h2 style="color: white; margin-top: -40px; font-style: italic;">Square Royale (0.5.0)</h2>
-                        <ul style="color: white; font-weight: 300; font-size: larger;">
-                            <li>[ADD] <b>MODALITY ADDED TO SQUARE ROYALE, THE MULTIPLAYER!</b> CHALLENGE AGAINST PEOPLE ONLINE OR AGAINST YOUR FRIENDS AND NAME A WINNER WITH AMAZING 3-MINUTE PVP BATTLES, WHO MAKES THE MOST KILLS WINS!</li>
-                            <li>[ADD] <b>2 NEW ENEMY TYPES ADDED!</b> Bomb Enemy and Mitra Enemy, The first of these has little life but takes half your life! The second also has not so much life but shoots many deadly bullets in a row!</li>
-                            <li>[ADD] Added an option in <b>Settings > General > Graphics</b> to change the rendering quality of the game, from WXGA to 4K.</li>
-                            <li>[ADD] Added an upper bar indicating the search process for a match, which remains fixed in all screens.</li>
-                            <li>[FIX] Fixed a problem with the purchase of PowerUp with Coins, now everything works correctly.</li>
-                            <li>[FIX] Fixed a problem that did not show the coin icon next to the skins presentation layer.</li>
-                            <li>[FIX] Fixed a problem with the SinglePlayer and MultiPlayer buttons, now when you delete a match, you have to wait 5 seconds before starting another one.</li>
-                        </ul>
-                        <br> <br>-->
                     </div>
                 </div>
                 <br>
                 <div class="updates-info" style="text-align: center;">
                     <h1 style="color: white;" class="troubleshoot">SCHEDULING UPDATES </h1>
-                    <h2 style="color: white; font-weight: 300;" class="depsTroubleshoot"><b>Square Royale</b> updates of stability and quality of life will be released every <b>2 weeks</b> from <b>Monday</b> to <b>Friday</b>, from <b>3PM</b> to <b>8PM</b>.</h2>
+                    <h2 style="color: white; font-weight: 300;" class="depsTroubleshoot"><b>Square Royale</b> updates of stability and quality of life will be released every <b>1/2 weeks</b> from <b>Monday</b> to <b>Friday</b>, from <b>3PM</b> to <b>8PM</b>.</h2>
                 </div>
                 <div class="credits" style="text-align: center;">
                     <h1 style="color: white; font-size: 80px;">CREDITS </h1>
@@ -141,7 +147,7 @@
                 </div>
                 <div class="troubleshooting" style="text-align: center;">
                     <h1 style="color: white;" class="troubleshoot">TROUBLESHOOTING </h1>
-                    <h2 style="color: white; font-weight: 300;" class="depsTroubleshoot">Do you have any issues with our games? Check their <b>Server Status</b>!</h2>
+                    <h2 style="color: white; font-weight: 300;" class="depsTroubleshoot">Do you have any issues with <b>Square Royale</b>? Check his <b>Server Status</b>!</h2>
                     <button class="seeMore" onclick="OpenServerStatus()">Server Status</button>
                 </div>
                 <br> <br> <br>
@@ -165,5 +171,6 @@
         </center>
         <script src="js/home.js"></script>
         <script src="js/openTrailers.js"></script>
+        <script src="js/imageModal.js"></script>
     </body>
 </html>

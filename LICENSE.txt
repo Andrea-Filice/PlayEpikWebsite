@@ -8,7 +8,7 @@ END-USER LICENSE FOR PLAY EPIK GAMES USE (last update: 06/03/25)
 5. FEEDBACK AND SUGGESTIONS
 
 0. UPDATES AND PATCHES
-Play Epik VideoGames receives updates to fix some problem within the game or security patches on its servers, and that's why we would like to better explain how to update Play Epik VideoGames to the latest version in the right way, below we will point out the steps.
+Play Epik VideoGames receives updates to fix problems within the game or security patches on its servers, and that's why we would like to better explain how to update Play Epik VideoGames to the latest version in the right way, below we will point out the steps.
 
 (1- Visit our itch site (play-epik-incorporatio.itch.io) and download the right package for your computer, to see if your machine has a 64-bit or 32-bit processor, WINDOWS 11/10 : Device Settings > System > Go all the way down and find the "system information" item > find the "System Type" item and that's where you can find out if your computer has a 64-bit or 32-bit processor.
 

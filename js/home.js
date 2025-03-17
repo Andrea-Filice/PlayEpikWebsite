@@ -32,7 +32,6 @@ function OpenServerStatus() {
 }
 
 //OPEN RELEASE NOTES
-
 function OpenReleaseNotes(link){
     sessionStorage.setItem("scrollToReleaseNotes", "true");
     window.location.href = link;

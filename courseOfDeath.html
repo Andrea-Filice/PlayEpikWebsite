@@ -22,7 +22,7 @@
         <!--Clash Display-->
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap" rel="stylesheet">
     </head>
-    <body style="background-color: black;" onload="OnLoad()">
+    <body style="background-color: black;" onload="OnLoad(), load('CourseOfDeath')">
         <center>
             <div id="loaderLayer" style="display: block; margin-top: 370px;">
                 <span class="loader"></span>
@@ -78,7 +78,7 @@
                     </video>
                     <br>
                     <br>
-                    <button class="seeMore" style="transform: scale(2);" onclick="OpenTrailer(0)">Watch Trailer</button>
+                    <button class="seeMore" style="transform: scale(2);" onclick="OpenTrailer(0)">Watch full trailer</button>
                 </div>
                 <br>
                 <div class="depscription">
@@ -97,26 +97,30 @@
                 </div>
                 <div class="images">
                     <h1 style="color: white; font-size: 80px;">IMAGES</h1>
-                    <img src="img/CourseOfDeathImages/Img2.webp" alt="">
-                    <img src="img/CourseOfDeathImages/Img3.webp" alt="">
-                    <img src="img/CourseOfDeathImages/Img4.webp" alt="">
-                    <img src="img/CourseOfDeathImages/Img1.webp" alt="" id="release">
+                    <img src="img/CourseOfDeathImages/Img2.webp" draggable="false" onclick="showModal(1)">
+                    <img src="img/CourseOfDeathImages/Img3.webp" draggable="false" onclick="showModal(2)">
+                    <img src="img/CourseOfDeathImages/Img4.webp" draggable="false" onclick="showModal(3)">
+                    <img src="img/CourseOfDeathImages/Img1.webp" draggable="false" onclick="showModal(0)">
+                </div>
+                <div id="modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="imgModal">
+                    <div id="caption"></div>
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
                 </div>
                 <div class="release-notes" style="text-align: center;">
-                    <h1 style="color: white; font-size: 80px;">RELEASE NOTES</h1>
-                    <h2 style="color: white; font-weight: 300; font-style: italic;">Latest version: 2.4.2 (February 27 2025)</h2>
+                    <h1 style="color: white; font-size: 80px;" id="release">RELEASE NOTES</h1>
+                    <h2 style="color: white; font-weight: 300; font-style: italic;">Latest version: 2.4.3 (March 17 2025)</h2>
                     <div class="release">
                         <h1 style="color: white;">WELCOME BACK PLAYERS!</h1>
                         <h2 style="color: white; font-weight: 300; padding-left: 40px; padding-left: 40px;">In this release, we fix <b>Some Bugs</b> and there are some <b>Performance Improvements</b>, but let's into details: </h2>
                         <ul style="color: white; font-weight: 300; font-size: larger;" class="releases">
-                            <li>[PERFORMANCE] Adding more animations for Players Characters into QuickMatch mode and PrivateMatch mode.</li>
-                            <li>[FIX] Fixed svarious bugs with <b>Customize</b> > <b>Store</b> page.</li>
-                            <li>[FIX] Fixed colors of Backgound in every singleplayer map, now is with current season colors.</li>
-                            <li>[FIX] Fixed some bugs with maps and skins colliders.</li>
-                            <li>[FIX] Fixed some animations in Start scene.</li>
+                            <li>[PERFORMANCE] Integrate @cineMachine 3.x for better performance in player cameras!</li>
+                            <li>[FIX] Fixed svarious animations bugs in Home scene.</li>
                         </ul>
                         <br> <br>
-                        <h2 style="color: white; font-weight: 300; font-style: italic;">Total issues fixed: 12 (someone is not on the list), <b>CVE-2025022712</b>.</h2>
+                        <h2 style="color: white; font-weight: 300; font-style: italic;">Total issues fixed: 4 (someone is not on the list), <b>CVE-202503174</b>.</h2>
                         <h1 style="color: white; font-size: 50px;">RECENT BIG UPDATE </h1>
                         <h2 style="color: white; margin-top: -40px; font-style: italic;">Course Of Death (2.4.0)</h2>
                         <ul style="color: white; font-weight: 300; font-size: larger;">
@@ -133,11 +137,12 @@
                 </div>
                 <div class="credits" style="text-align: center;">
                     <h1 style="color: white; font-size: 80px;">CREDITS </h1>
+                    <h2 style="color: white; margin-top: -40px; font-weight: 300;">Main music by: Zyrk | SFX By: Pixabay</h2>
                     <h2 style="color: white; text-decoration: underline;" onclick="window.location.href='thirdPartySoftwares.html'" class="tps">THIRD PARTY SOFTWARES</h2>
                 </div>
                 <div class="troubleshooting" style="text-align: center;">
                     <h1 style="color: white;" class="troubleshoot">TROUBLESHOOTING </h1>
-                    <h2 style="color: white; font-weight: 300;" class="depsTroubleshoot">Do you have any issues with our games? Check their <b>Server Status</b>!</h2>
+                    <h2 style="color: white; font-weight: 300;" class="depsTroubleshoot">Do you have any issues with <b>Course Of Death</b>? Check his <b>Server Status</b>!</h2>
                     <button class="seeMore" onclick="OpenServerStatus()">Server Status</button>
                 </div>
                 <br> <br> <br>
@@ -161,5 +166,6 @@
         </center>
         <script src="js/home.js"></script>
         <script src="js/openTrailers.js"></script>
+        <script src="js/imageModal.js"></script>
     </body>
 </html>

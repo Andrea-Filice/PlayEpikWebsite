@@ -42,12 +42,12 @@
 
 @keyframes counter {
   from {--num: 0;}
-  to {--num: 2840;}
+  to {--num: 2856;}
 }
 
 @keyframes counter2 {
   from {--num: 0;}
-  to {--num: 105;}
+  to {--num: 106;}
 }
 
 @keyframes counter3 {
