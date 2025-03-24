@@ -3,14 +3,11 @@ let images = []
 let currentIndex = 0;
 const modal = document.getElementById("modal");
 const imgModal = document.getElementById("imgModal");
-const captionText = document.getElementById("caption");
 const openModalBtn = document.getElementById("openModal");
 const closeModal = document.getElementsByClassName("close")[0];
 
 function load(game){
-    console.log(game);
     gameName = game;
-    console.log(gameName);
     images = [
         "img/" + gameName + "Images/Img1.webp",
         "img/" + gameName + "Images/Img2.webp",
@@ -24,7 +21,6 @@ function showSlide(index) {
     if (index >= images.length) index = 0;
     currentIndex = index;
     imgModal.src = images[currentIndex];
-    captionText.textContent = "Image " + (currentIndex + 1);
     if(gameName == "CodeUnlocker"){
         imgModal.style.width = "330px";
         imgModal.style.height = "565px";
@@ -34,7 +30,7 @@ function showSlide(index) {
 function showModal(index) {
     if(window.screen.width > 600){
         modal.style.opacity = "0%";
-        modal.style.display = "block";
+        modal.style.display = "flex";
         modal.style.animation = "FadeIn 500ms forwards";
     }
     else

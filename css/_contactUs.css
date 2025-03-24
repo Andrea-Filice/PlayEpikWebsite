@@ -24,6 +24,6 @@
 
 .discord{
     -webkit-text-fill-color: transparent; 
-    background: linear-gradient(20deg, rgb(0, 238, 255), rgb(77, 6, 255)); 
+    background: linear-gradient(20deg, rgb(0, 238, 255), rgb(35, 6, 255)); 
     -webkit-background-clip: text;
 }
