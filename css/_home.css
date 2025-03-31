@@ -528,3 +528,9 @@ html {
 #article1, #article2{
     transform: scale(0.8);
 }
+
+.gif{
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
