@@ -6,8 +6,8 @@ const imgModal = document.getElementById("imgModal");
 const openModalBtn = document.getElementById("openModal");
 const closeModal = document.getElementsByClassName("close")[0];
 
-function load(game){
-    gameName = game;
+function load(pageName){
+    gameName = pageName;
     images = [
         "img/" + gameName + "Images/Img1.webp",
         "img/" + gameName + "Images/Img2.webp",

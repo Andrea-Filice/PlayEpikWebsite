@@ -31,7 +31,6 @@ function OpenServerStatus() {
     window.location.href = "https://serverstatus-playepik.netlify.app/";
 }
 
-//OPEN RELEASE NOTES
 function OpenReleaseNotes(link){
     sessionStorage.setItem("scrollToReleaseNotes", "true");
     window.location.href = link;

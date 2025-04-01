@@ -32,6 +32,11 @@ img{
     font-size: 120px;
 }
 
+.releaseDeps{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 @media (max-width:600px){
     body{
         overflow-x: hidden;
@@ -66,6 +71,10 @@ img{
     }
     #codeUnlocker{
         font-size: 70px;
+    }
+    .releaseDeps{
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
