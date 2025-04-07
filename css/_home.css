@@ -417,7 +417,7 @@ body {
 }
 
 .rightToLeft{
-    animation: rightToLeft 12s infinite linear;
+    animation: rightToLeft 10s infinite linear;
 }
 
 @keyframes rightToLeft{
