@@ -1,4 +1,4 @@
-**Play Epik Website**
+# **Play Epik Website**
 
 A modern, responsive website deployed on Netlify.
 
