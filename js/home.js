@@ -7,6 +7,14 @@ function OnLoad() {
         const scrollToReleaseNotes = sessionStorage.getItem("scrollToReleaseNotes") === "true";
         document.getElementById("loaderLayer").style.display = "none";
         document.getElementById("mainLayer").style.display = "block";
+        setTimeout(() => {
+            if (window.location.hash === '#credits') {
+                const creditsSection = document.getElementById('credits');
+                if (creditsSection) {
+                  creditsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }, 100) //WAIT FOR THE PAGE TO LOAD COMPLETELY
         if (scrollToReleaseNotes) {
             document.getElementById("release").scrollIntoView({ behavior: "smooth" });
             sessionStorage.removeItem("scrollToReleaseNotes");

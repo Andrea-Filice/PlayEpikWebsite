@@ -155,3 +155,17 @@ img{
     color: #ccc;
     padding: 10px 0;
 }
+
+/*TRAILER*/
+.trailer {
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+}
+
+.trailer video {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}

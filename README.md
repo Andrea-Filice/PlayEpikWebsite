@@ -18,7 +18,7 @@ Issues: If you find any bugs or have feature requests, please open an issue. We 
 Please follow the standard GitHub Flow when contributing.
 
 # License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License and you can find the **PLAY EPIK END-USER LICENSE**.
 
 # Contact
 For further questions or suggestions, please open an issue on the repository or contact us at help.playepik@gmail.com.
