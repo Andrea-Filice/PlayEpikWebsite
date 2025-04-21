@@ -12,6 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Clash Display-->
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap" rel="stylesheet">
+        <!--EmailJS Online-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     </head>
     <body style="background-color: black;" onload="OnLoad()">
         <center>
@@ -40,14 +42,14 @@
                       <a href="contactUs.html">Contact us</a>
                     </div>
                 </div>
-                <div class="scrollAnim">
+                <!--<div class="scrollAnim">
                     <div class="scroll">
                         <div class="rightToLeft">
                             <p style="color: white; font-family: 'Clash Display', sans-serif;">SEASON 5 IS HERE! - DOWNLOAD COURSE OF DEATH 2.5.0 NOW! - SEASON 5 IS HERE! - DOWNLOAD COURSE OF DEATH 2.5.0 NOW! - SEASON 5 IS HERE! - DOWNLOAD COURSE OF DEATH 2.5.0 NOW!- SEASON 5 IS HERE! - </p>
                         </div>
                     </div>
                 </div>
-                <hr color="white" style="border: white 1px solid;">
+                <hr color="white" style="border: white 1px solid;">-->
                 <div class="startIndex">
                     <h1 style="color: white; font-family: 'Clash Display', sans-serif;" class="startText" id="contact">CONTACT <br> <p style="display: inline; font-weight: 100;" class="special">✳︎</p>  <p style="display: inline;" class="hereText" id="team">THE TEAM.</p></h1>
                     <h2 style="color: white; font-family: 'Clash Display', sans-serif; font-size: 50px; font-weight: 300; margin-top: -25px;">Here you can <b>contact the team!</b></h2>
@@ -56,11 +58,31 @@
                 <hr color="white" style="border: white 3px solid;">
                 <br> <br>
                 <h1 style="color: white; font-size: 80px;">HOW CAN YOU <p style="display: inline; font-style: italic;">CONTACT US?</p></h1>
-                <h2 style="color: white; font-weight: 300;">Send us a feedback by mail: <a href="mailto:help.playepik@gmail.com" style="color: white; text-decoration: none; font-style: italic; font-weight: 600;">help.playepik@gmail.com.</a></h2>
+                <!--<h2 style="color: white; font-weight: 300;">Send us a feedback by mail: <a href="mailto:help.playepik@gmail.com" style="color: white; text-decoration: none; font-style: italic; font-weight: 600;">help.playepik@gmail.com.</a></h2>-->
                 <h2 style="color: white; font-weight: 300;">Write a comment under our post on <a style="display: inline; font-weight: 800;" class="itch" href="https://play-epik-incorporation.itch.io">itch.io</a> or <a style="display: inline; font-weight: 800;" class="gamejolt" href="https://gamejolt.com/@Play_Epik_Inc">gamejolt.com</a>.</h2>
                 <h2 style="color: white; font-weight: 300;">Write a message to our <a style="display: inline; font-weight: 800;" class="tiktok" href="https://www.tiktok.com/@play.epik.inc?is_from_webapp=1&sender_device=pc">tiktok</a> and <a style="display: inline; font-weight: 800;" class="instagram" href="https://www.instagram.com/playepikinc/">instagram</a> accounts.</h2>
                 <h2 style="color: white; font-weight: 300;">Write in our <a style="display: inline; font-weight: 800;" class="discord" href="https://discord.gg/nKBrSqnNuD">discord</a> server and an helper will be here for you!</h2>
-                <br> <br> <br>
+                <br>
+                <h1 style="color: white; font-size: 80px;">STILL NEED<p style="display: inline; font-style: italic;"> HELP?</p></h1>
+                <br> <br> <br> <br>
+                <div class="form">
+                    <form id="feedbackForm" style="scale: 2;">
+                        <label for="email" style="color: white;">Email:</label>
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="Insert your email here..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; border-color: white;">
+                        <br> <br>
+                        <label for="description" style="color: white;">Message: </label>
+                        <br>
+                        <textarea id="description" name="description" rows="5" placeholder="Write here your feedback (Markdown Support)..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; border-color: white; resize: none;"></textarea>
+                        <br>
+                        <h3 style="color: white;">Mail Preview:</h3>
+                        <div id="preview"></div>
+                        <br> <br>
+                    </form>
+                    <br> <br> <br>
+                    <button class="seeMore" onclick="SendEmail()">Submit</button>
+                    <p id="responseMessage" style="color: white; font-family: 'Clash Display', sans-serif; font-size: 50px;"></p>
+                </div>
                 <footer>
                     <div class="footer" style="background-color: rgb(24, 24, 24);">
                         <h3 style="color: white;">&copy; Play Epik Incorporation</h3>
@@ -78,6 +100,10 @@
                 <button id="backToTopBtn" onclick="BackToTop()">↑</button>
             </div>
         </center>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="js/markdown.js"></script>
         <script src="js/home.js"></script>
+        <!--EmailJS Local-->
+        <script src="js/emailJS.min.js"></script>
     </body>
 </html>

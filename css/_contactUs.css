@@ -27,3 +27,26 @@
     background: linear-gradient(20deg, rgb(0, 238, 255), rgb(35, 6, 255)); 
     -webkit-background-clip: text;
 }
+
+/*MARKDOWN SUPPORT*/
+#preview {
+    margin-top: -20px;
+    color: white;
+    font-family: 'Clash Display', sans-serif;
+}
+
+#email{
+    width: 25%;
+}
+#description{
+    width: 25%;
+}
+
+@media (max-width: 768px) {
+    #email{
+        width: 45%;
+    }
+    #description{
+        width: 45%;
+    }
+}
