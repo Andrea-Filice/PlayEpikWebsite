@@ -14,6 +14,12 @@ function OnLoad() {
                   creditsSection.scrollIntoView({ behavior: 'smooth' });
                 }
             }
+            if (window.location.hash === '#morehelp') {
+                const creditsSection = document.getElementById('morehelp');
+                if (creditsSection) {
+                  creditsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
         }, 100) //WAIT FOR THE PAGE TO LOAD COMPLETELY
         if (scrollToReleaseNotes) {
             document.getElementById("release").scrollIntoView({ behavior: "smooth" });
