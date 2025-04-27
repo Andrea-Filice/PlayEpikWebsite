@@ -12,6 +12,12 @@
     text-align: center;
 }
 
+.games img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 @media (max-width: 600px){
     body{
         overflow-x: hidden;

@@ -40,14 +40,23 @@
   content: counter(num);
 }
 
+.counter5{
+  counter-reset: num var(--num);
+  padding: 2rem;
+}
+
+.counter5::after {
+  content: counter(num);
+}
+
 @keyframes counter {
   from {--num: 0;}
-  to {--num: 2900;} /*2924*/
+  to {--num: 2900;}
 }
 
 @keyframes counter2 {
   from {--num: 0;}
-  to {--num: 110;} /*116*/
+  to {--num: 110;} 
 }
 
 @keyframes counter3 {
@@ -58,6 +67,11 @@
 @keyframes counter4 {
   from {--num: 0;}
   to {--num: 3;}
+}
+
+@keyframes counter5 {
+  from {--num: 0;}
+  to {--num: 1500;}
 }
 
 .mainCounter {

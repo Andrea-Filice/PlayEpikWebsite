@@ -20,7 +20,7 @@ function OnLoad() {
                   creditsSection.scrollIntoView({ behavior: 'smooth' });
                 }
             }
-        }, 100) //WAIT FOR THE PAGE TO LOAD COMPLETELY
+        }, 100)
         if (scrollToReleaseNotes) {
             document.getElementById("release").scrollIntoView({ behavior: "smooth" });
             sessionStorage.removeItem("scrollToReleaseNotes");
@@ -47,7 +47,7 @@ function OpenServerStatus() {
 
 function OpenReleaseNotes(link){
     sessionStorage.setItem("scrollToReleaseNotes", "true");
-    window.location.href = link;
+    window.location.href = "/" + link;
 }
 
 window.onscroll = () => {
