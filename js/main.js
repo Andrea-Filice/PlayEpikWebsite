@@ -1,4 +1,8 @@
 function SendEmail(){
+  if(document.getElementById("email").value == ""){
+    alert("Please, check your email address and try again.")
+  }
+  else{
     emailjs.init("Vx1Y2a2hCfrNX3MLW");
     const email = document.getElementById('email').value;
     const description = document.getElementById('description').value;
@@ -15,4 +19,6 @@ function SendEmail(){
       console.error('Error sending the support mail: ', error);
       document.getElementById('responseMessage').textContent = "There was an error sending your feedback. Please try again later.";
     });
+    alert("Feedback succesfully sent!");
+  }
 }

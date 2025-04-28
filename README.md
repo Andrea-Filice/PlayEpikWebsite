@@ -1,9 +1,9 @@
 # **Play Epik Website**
 
-A modern, responsive website deployed on Netlify.
+A modern, responsive website for our company (Play Epik, Incorporation) deployed on Netlify.
 
 # Overview
-This repository contains the source code for our website. The site is deployed via Netlify. Although direct modifications to the code are not permitted, we welcome contributions through pull requests and issues.
+This repository contains the source code for our website. The site is deployed via Netlify. Although direct modifications to the code are not permitted, we welcome contributions through pull requests and issues reports.
 
 # Live Demo
 Check out the live website here: https://play-epik-incorporation.netlify.app/
@@ -18,7 +18,7 @@ Issues: If you find any bugs or have feature requests, please open an issue. We 
 Please follow the standard GitHub Flow when contributing.
 
 # License
-This project is licensed under the MIT License and you can find the **PLAY EPIK END-USER LICENSE**.
+This project is licensed under the MIT License and the **PLAY EPIK END-USER LICENSE**.
 
 # Contact
-For further questions or suggestions, please open an issue on the repository or contact us at help.playepik@gmail.com.
+For further questions or suggestions, contact us via mail: help.playepik@gmail.com
