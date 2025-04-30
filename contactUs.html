@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <!--Website Settings-->
+        <!--Settings-->
         <title>Play Epik Inc - Contact Us</title>
         <link rel="icon" type="img/png" href="img/_logo.webp">
         <link rel="stylesheet" href="css/_home.css">
@@ -58,7 +58,6 @@
                 <hr color="white" style="border: white 3px solid;">
                 <br> <br>
                 <h1 style="color: white; font-size: 80px;">HOW CAN YOU <p style="display: inline; font-style: italic;">CONTACT US?</p></h1>
-                <!--<h2 style="color: white; font-weight: 300;">Send us a feedback by mail: <a href="mailto:help.playepik@gmail.com" style="color: white; text-decoration: none; font-style: italic; font-weight: 600;">help.playepik@gmail.com.</a></h2>-->
                 <h2 style="color: white; font-weight: 300;">Write a comment under our post on <a style="display: inline; font-weight: 800;" class="itch" href="https://play-epik-incorporation.itch.io">itch.io</a> or <a style="display: inline; font-weight: 800;" class="gamejolt" href="https://gamejolt.com/@Play_Epik_Inc">gamejolt.com</a>.</h2>
                 <h2 style="color: white; font-weight: 300;">Write a message to our <a style="display: inline; font-weight: 800;" class="tiktok" href="https://www.tiktok.com/@play.epik.inc?is_from_webapp=1&sender_device=pc">tiktok</a> and <a style="display: inline; font-weight: 800;" class="instagram" href="https://www.instagram.com/playepikinc/">instagram</a> accounts.</h2>
                 <h2 style="color: white; font-weight: 300;">Write in our <a style="display: inline; font-weight: 800;" class="discord" href="https://discord.gg/nKBrSqnNuD">discord</a> server and an helper will be here for you!</h2>
@@ -69,15 +68,16 @@
                     <form id="feedbackForm" style="scale: 2;">
                         <label for="email" style="color: white;">Email:</label>
                         <br>
-                        <input type="email" id="email" name="email" placeholder="Insert your email here..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; border-color: white;">
+                        <input type="email" id="email" name="email" placeholder="Insert your email here..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; border-color: white;" disabled alt="Disabled">
                         <br> <br>
                         <label for="description" style="color: white;">Message: </label>
                         <br>
-                        <textarea id="description" name="description" rows="5" placeholder="Write here your feedback (Markdown Support)..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; border-color: white; resize: none;"></textarea>
+                        <textarea id="description" name="description" rows="5" placeholder="Write here your feedback (Markdown Support)..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; border-color: white; resize: none;" disabled alt="Disabled"></textarea>
                         <br>
+                        <h3 style="color: white;">SUBMIT REQUESTS IT'S NOW NOT AVAIBLE, SORRY FOR THE INCOVENIENCE.</h3>
                         <h3 style="color: white;">Mail Preview:</h3>
                         <div id="preview"></div>
-                        <br> <br>
+                        <br> <br><br>
                     </form>
                     <br> <br> <br>
                     <button class="seeMore" onclick="SendEmail()">Submit</button>
