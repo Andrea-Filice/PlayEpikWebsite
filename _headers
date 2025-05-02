@@ -1,2 +1,4 @@
 /dependecies/*
-  Access-Control-Allow-Origin: 
+  Access-Control-Allow-Origin: https://play-epik-incorporation.netlify.app
+  Access-Control-Allow-Methods: GET
+  Access-Control-Allow-Headers: Content-Type
