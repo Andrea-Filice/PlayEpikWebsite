@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 function SendEmail(){
     if(document.getElementById("email").value == ""){
       alert("Please, check your email address and try again.")
