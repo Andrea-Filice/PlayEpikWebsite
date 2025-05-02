@@ -5,7 +5,7 @@ async function SendEmail() {
     alert("Please, check your email address and try again.");
     return;
   }
-  const response = await fetch('/.netlify/functions/send-email', {
+  const response = await fetch('/netlify/functions/send-email', {
     method: 'POST',
     body: JSON.stringify({ email, message: description }),
   });
