@@ -202,7 +202,7 @@ body {
     font-size: 50px;
 }
 
-#creations, #contact, #team, #ideas{
+#limits, #contact, #team, #ideas{
     font-size: 120px;
 }
 
@@ -309,8 +309,8 @@ body {
     .smallDeps{
         font-size: 25px;
     }
-    #creations{
-        font-size: 65px;
+    #limits{
+        font-size: 95px;
     }
     #contact, #ideas{
         font-size: 75px;

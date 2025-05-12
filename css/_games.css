@@ -18,6 +18,10 @@
     border-radius: 10px;
 }
 
+.gamesStart{
+    font-size: 120px;
+}
+
 @media (max-width: 600px){
     body{
         overflow-x: hidden;
@@ -29,5 +33,11 @@
     .game{
         display: block;
         gap: 0px;
+    }
+    .gamesStart{
+        font-size: 70px;
+    }
+    .games img{
+        border-radius: 0px;
     }
 }
