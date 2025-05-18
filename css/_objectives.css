@@ -51,7 +51,7 @@
 
 @keyframes counter {
   from {--num: 0;}
-  to {--num: 2900;}
+  to {--num: 3000;}
 }
 
 @keyframes counter2 {

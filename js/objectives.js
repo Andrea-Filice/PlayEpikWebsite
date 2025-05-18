@@ -4,7 +4,7 @@ document.addEventListener("scroll", () => {
     document.getElementById("counter").style.animation = "counter 3s forwards";
     document.getElementById("counter2").style.animation = "counter2 3s forwards";
   }
-  if(scrollPosition >= 1300){
+  if(scrollPosition >= 1200){
     document.getElementById("counter3").style.animation = "counter3 3s forwards";
     document.getElementById("counter5").style.animation = "counter5 3s forwards";
   }
