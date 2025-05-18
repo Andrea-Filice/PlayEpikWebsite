@@ -529,7 +529,14 @@ html {
     transform: scale(0.8);
 }
 
-.gif{
+.gif {
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+}
+
+.gif video {
     width: 95%;
     height: 95%;
     object-fit: cover;
