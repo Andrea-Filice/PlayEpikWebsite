@@ -38,6 +38,7 @@
                       <a href="index.html">Home</a>
                       <a href="games.html">Games</a>
                       <a href="contactUs.html">Contact us</a>
+                      <a href="developers.html">Developers</a>
                     </div>
                 </div>
                 <!--<div class="scrollAnim">
@@ -58,17 +59,20 @@
                 <div class="trailer">
                     <h1 style="color: white;" class="deps">LATEST VIDEO</h1>
                     <video muted loop autoplay>
-                        <source src="videos/SUMMER VIBES-Course Of Death.mp4">
+                        <source src="videos/SUMMER VIBES - Course Of Death.mp4">
                         Your browser does not support Video Rendering.
                     </video>
                     <br>
                     <br>
-                    <button class="seeMore" style="transform: scale(2);" onclick="OpenTrailer('watch?v=pds0HjinOG0&ab_channel=PlayEpik%2CIncorporation.')">Watch full video</button>
+                    <div style="display: flex; justify-content: center; gap: 100px; transform: scale(1.2);">
+                        <button class="seeMore" onclick="OpenTrailer('watch?v=pds0HjinOG0&ab_channel=PlayEpik%2CIncorporation.')">Watch full video</button>
+                        <button class="seeMore" onclick="OpenTrailer('@PlayEpikIncorporation.')">See the channel</button>
+                    </div>
                 </div>
                 <br>
                 <div class="depscription">
                     <h1 style="color: white;" class="deps">A SHORT DESCRIPTION</h1>
-                    <h2 style="color: white; font-weight: 300; text-align: center; padding-left: 40px; padding-right: 40px;">Course Of Death -Ultimate Chance- is a small battle royale with different maps to combat against the bots and against the players for win a special trophy... THE CROWN!</h2>
+                    <h2 style="color: white; font-weight: 300; text-align: center; padding-left: 40px; padding-right: 40px;"><b>COURSE OF DEATH</b> is a small battle royale with <b>20 DIFFERENT MAPS</b> to combat against the bots and against the players for win a special trophy... <b>THE CROWN!</b></h2>
                 </div>
                 <div class="whereplayit">
                     <h1 style="color: white; font-size: 80px;">WHERE CAN I PLAY IT?</h1>
@@ -95,18 +99,18 @@
                 </div>
                 <div class="release-notes" style="text-align: center;">
                     <h1 style="color: white; font-size: 80px;" id="release">RELEASE NOTES</h1>
-                    <h2 style="color: white; font-weight: 300; font-style: italic;">Latest version: 2.5.4 (May 19 2025)</h2>
+                    <h2 style="color: white; font-weight: 300; font-style: italic;">Latest version: 2.5.5 (May 26 2025)</h2>
                     <div class="release">
                         <h1 style="color: white;">WELCOME BACK PLAYERS!</h1>
                         <h2 style="color: white; font-weight: 300;" class="releaseDeps">In this release, we fix <b>Some Bugs</b> and there are some <b>Performance Improvements</b>, but let's into details: </h2>
                         <ul style="color: white; font-weight: 300; font-size: larger;" class="releases">
-                            <li>[PERFORMANCE] Improved StartUp timing.</li>
-                            <li>[FIX] Fixed some bugs with WebGL Build.</li>
-                            <li>[WINDOWS] Updated AntiCheat with new anti-cheat measures.</li>
-                            <li>[FIX] Fixed some UI incorrect behaviours.</li>
+                            <li>[ADD] Added the VSync option.</li>
+                            <li>[FIX] Fixed some animations.</li>
+                            <li>[FIX] Fixed some depscriptions.</li>
+                            <li>[FIX] Fixed Datas corruption.</li>
                         </ul>
                         <br> <br>
-                        <h2 style="color: white; font-weight: 300; font-style: italic;">Total issues fixed: 4, <b>CVE-202505194</b>.</h2> <!--(someone is not on the list)-->
+                        <h2 style="color: white; font-weight: 300; font-style: italic;">Total issues fixed: 10 (someone is not on the list), <b>CVE-2025052610</b>.</h2> 
                         <h1 style="color: white; font-size: 50px;">RECENT BIG UPDATE </h1>
                         <h2 style="color: white; margin-top: -40px; font-style: italic;">Course Of Death (2.5.0)</h2>
                         <ul style="color: white; font-weight: 300; font-size: larger;">
@@ -128,18 +132,12 @@
                 <div class="credits" id="credits" style="text-align: center;">
                     <h1 style="color: white; font-size: 80px;">CREDITS </h1>
                     <h2 style="color: white; margin-top: -40px; font-weight: 300;">Main music by: Zyrk | SFXs By: Pixabay</h2>
-                    <h2 style="color: white; text-decoration: underline;" onclick="window.location.href='thirdPartySoftwares.html'" class="tps">THIRD PARTY SOFTWARES</h2>
+                    <h2 style="color: white; text-decoration: underline;" onclick="SetGameName('Course Of Death')" class="tps">THIRD PARTY SOFTWARES</h2>
                 </div>
                 <div class="troubleshooting" style="text-align: center;">
                     <h1 style="color: white;" class="troubleshoot">TROUBLESHOOTING </h1>
                     <h2 style="color: white; font-weight: 300;" class="depsTroubleshoot">Do you have any issues with <b>Course Of Death</b>? Check his <b>Server Status</b>!</h2>
                     <button class="seeMore" onclick="OpenServerStatus()">Server Status</button>
-                </div>
-                <br> <br> <br>
-                <div class="warning" style="background-color: black; border: 3px solid white; margin-left: 40px; margin-right: 40px; border-radius: 35px;">
-                    <h1 style="color: red; font-weight: 600;" class="deps">&#9888; ANTICHEAT NOT INSTALLED ERROR</h1>
-                    <h2 style="color: white; font-weight: 300; text-align: center; padding-left: 40px; padding-right: 40px;">If you see this message when you're trying to open the game, navigate to the Game Folder and open the file <p style="display: inline;" class="antiCheat"><b>Install_EasyAntiCheat.bat</b></p> (with Administrator privilegies) for solve the issue!</h2>
-                    <br>
                 </div>
                 <br> <br> <br>
                 <footer>
@@ -162,5 +160,6 @@
         <script src="js/home.js"></script>
         <script src="js/openTrailers.js"></script>
         <script src="js/imageModal.js"></script>
+        <script src="js/gameNameManager.js"></script>
     </body>
 </html>

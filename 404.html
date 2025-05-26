@@ -1,27 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
     <head>
-        <!--Settings-->
-        <title>Page Not Found - 404</title>
-        <link rel="icon" type="img/png" href="img/_logo.webp">
-        <link rel="stylesheet" href="css/_home.css">
-        <meta name="UTF characters" http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <title>404 - Page Not Found</title>
+        <link rel="stylesheet" href="css/_404.css">
         <!--Clash Display-->
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap" rel="stylesheet">
     </head>
-    <body style="background-color: black;">
-        <center>
-            <div id="mainLayer" style="display: block; overflow-x: hidden;">
-                <div style="margin-top: -180px;">
-                    <h1 style="color: white; font-family: 'Clash Display', sans-serif; font-size: 120px; margin-top: -50px;"><br><p class="gameTitle" style="font-size: 190px;">404</p></h1>
-                    <h2 style="color: white; font-family: 'Clash Display', sans-serif; font-weight: 500; margin-top: -155px; padding-left: 20px; padding-right: 20px;" class="smallDeps">The page you are looking for is not <b><i>here!</i></b></h2>
-                    <div style="display: flex; justify-content: center; align-items: center; position: relative;">
-                        <a href="index.html"><img src="img/_iconHome.png" alt="HomeIcon" style="height: 50px;" draggable="false"></a>
-                        <a href="index.html" style="text-decoration: none;"><h1 style="color: white; display: inline; font-family: 'Clash Display';">BACK HOME</h1></a>
-                    </div>
-                </div>
-            </div>
-        </center>
+    <body>
+        <div class="error-content">
+            <h1>404</h1>
+            <div class="separator"></div>
+            <p>This page could not be found.</p>
+        </div>
+
+        <button onclick="window.location.href='index.html'">Go Back Home</button>
     </body>
 </html>

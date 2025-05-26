@@ -1,30 +1,26 @@
-let scrollToReleaseNotes = false;
-
 function OnLoad() {
     document.getElementById("loaderLayer").style.animation = "FadeOut 1s linear forwards";
     document.getElementById("mainLayer").style.animation = "FadeIn 1s linear forwards";
     setTimeout(() => {
-        const scrollToReleaseNotes = sessionStorage.getItem("scrollToReleaseNotes") === "true";
         document.getElementById("loaderLayer").style.display = "none";
         document.getElementById("mainLayer").style.display = "block";
         setTimeout(() => {
             if (window.location.hash === '#credits') {
                 const creditsSection = document.getElementById('credits');
-                if (creditsSection) {
+                if (creditsSection) 
                   creditsSection.scrollIntoView({ behavior: 'smooth' });
-                }
             }
             if (window.location.hash === '#morehelp') {
                 const creditsSection = document.getElementById('morehelp');
-                if (creditsSection) {
+                if (creditsSection) 
                   creditsSection.scrollIntoView({ behavior: 'smooth' });
-                }
+            }
+            if(window.location.hash === "#releasenotes"){
+                const releaseNotesSection = document.getElementById('release');
+                if(releaseNotesSection)
+                    releaseNotesSection.scrollIntoView({behavior: "smooth"});
             }
         }, 100)
-        if (scrollToReleaseNotes) {
-            document.getElementById("release").scrollIntoView({ behavior: "smooth" });
-            sessionStorage.removeItem("scrollToReleaseNotes");
-        }
     }, 1000);
     const seeMoreButtons = document.querySelectorAll('.seeMore');
     seeMoreButtons.forEach(button => {
@@ -46,8 +42,7 @@ function OpenServerStatus() {
 }
 
 function OpenReleaseNotes(link){
-    sessionStorage.setItem("scrollToReleaseNotes", "true");
-    window.location.href = "/" + link;
+    window.location.href = link + "#releasenotes";
 }
 
 window.onscroll = () => {

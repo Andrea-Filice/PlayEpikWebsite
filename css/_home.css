@@ -202,7 +202,7 @@ body {
     font-size: 50px;
 }
 
-#limits, #contact, #team, #ideas{
+#limits, #contact, #team, #ideas, #devs{
     font-size: 120px;
 }
 
@@ -216,6 +216,10 @@ body {
 
 .licenseText{
     font-size: 100px;
+}
+
+#devsPhone{
+    display: none;
 }
   
 @media (max-width:600px) {
@@ -313,6 +317,13 @@ body {
         font-size: 95px;
     }
     #contact, #ideas{
+        font-size: 75px;
+    }
+    #devs{
+        display: none;
+    }
+    #devsPhone{
+        display: block;
         font-size: 75px;
     }
     #team{

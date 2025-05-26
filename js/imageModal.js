@@ -51,6 +51,9 @@ function changeSlide(n) {
 
 modal.onclick = function(event) {
     if (event.target == modal) {
-      modal.style.display = "none";
+          modal.style.animation = "FadeOut 500ms forwards"
+        setTimeout(() =>{
+            modal.style.display = "none";
+        }, 1000);
     }
 }

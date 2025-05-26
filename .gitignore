@@ -1,8 +1,6 @@
+#OTHER REPOSITORIES
 PlayEpikServerStatus/
+
+#CONFIG FILES
 .vscode/launch.json
-js/main.js
-.env
-node_modules/
-package-lock.json
-package.json
 .fleet
