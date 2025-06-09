@@ -45,6 +45,8 @@ function FetchLatestVersion(){
     .then(response => response.json())
         .then(data => {
             version = data.versionTaskify;
+            updateValue(data.versionTaskify);
         })
-    document.getElementById('latest').innerHTML = `Latest version: ${version}`
 }
+
+function updateValue(value){document.getElementById('latest').innerHTML = `Latest version: ${value}`}
