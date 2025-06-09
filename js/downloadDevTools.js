@@ -46,4 +46,5 @@ function FetchLatestVersion(){
         .then(data => {
             version = data.versionTaskify;
         })
+    document.getElementById('latest').innerHTML = `Latest version: ${version}`
 }
