@@ -19,6 +19,7 @@ function load(pageName){
 function showSlide(index) {
     if (index < 0) index = images.length - 1;
     if (index >= images.length) index = 0;
+    if(index == 3 && gameName == "CubeInvasion") index = 0
     currentIndex = index;
     imgModal.src = images[currentIndex];
     if(gameName == "CodeUnlocker"){

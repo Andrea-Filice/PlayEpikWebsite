@@ -1,6 +1,6 @@
 function OnLoad() {
-    document.getElementById("loaderLayer").style.animation = "FadeOut 1s linear forwards";
-    document.getElementById("mainLayer").style.animation = "FadeIn 1s linear forwards";
+    document.getElementById("loaderLayer").style.animation = "FadeOut 0.5s linear forwards";
+    document.getElementById("mainLayer").style.animation = "FadeIn 0.5s linear forwards";
     setTimeout(() => {
         document.getElementById("loaderLayer").style.display = "none";
         document.getElementById("mainLayer").style.display = "block";
@@ -21,7 +21,7 @@ function OnLoad() {
                     releaseNotesSection.scrollIntoView({behavior: "smooth"});
             }
         }, 100)
-    }, 1000);
+    }, 500);
     const seeMoreButtons = document.querySelectorAll('.seeMore');
     seeMoreButtons.forEach(button => {
         button.addEventListener('mouseleave', () => {
@@ -33,17 +33,11 @@ function OnLoad() {
     });
 }
 
-function BackToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+function BackToTop() {window.scrollTo({ top: 0, behavior: 'smooth' });}
 
-function OpenServerStatus() {
-    window.location.href = "https://serverstatus-playepik.netlify.app/";
-}
+function OpenServerStatus() { window.location.href = "https://serverstatus-playepik.netlify.app/"; }
 
-function OpenReleaseNotes(link){
-    window.location.href = link + "#releasenotes";
-}
+function OpenReleaseNotes(link){window.location.href = link + "#releasenotes";}
 
 window.onscroll = () => {
     const backToTopBtn = document.getElementById("backToTopBtn");

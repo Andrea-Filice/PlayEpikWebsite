@@ -1,9 +1,7 @@
 let downloadLink = "";
 let version = "1.0.0";
 
-function Load(){
-    FetchLatestVersion();
-}
+function Load() {FetchLatestVersion();}
 
 function showOS(osName){
 
@@ -36,13 +34,11 @@ function showOS(osName){
     }
 }
 
-function DownloadFile(){
-    window.location.href = "https://github.com/" + downloadLink;
-}
+function DownloadFile() {window.location.href = "https://github.com/" + downloadLink;}
 
-function OpenRepository(){
-    window.location.href = "https://github.com/Play-Epik-Inc/Taskify-Business";
-}
+function OpenRepository() {window.location.href = "https://github.com/Play-Epik-Inc/Taskify-Business";}
+
+function OpenLicense() {window.location.href = "https://github.com/Play-Epik-Inc/Taskify-Business/blob/main/LICENSE";}
 
 function FetchLatestVersion(){
     fetch('https://playepikservercontents.netlify.app/dependecies/dependecies.json')

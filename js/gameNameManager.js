@@ -1,5 +1,4 @@
 const params = new URLSearchParams(window.location.search);
-let version = "1.2.0";
 
 let gameParam = params.get("game");
 

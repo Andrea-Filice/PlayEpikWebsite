@@ -6,6 +6,4 @@ try{
           document.getElementById('unity').innerText = "Unity Engine v6.1: (" + version + ")";
         })
 }
-catch (error) {
-  document.getElementById('unity').innerText = "Unity Engine v6.1: (Error retrieving data)";
-}
+catch (error) {document.getElementById('unity').innerText = "Unity Engine v6.1: (Error retrieving data)";}
