@@ -1,36 +1,24 @@
-.smartPhone{
-    display: none;
-}
+.smartPhone{display: none;}
 
-.buttons{
-    display: block;
-}
+.buttons{display: block;}
 
 ul{
     padding-left: 200px; 
     padding-right: 200px;
 }
 
-img{
-    height: 400px;
-}
+img{height: 400px;}
 
 .hereText{
     display: inline;
     font-size: 120px;
 }
 
-.deps, .troubleshoot{
-    font-size: 80px;
-}
+.deps, .troubleshoot{font-size: 80px;}
 
-.depsTroubleshoot{
-    margin-top: -40px;
-}
+.depsTroubleshoot{margin-top: -40px;}
 
-#codeUnlocker{
-    font-size: 120px;
-}
+#codeUnlocker{font-size: 120px;}
 
 .releaseDeps{
     padding-left: 40px;
@@ -38,58 +26,37 @@ img{
 }
 
 @media (max-width:600px){
-    body{
-        overflow-x: hidden;
-    }
-    .smartPhone{
-        display: block;
-    }
-    .buttons{
-        display: none;
-    }
+    body{overflow-x: hidden;}
+    .smartPhone{display: block;}
+    .buttons{display: none;}
     ul{
         padding-left: 10px; 
         padding-right: 10px;
     }
-    img{
-        height: 200px;
-    }
+    img{height: 200px;}
     .hereText{
         display: block;
         font-size: 40px;
     }
-    .deps{
-        font-size: 60px;
-    }
-    .troubleshoot{
-        font-size: 35px;
-    }
+    .deps{font-size: 60px;}
+    .troubleshoot{font-size: 35px;}
     .depsTroubleshoot{
         margin-top: -0px;
         padding-left: 10px;
         padding-right: 10px;
     }
-    #codeUnlocker{
-        font-size: 70px;
-    }
+    #codeUnlocker{font-size: 70px;}
     .releaseDeps{
         padding-left: 0px;
         padding-right: 0px;
     }
 }
 
-/*THIRD PARTY SOFTWARES BUTTON*/
-.tps:hover{
-    cursor: pointer;
-}
-
 .images img{
     border-radius: 10px;
 }
 
-.images img:hover{
-    cursor: pointer;
-}
+.images img:hover, .tps:hover{cursor: pointer;}
 
 /*MODAL*/
 .modal {
@@ -138,13 +105,8 @@ img{
     user-select: none;
 }
 
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
+.prev{left: 0;}
+.next{right: 0;}
 
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);

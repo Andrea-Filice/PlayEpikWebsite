@@ -1,5 +1,4 @@
 const params = new URLSearchParams(window.location.search);
-
 let gameParam = params.get("game");
 
 function SetGameName(gameName){
@@ -24,14 +23,12 @@ function GetGameNameFromURL(){
             courseofdeath: "Course Of Death",
             squareroyale: "Square Royale"
         }
-        
         gameName = map[gameName] || gameParam.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/([a-z])([A-Z])/g, '$1 $2').replace(/\b\w/g, l => l.toUpperCase()); 
         switch(gameName){
             case 'Courseofdeath':
-                document.getElementById("mainTitle").innerHTML = "Course Of Death uses the following third party components which are subject to separate license terms as set out below:";
-                break;
+                document.getElementById("mainTitle").innerHTML = "Course Of Death uses the following third party components which are subject to separate license terms as set out below:"; break;
             case 'Squareroyale':
-                document.getElementById("mainTitle").innerHTML = "Square Royale uses the following third party components which are subject to separate license terms as set out below:";
+                document.getElementById("mainTitle").innerHTML = "Square Royale uses the following third party components which are subject to separate license terms as set out below:"; break;
         }
     }
     else

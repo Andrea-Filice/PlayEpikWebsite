@@ -35,18 +35,12 @@
     font-family: 'Clash Display', sans-serif;
 }
 
-#email{
-    width: 25%;
-}
-#description{
+#email, #description{
     width: 25%;
 }
 
 @media (max-width: 768px) {
-    #email{
-        width: 45%;
-    }
-    #description{
+    #email, #description{
         width: 45%;
     }
 }

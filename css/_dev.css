@@ -55,40 +55,17 @@
   gap: 70px;
 }
 
-.windows, .macOS, .linux{
-  display: none;
-}
+.windows, .macOS, .linux{display: none;}
 
-img:hover{
-  cursor: pointer;
-}
+img:hover, .deps:hover{cursor: pointer;}
 
-img:hover::after{
-  cursor: default;
-}
+img:hover::after, .deps:hover::after, .iconTaskify:hover{cursor: default;}
 
-.deps:hover{
-  cursor: pointer;
-}
-
-.deps:hover::after{
-  cursor: default;
-}
-
-.notAvaible{
-  display: none;
-}
+.notAvaible{display: none;}
 
 @media (max-width: 600px) {
-  .card{
-    display: none;
-  }
-  .downloads{
-    display: none;
-  }
-  .notAvaible{
-    display: block;
-  }
+  .card, .downloads{display: none;}
+  .notAvaible{display: block;}
   h2, h3, h4, h5, h6{
     margin-left: 10px;
     margin-right: 10px;

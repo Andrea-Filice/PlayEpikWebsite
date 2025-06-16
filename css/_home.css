@@ -10,30 +10,18 @@
 }
   
 @keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 } 
 
 @keyframes FadeIn{
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 @keyframes FadeOut{
-    0%{
-        opacity: 100%;
-    }
-    100%{
-        opacity: 0%;
-    }
+    0%{opacity: 1;}
+    100%{opacity: 0;}
 }
 
 @keyframes scaleIn {
@@ -48,9 +36,7 @@
 }
 
 /*NAVBAR*/
-* {
-    box-sizing: border-box;
-}
+* {box-sizing: border-box;}
   
 body {
     margin: 0px;
@@ -67,9 +53,7 @@ body {
     top: 0;
 }
   
-.nav > .nav-header {
-    display: inline;
-}
+.nav > .nav-header {display: inline;}
   
 .nav > .nav-header > .nav-title {
     display: inline-block;
@@ -78,9 +62,7 @@ body {
     padding: 10px 10px 10px 10px;
 }
   
-.nav > .nav-btn {
-    display: none;
-}
+.nav > .nav-btn {display: none;}
   
 .nav > .nav-links {
     display: inline;
@@ -104,13 +86,9 @@ body {
     animation: gradient 8s linear infinite;
 }
   
-.nav > #nav-check {
-    display: none;
-}
+.nav > #nav-check {display: none;}
 
-.gameTitle{
-    font-size: 120px;
-}
+.gameTitle{font-size: 120px;}
 
 .seeMore {
     border: white 3px solid;
@@ -122,13 +100,9 @@ body {
     z-index: -1;
 }
 
-.seeMore:hover{
-    cursor: pointer;
-}
+.seeMore:hover, .backToTop:hover{cursor: pointer;}
 
-.seeMore:hover::after{
-    cursor: default;
-}
+.seeMore:hover::after, .backToTop:hover::after{cursor: default;}
 
 @keyframes AnimationButtonOn {
     0% {
@@ -174,58 +148,29 @@ body {
     margin-right: 0pxx;
 }
 
-.iconGame{
-    float: left;
+.iconGame{float: left;
 }
 
-.iconGame2{
-    float: right;
-}
+.iconGame2{float: right;}
 
-.S3{
-    padding-left: 100px;
-}
+.S3{padding-left: 100px;}
 
-.depsS3{
-    padding-left: 70px;
-}
+.depsS3{padding-left: 70px;}
 
-.startText{
-    font-size: 120px;
-}
+.troubleshoot, .newsIndex{font-size: 80px;}
 
-.troubleshoot{
-    font-size: 80px;
-}
+.smallDeps{font-size: 50px;}
 
-.smallDeps{
-    font-size: 50px;
-}
+#limits, #contact, #team, #ideas, #devs, .startText{font-size: 120px;}
 
-#limits, #contact, #team, #ideas, #devs{
-    font-size: 120px;
-}
+.antiCheat{font-size: 24px;}
 
-.antiCheat{
-    font-size: 24px;
-}
+.licenseText{font-size: 100px;}
 
-.newsIndex{
-    font-size: 80px;
-}
-
-.licenseText{
-    font-size: 100px;
-}
-
-#devsPhone{
-    display: none;
-}
+#devsPhone{display: none;}
   
 @media (max-width:600px) {
-    body{
-        overflow-x: hidden;
-    }
+    body{overflow-x: hidden;}
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -267,19 +212,13 @@ body {
         display: block;
         width: 100%;
     }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {height: 0px;}
     .nav > #nav-check:checked ~ .nav-links {
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
-    .gameTitle{
-        font-size: 80px;
-    }
-    .releaseNotes, .releaseNotes2{
-        margin-right: 0px;
-    }
+    .gameTitle{font-size: 80px;}
+    .releaseNotes, .releaseNotes2{margin-right: 0px;}
     .iconGame{
         float: none;
         margin-left: -50px;
@@ -288,61 +227,26 @@ body {
         float: none;
         margin-left: -65px;
     }
-    .S3{
-        padding-left: 0px;
-    }
-    .depsS3{
-        padding-left: 0px;
-    }
+    .S3, .depsS3{padding-left: 0px;}
     .images-Gifts, .rarity{
         display: block;
         text-align: center;
     }
-    .gift{
-        padding-left: 0px;
-    }
-    .startText{
-        font-size: 90px;
-    }
-    .troubleshoot{
-        font-size: 40px;
-    }
-    .hereText{
-        font-size: 105px;
-    }
-    .smallDeps{
-        font-size: 25px;
-    }
-    #limits{
-        font-size: 95px;
-    }
-    #contact, #ideas{
-        font-size: 75px;
-    }
-    #devs{
-        display: none;
-    }
-    #devsPhone{
-        display: block;
-        font-size: 75px;
-    }
-    #team{
-        font-size: 120px;
-    }
-    .antiCheat{
-        font-size: 20px;
-    }
-    .newsIndex{
-        font-size: 60px;
-    }
-    .licenseText{
-        font-size: 75px;
-    }
+    .gift{padding-left: 0px;}
+    .startText{font-size: 90px;}
+    .troubleshoot{font-size: 40px;}
+    .hereText{font-size: 105px;}
+    .smallDeps{font-size: 25px;}
+    #limits{font-size: 95px;}
+    #contact, #ideas, #devsPhone, .licenseText{font-size: 75px;}
+    #devs{display: none;}
+    #devsPhone{display: block;}
+    #team{font-size: 120px;}
+    .antiCheat{font-size: 20px;}
+    .newsIndex{font-size: 60px;}
 }
 
-.start{
-    margin-top: -150px;
-}
+.start{margin-top: -150px;}
 
 .releaseNotes:hover{
     animation: AnimationButtonOn 500ms forwards;
@@ -381,27 +285,12 @@ body {
 }
 
 @keyframes gradient {
-    to {
-        background-position: 200% center
-    }
+    to {background-position: 200% center}
 }
 
 @keyframes animTextUp{
-    0%{
-        font-size: 240px;
-    }
-    100%{
-        font-size: 120px;
-    }
-}
-
-/*BACK TO TOP BUTTON*/
-.backToTop:hover{
-    cursor: pointer;
-}
-
-.backToTop:hover::after{
-    cursor: default;
+    0%{font-size: 240px;}
+    100%{font-size: 120px;}
 }
 
 /*SCROLLTO ANIMATION*/
@@ -412,9 +301,7 @@ body {
     height: 10vh;
 }
 
-.scroll{
-    white-space: nowrap;
-}
+.scroll{white-space: nowrap;}
 
 .scroll div{
     display: flex;
@@ -427,22 +314,14 @@ body {
     line-height: 10px;
 }
 
-.rightToLeft{
-    animation: rightToLeft 10s infinite linear;
-}
+.rightToLeft{animation: rightToLeft 10s infinite linear;}
 
 @keyframes rightToLeft{
-    from{
-        transform: translateX(-50%);
-    }
-    to{
-        transform: translateX(0%);
-    }
+    from{transform: translateX(-50%);}
+    to{transform: translateX(0%);}
 }
 
-h2{
-    font-family: 'Inter', sans-serif;
-}
+h2{font-family: 'Inter', sans-serif;}
 
 #backToTopBtn {
     display: none;
@@ -460,30 +339,18 @@ h2{
 }
 
 @keyframes animationIn{
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 @keyframes animationOut{
-    0%{
-        opacity: 100%;
-    }
-    100%{
-        opacity: 0%;
-    }
+    0%{opacity: 1;}
+    100%{opacity: 0;}
 }
 
-#backToTopBtn:hover{
-    animation: animationIn 500ms forwards;
-}
+#backToTopBtn:hover{animation: animationIn 500ms forwards;}
 
-#backToTopBtn:hover::after{
-    animation: animationOut 500ms linear;
-}
+#backToTopBtn:hover::after{animation: animationOut 500ms linear;}
 
 .articles {
     display: flex;
@@ -515,14 +382,10 @@ h2{
     color: white;
 }
 
-.article-text h1, .article-text h2 {
-    margin: 10px 0;
-}
+.article-text h1, .article-text h2 {margin: 10px 0;}
 
 @media (max-width: 768px) {
-    .article {
-        grid-template-columns: 1fr;
-    }
+    .article {grid-template-columns: 1fr;}
 }
 
 /*OVERFLOW*/
@@ -536,9 +399,7 @@ html {
     animation: scaleIn 0.5s forwards;
 }
 
-#article1, #article2{
-    transform: scale(0.8);
-}
+#article1, #article2{transform: scale(0.8);}
 
 .gif {
     top: 0;

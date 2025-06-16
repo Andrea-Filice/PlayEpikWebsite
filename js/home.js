@@ -34,9 +34,7 @@ function OnLoad() {
 }
 
 function BackToTop() {window.scrollTo({ top: 0, behavior: 'smooth' });}
-
 function OpenServerStatus() { window.location.href = "https://serverstatus-playepik.netlify.app/"; }
-
 function OpenReleaseNotes(link){window.location.href = link + "#releasenotes";}
 
 window.onscroll = () => {
@@ -44,13 +42,10 @@ window.onscroll = () => {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         backToTopBtn.style.display = "block";
         backToTopBtn.style.animation = "animationIn 0.5s linear forwards";
-    } else {
+    } else
         backToTopBtn.style.animation = "animationOut 0.5s linear forwards";
-    }
-    if(document.body.scrollTo > 400 || document.documentElement.scrollTop > 400 && document.getElementById("article1") != null){
+    if(document.body.scrollTo > 400 || document.documentElement.scrollTop > 400 && document.getElementById("article1") != null)
         document.getElementById("article1").style.animation = "scaleIn 0.5s forwards";
-    }
-    if(document.body.scrollTo > 600 || document.documentElement.scrollTop > 600 && document.getElementById("article2") != null){
+    if(document.body.scrollTo > 600 || document.documentElement.scrollTop > 600 && document.getElementById("article2") != null)
         document.getElementById("article2").style.animation = "scaleIn 0.5s forwards";
-    }
 };

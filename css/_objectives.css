@@ -9,45 +9,35 @@
   padding: 2rem;
 }
 
-.counter::after {
-  content: counter(num);
-}
+.counter::after {content: counter(num);}
 
 .counter2 {
   counter-reset: num var(--num);
   padding: 2rem;
 }
 
-.counter2::after {
-  content: counter(num);
-}
+.counter2::after {content: counter(num);}
 
 .counter3 {
   counter-reset: num var(--num);
   padding: 2rem;
 }
 
-.counter3::after {
-  content: counter(num);
-}
+.counter3::after {content: counter(num);}
 
 .counter4 {
   counter-reset: num var(--num);
   padding: 2rem;
 }
 
-.counter4::after {
-  content: counter(num);
-}
+.counter4::after {content: counter(num);}
 
 .counter5{
   counter-reset: num var(--num);
   padding: 2rem;
 }
 
-.counter5::after {
-  content: counter(num);
-}
+.counter5::after {content: counter(num);}
 
 @keyframes counter {
   from {--num: 0;}
@@ -85,9 +75,7 @@
   gap: 20px;
 }
 
-.smallCounter-item {
-  text-align: center;
-}
+.smallCounter-item {text-align: center;}
 
 span{
 	margin: 0 15px;
@@ -95,6 +83,7 @@ span{
 	text-shadow: 0 0 2px rgba(0, 0, 0, .45);
 	animation: span 3s ease-in infinite alternate;
 }
+
 .main{
 	display: flex;
 	justify-content: center;
@@ -108,29 +97,11 @@ span{
   font-family: 'Clash Display', sans-serif;
 }
 
-h2{
-  font-weight: 300;
-}
+h2{font-weight: 300;}
 
-.counter{
-  font-size: 165px;
-}
+.counter, .counter2, .counter3, .counter4, .counter5{font-size: 165px;}
 
-.counter2{
-  font-size: 165px;
-}
-
-.counter3{
-  font-size: 165px;
-}
-
-.counter4{
-  font-size: 165px;
-}
-
-.numbersText{
-  font-size: 85px;
-}
+.numbersText{font-size: 85px;}
 
 .letter{
 	display: inline-flex;
@@ -155,23 +126,12 @@ h2{
 }
 
 @media (max-width: 600px) {
-  body {
-    overflow-x: hidden;
-  }
-  .mainCounter {
-    display: block;
-  }
-  .smallCounter {
+  body {overflow-x: hidden;}
+  .smallCounter, .mainCounter {
     display: block;
     gap: 0px;
   }
-  .smallCounter-item {
-    margin-bottom: 20px;
-  }
-  .counter, .counter2, .counter3, .counter4{
-    font-size: 120px;
-  }
-  .numbersText{
-    font-size: 75px;
-  }
+  .smallCounter-item {margin-bottom: 20px;}
+  .counter, .counter2, .counter3, .counter4, .counter5{font-size: 120px;}
+  .numbersText{font-size: 75px;}
 }

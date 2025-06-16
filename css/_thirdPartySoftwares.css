@@ -8,19 +8,10 @@ p{
     white-space: pre-line;
 }
 
-.programLinks{
-    font-size: 80px;
-}
+.programLinks{font-size: 80px;}
 
-.tpsText{
-    font-size: 100px;
-}
+.tpsText{font-size: 100px;}
 
 @media (max-width: 600px) {
-    .programLinks{
-        font-size: 60px;
-    }
-    .tpsText{
-        font-size: 60px;
-    }    
+    .programLinks, .tpsText{font-size: 60px;}
 }
