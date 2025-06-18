@@ -1,1 +1,0 @@
-function OpenTrailer(trailerLink){window.location.href = `https://www.youtube.com/${trailerLink}`;}
