@@ -38,14 +38,20 @@ function OpenServerStatus() { window.location.href = "https://serverstatus-playe
 function OpenReleaseNotes(link){window.location.href = link + "#releasenotes";}
 
 window.onscroll = () => {
+    //VARIABLES
     const backToTopBtn = document.getElementById("backToTopBtn");
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    const article1 = document.getElementById("article1");
+    const article2 = document.getElementById("article2");
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+    if (scrollTop > 500) {
         backToTopBtn.style.display = "block";
         backToTopBtn.style.animation = "animationIn 0.5s linear forwards";
-    } else
+    } else 
         backToTopBtn.style.animation = "animationOut 0.5s linear forwards";
-    if(document.body.scrollTo > 400 || document.documentElement.scrollTop > 400 && document.getElementById("article1") != null)
-        document.getElementById("article1").style.animation = "scaleIn 0.5s forwards";
-    if(document.body.scrollTo > 600 || document.documentElement.scrollTop > 600 && document.getElementById("article2") != null)
-        document.getElementById("article2").style.animation = "scaleIn 0.5s forwards";
+
+    if (scrollTop > 400 && article1) 
+        article1.style.animation = "scaleIn 0.5s forwards";
+    if (scrollTop > 600 && article2) 
+        article2.style.animation = "scaleIn 0.5s forwards";
 };

@@ -9,11 +9,11 @@ const closeModal = document.getElementsByClassName("close")[0];
 function load(pageName){
     gameName = pageName;
     images = [
-        "img/" + gameName + "Images/Img1.webp",
-        "img/" + gameName + "Images/Img2.webp",
-        "img/" + gameName + "Images/Img3.webp",
-        "img/" + gameName + "Images/Img4.webp"
-    ];
+        `img/${gameName}Images/Img1.webp`,
+        `img/${gameName}Images/Img2.webp`,
+        `img/${gameName}Images/Img3.webp`,
+        `img/${gameName}Images/Img4.webp`
+    ]
 }
 
 function showSlide(index) {
@@ -46,9 +46,7 @@ closeModal.onclick = function() {
     }, 1000);
 };
 
-function changeSlide(n) {
-    showSlide(currentIndex + n);
-}
+function changeSlide(n) {showSlide(currentIndex + n);}
 
 modal.onclick = function(event) {
     if (event.target == modal) {

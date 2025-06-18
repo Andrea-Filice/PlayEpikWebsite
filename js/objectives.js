@@ -1,13 +1,19 @@
 document.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-  if (scrollPosition >= 400) 
-    document.getElementById("counter").style.animation = "counter 3s forwards";
-  if(scrollPosition >= 500)
-    document.getElementById("counter2").style.animation = "counter2 3s forwards";
-  if(scrollPosition >= 1200)
-    document.getElementById("counter3").style.animation = "counter3 3s forwards";
-  if(scrollPosition >= 1300)
-    document.getElementById("counter5").style.animation = "counter5 3s forwards";
-  if(scrollPosition >= 2000)
-    document.getElementById("counter4").style.animation = "counter4 3s forwards"; 
+  const animations = [
+    { id: "counter", position: 400, animation: "counter 3s forwards" },
+    { id: "counter2", position: 500, animation: "counter2 3s forwards" },
+    { id: "counter3", position: 1200, animation: "counter3 3s forwards" },
+    { id: "counter5", position: 1300, animation: "counter5 3s forwards" },
+    { id: "counter4", position: 2000, animation: "counter4 3s forwards" },
+  ];
+
+  animations.forEach(({ id, position, animation }) => {
+    if (scrollPosition >= position) {
+      const el = document.getElementById(id);
+      if (el && el.style.animation !== animation) {
+        el.style.animation = animation;
+      }
+    }
+  });
 });
