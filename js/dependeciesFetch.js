@@ -2,8 +2,7 @@ try{
   fetch('https://playepikservercontents.netlify.app/dependecies/dependecies.json')
   .then(response => response.json())
         .then(data => {
-          const version = data.versionUnity;
-          document.getElementById('unity').innerText = "Unity Engine v6.1: (" + version + ")";
+          document.getElementById('unity').innerText = "Unity Engine v6.1: (" + data.versionUnity + ")";
         })
 }
 catch (error) {document.getElementById('unity').innerText = "Unity Engine v6.1: (Error retrieving data: " + error + ").";}
