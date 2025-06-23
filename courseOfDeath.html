@@ -11,7 +11,7 @@
         <meta name="UTF characters" http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Clash Display-->
-        <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap" rel="stylesheet">
+        <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap" rel="preconnect">
     </head>
     <body style="background-color: black;" onload="OnLoad(), load('CourseOfDeath')">
         <center>
@@ -41,14 +41,14 @@
                       <a href="developers.html">Developers</a>
                     </div>
                 </div>
-                <div class="scrollAnim">
+                <!--<div class="scrollAnim">
                     <div class="scroll">
                         <div class="rightToLeft">
                             <p style="color: white; font-family: 'Clash Display', sans-serif;">SEASON 6 IS HERE! - DOWNLOAD COURSE OF DEATH AND PLAY IT NOW! - SEASON 6 IS HERE! - DOWNLOAD COURSE OF DEATH AND PLAY IT NOW! - SEASON 6 IS HERE! - DOWNLOAD COURSE OF DEATH AND PLAY IT NOW!- SEASON 6 IS HERE! - </p>
                         </div>
                     </div>
                 </div>
-                <hr color="white" style="border: white 1px solid;">
+                <hr color="white" style="border: white 1px solid;">-->
                 <div class="start">
                     <h1 style="color: white; font-family: 'Clash Display', sans-serif; font-size: 120px;"><br> <p class="gameTitle">COURSE OF DEATH.</p></h1>
                     <h2 style="color: white; font-family: 'Clash Display', sans-serif; font-weight: 300; margin-top: -25px;" class="smallDeps">A small <img src="img/icons/_sword.webp" style="height: 50px;" draggable="false"> <i style="color: cornflowerblue;">Battle-Royale</i> game.</h2>
@@ -65,8 +65,8 @@
                     <br>
                     <br>
                     <div style="display: flex; justify-content: center; gap: 100px; transform: scale(1.2);">
-                        <button class="seeMore" onclick="OpenTrailer('watch?v=asgexwWAXh4&ab_channel=PlayEpik%2CIncorporation.')">Watch full video</button>
-                        <button class="seeMore" onclick="OpenTrailer('@PlayEpikIncorporation.')">See the channel</button>
+                        <button class="seeMore" onclick="window.location.href =`https://www.youtube.com/watch?v=asgexwWAXh4&ab_channel=PlayEpik%2CIncorporation.`">Watch full video</button>
+                        <button class="seeMore" onclick="window.location.href =`https://www.youtube.com/@PlayEpikIncorporation.`">See the channel</button>
                     </div>
                 </div>
                 <br>
@@ -79,17 +79,17 @@
                     <center>
                         <div class="buttons">
                             <iframe frameborder="0" src="https://itch.io/embed/1631297?bg_color=000000&amp;fg_color=ffffff&amp;link_color=ffffff&amp;border_color=000000" width="552" height="167"><a href="https://play-epik-incorporation.itch.io/cod-multiplayer">Course Of Death - Multiplayer Version by Play Epik, Incorporation.</a></iframe>
-                            <a href="https://gamejolt.com/games/course_of_death/769717"><img src="img/_gameJoltIcon.webp" style="height: 140px; padding-left: 180px;"></a>
+                            <a href="https://gamejolt.com/games/course_of_death/769717"><img src="img/_gameJoltIcon.webp" style="height: 140px; padding-left: 180px;" loading="lazy"></a>
                         </div>
                         <h1 style="color: white; font-weight: 300;" class="smartPhone">Not avaible for your device.</h1>
                     </center>
                 </div>
                 <div class="images">
                     <h1 style="color: white; font-size: 80px;">IMAGES</h1>
-                    <img src="img/CourseOfDeathImages/Img2.webp" draggable="false" onclick="showModal(1)">
-                    <img src="img/CourseOfDeathImages/Img3.webp" draggable="false" onclick="showModal(2)">
-                    <img src="img/CourseOfDeathImages/Img4.webp" draggable="false" onclick="showModal(3)">
-                    <img src="img/CourseOfDeathImages/Img1.webp" draggable="false" onclick="showModal(0)">
+                    <img src="img/CourseOfDeathImages/Img2.webp" draggable="false" onclick="showModal(1)" loading="lazy">
+                    <img src="img/CourseOfDeathImages/Img3.webp" draggable="false" onclick="showModal(2)" loading="lazy">
+                    <img src="img/CourseOfDeathImages/Img4.webp" draggable="false" onclick="showModal(3)" loading="lazy">
+                    <img src="img/CourseOfDeathImages/Img1.webp" draggable="false" onclick="showModal(0)" loading="lazy">
                 </div>
                 <div id="modal" class="modal">
                     <span class="close">&times;</span>
@@ -99,10 +99,19 @@
                 </div>
                 <div class="release-notes" style="text-align: center;">
                     <h1 style="color: white; font-size: 80px;" id="release">RELEASE NOTES</h1>
-                    <h2 style="color: white; font-weight: 300; font-style: italic;">Latest version: 2.6.0 (June 16 2025)</h2>
+                    <h2 style="color: white; font-weight: 300; font-style: italic;">Latest version: 2.6.1 (June 23 2025)</h2>
                     <div class="release">
                         <h1 style="color: white;">WELCOME BACK PLAYERS!</h1>
-                        <h2 style="color: white; font-weight: 300;" class="releaseDeps">In this release, we add <b>New Feautures</b> and there are some <b>Bug Fixes</b>, but let's into details: </h2>
+                        <h2 style="color: white; font-weight: 300;" class="releaseDeps">In this release, we fix <b>Some Bugs</b> and there are some <b>Performance Improvements</b>, but let's into details: </h2>
+                        <ul style="color: white; font-weight: 300; font-size: larger;" class="releases">
+                            <li><b>[FIX]</b> Fixed Discord SDK Error, not showing the current status.</li>
+                            <li><b>[FIX]</b> Fixed the Season Intro animation.</li>
+                            <li><b>[FIX]</b> Fixed some bugs with Singleplayer Maps.</li>
+                        </ul>
+                        <br> <br>
+                        <h2 style="color: white; font-weight: 300; font-style: italic;">Total issues fixed: 6 (someone is not on the list), <b>CVE-202506236</b>.</h2>
+                        <h1 style="color: white; font-size: 50px;">RECENT BIG UPDATE </h1>
+                        <h2 style="color: white; margin-top: -40px; font-style: italic;">Course Of Death (2.6.0)</h2>
                         <ul style="color: white; font-weight: 300; font-size: larger;" class="releases">
                             <li><b>[ADD]</b> SEASON 6 OF COURSE OF DEATH IS HERE! THE YEARS-RELOAD SEASON IS READY! PLAY AND GET ALL THE NEW BATTLE PASS REWARDS INCLUDING THE NEW SKIN!</li>
                             <li><b>[ADD]</b> ADDED THE PROFILE SECTION! Log-In with your Play Epik Account in this section!</li>
@@ -112,19 +121,6 @@
                             <li><b>[FIX]</b> Fixed svarious animations with Next Up scene.</li>
                             <li><b>[FIX]</b> Fixed some Z-Level with skins in all Singleplayer Maps.</li>
                         </ul>
-                        <br> <br>
-                        <h2 style="color: white; font-weight: 300; font-style: italic;">Total issues fixed: 12 (someone is not on the list), <b>CVE-2025061612</b>.</h2>
-                        <!--<h1 style="color: white; font-size: 50px;">RECENT BIG UPDATE </h1>
-                        <h2 style="color: white; margin-top: -40px; font-style: italic;">Course Of Death (2.5.0)</h2>
-                        <ul style="color: white; font-weight: 300; font-size: larger;">
-                            <li><b>[ADD]</b> SEASON 5 OF COURSE OF DEATH ADDED! PRE-SUMMER SEASON! PLAY NOW AND GET ALL THE NEW BATTLE PASS REWARDS INCLUDING THE NEW SKIN!</li>
-                            <li><b>[ADD]</b> PLAY THE GAME AND LET YOUR FRIENDS KNOW YOU ARE PLAYING COURSE OF DEATH! DISCORD IS NOW INTEGRATED!</li>
-                            <li><b>[ADD]</b> Adding more Tips!</li>
-                            <li><b>[ADD]</b> Quality-of-life improvement with adding a menu for choose the images quality.</li>
-                            <li><b>[ADD]</b> Quality-of-life improvement with adding an achievements reached bar.</li>
-                            <li><b>[FIX]</b> Fixed some animations bugs.</li>
-                            <li><b>[FIX]</b> Fixed some Skins bugs.</li>
-                        </ul>-->
                     </div>
                 </div>
                 <br>
@@ -148,11 +144,11 @@
                         <h3 style="color: white;">&copy; Play Epik Incorporation</h3>
                         <h3 style="color: white;" class="license"><a href="endUserPrivacy.html" style="text-decoration: none; color: white;"><u>License</u></a></h3>
                         <div class="iconSocial" style="display: inline;">
-                            <a href="https://www.youtube.com/channel/UCRFhqL8LmWNj_4-3AdYESzA"style="color: transparent;" aria-label="Youtube"><img src="img/_iconYoutube.webp" style="height: 50px; width: 50px;"></a>
-                            <a href="https://www.instagram.com/playepikinc/"style="color: transparent;" aria-label="Instagram">&nbsp; &nbsp; &nbsp;<img src="img/_iconInstagram.webp" style="height: 50px; width: 50px;"></a>
-                            <a href="https://www.tiktok.com/@play.epik.inc?is_from_webapp=1&sender_device=pc"style="color: transparent;" aria-label="Tiktok">&nbsp; &nbsp; &nbsp;<img src="img/_iconTikTok.webp" style="height: 50px; width: 50px;"></a>
-                            <a href="https://discord.gg/nKBrSqnNuD" style="color: transparent;" aria-label="Discord">&nbsp; &nbsp; &nbsp;<img src="img/_iconDiscord.webp" style="height: 50px; width: 50px;"></a>
-                            <a href="https://x.com/play_epikinc" style="color: transparent;" aria-label="X">&nbsp; &nbsp; &nbsp;<img src="img/_iconX.webp" style="height: 50px; width: 50px;"></a>
+                            <a href="https://www.youtube.com/channel/UCRFhqL8LmWNj_4-3AdYESzA"style="color: transparent;" aria-label="Youtube"><img src="img/_iconYoutube.webp" style="height: 50px; width: 50px;" loading="lazy"></a>
+                            <a href="https://www.instagram.com/playepikinc/"style="color: transparent;" aria-label="Instagram">&nbsp; &nbsp; &nbsp;<img src="img/_iconInstagram.webp" style="height: 50px; width: 50px;" loading="lazy"></a>
+                            <a href="https://www.tiktok.com/@play.epik.inc?is_from_webapp=1&sender_device=pc"style="color: transparent;" aria-label="Tiktok">&nbsp; &nbsp; &nbsp;<img src="img/_iconTikTok.webp" style="height: 50px; width: 50px;" loading="lazy"></a>
+                            <a href="https://discord.gg/nKBrSqnNuD" style="color: transparent;" aria-label="Discord">&nbsp; &nbsp; &nbsp;<img src="img/_iconDiscord.webp" style="height: 50px; width: 50px;" loading="lazy"></a>
+                            <a href="https://x.com/play_epikinc" style="color: transparent;" aria-label="X">&nbsp; &nbsp; &nbsp;<img src="img/_iconX.webp" style="height: 50px; width: 50px;" loading="lazy"></a>
                         </div>
                         <br> <br> <br>
                     </div>
@@ -160,9 +156,6 @@
                 <button id="backToTopBtn" onclick="BackToTop()">↑</button>
             </div>
         </center>
-        <script src="js/home.js"></script>
-        <script src="js/openTrailers.js"></script>
-        <script src="js/imageModal.js"></script>
-        <script src="js/gameNameManager.js"></script>
+        <script src="js/home.js"></script><script src="js/imageModal.js"></script><script src="js/gameNameManager.js"></script>
     </body>
 </html>
