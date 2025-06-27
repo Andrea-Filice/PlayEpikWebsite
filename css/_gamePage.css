@@ -130,4 +130,5 @@ img{height: 400px;}
     width: 95%;
     height: 95%;
     object-fit: cover;
+    border-radius: 10px;
 }
