@@ -65,19 +65,27 @@
                 <div class="notAvaible">
                     <h2 style="color: white;">Not avaible on smartphones.</h2>
                 </div>
-                <div class="card">
-                    <div class="card_part card_part-one">
-                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide1.png" width="900px" height="500px" loading="lazy">
+                <div class="slideshow-container">
+                    <button class="slide-arrow left-arrow" onclick="plusSlide(-1)">&#10094;</button>
+                    <div class="slide fade">
+                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide1.png" width="900" height="500" loading="lazy">
                     </div>
-                    <div class="card_part card_part-two">
-                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide2.png"  width="900px" height="500px" loading="lazy">
+                    <div class="slide fade">
+                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide2.png" width="900" height="500" loading="lazy">
                     </div>
-                    <div class="card_part card_part-three">
-                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide3.png"  width="900px" height="500px" loading="lazy">
+                    <div class="slide fade">
+                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide3.png" width="900" height="500" loading="lazy">
                     </div>
-                    <div class="card_part card_part-four">
-                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide4.png"  width="900px" height="500px" loading="lazy">
+                    <div class="slide fade">
+                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide4.png" width="900" height="500" loading="lazy">
                     </div>
+                    <button class="slide-arrow right-arrow" onclick="plusSlide(1)">&#10095;</button>
+                </div>
+                <div style="text-align:center; margin-top:10px;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
                 <br>
                 <h1 style="color: white; font-family: 'Clash Display', sans-serif;">Downloads</h1>
@@ -131,5 +139,29 @@
         </center>
         <button id="backToTopBtn" onclick="BackToTop()">↑</button>
         <script src="js/home.js"></script><script src="js/downloadDevTools.js"></script>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlide(n) {showSlides(slideIndex += n);}
+
+            function currentSlide(n) {showSlides(slideIndex = n);}
+
+            function showSlides(n) {
+                let i;
+                const slides = document.getElementsByClassName("slide");
+                const dots = document.getElementsByClassName("dot");
+                if (n > slides.length) slideIndex = 1
+                if (n < 1) slideIndex = slides.length
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].classList.remove("active");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].classList.add("active");
+            }
+        </script>
     </body>
 </html>
