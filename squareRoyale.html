@@ -65,8 +65,8 @@
                     <br>
                     <br>
                     <div style="display: flex; justify-content: center; gap: 100px; transform: scale(1.2);">
-                        <button class="seeMore" onclick="window.location.href = `https://www.youtube.com/watch?v=lvzlBDRxx-4&ab_channel=PlayEpik%2CIncorporation.`">Watch full video</button>
-                        <button class="seeMore" onclick="window.location.href =`https://www.youtube.com/@PlayEpikIncorporation.`">See the channel</button>
+                        <button class="seeMore" onclick="window.location.href = `https://www.youtube.com/watch?v=lvzlBDRxx-4&ab_channel=PlayEpik%2CIncorporation.`" title="Open YouTube">Watch full video</button>
+                        <button class="seeMore" onclick="window.location.href =`https://www.youtube.com/@PlayEpikIncorporation.`" title="Open YouTube">See the channel</button>
                     </div>
                 </div>
                 <br>
@@ -129,12 +129,12 @@
                 <div class="credits" id="credits" style="text-align: center;">
                     <h1 style="color: white; font-size: 80px;">CREDITS </h1>
                     <h2 style="color: white; font-weight: 300; margin-top: -40px;">Asset by: Freepik on FlatIcons, Jesus Chavarria, shmai, max.icons <br> Music by: PIXABAY (AlexGrohl, PremiumMusicOdissey, Pheaha Mohwasa, freesound_community, jigokukarano_sisya)</h2>
-                    <h2 style="color: white; text-decoration: underline;" onclick="SetGameName('Square Royale')" class="tps">THIRD PARTY SOFTWARES</h2>
+                    <h2 style="color: white; text-decoration: underline;" onclick="SetGameName('Square Royale')" class="tps" title="Open Credits">THIRD PARTY SOFTWARES</h2>
                 </div>
                 <div class="troubleshooting" style="text-align: center;">
                     <h1 style="color: white;" class="troubleshoot">TROUBLESHOOTING </h1>
                     <h2 style="color: white; font-weight: 300;" class="depsTroubleshoot">Do you have any issues with <b>Square Royale</b>? Check his <b>Server Status</b>!</h2>
-                    <button class="seeMore" onclick="OpenServerStatus()">Server Status</button>
+                    <button class="seeMore" onclick="OpenServerStatus()" title="Open Server Status">Server Status</button>
                 </div>
                 <br> <br> <br>
                 <footer>
@@ -154,8 +154,6 @@
                 <button id="backToTopBtn" onclick="BackToTop()">↑</button>
             </div>
         </center>
-        <script src="js/home.js"></script>
-        <script src="js/imageModal.js"></script>
-        <script src="js/gameNameManager.js"></script>
+        <script src="js/home.js"></script><script src="js/imageModal.js"></script><script src="js/gameNameManager.js"></script>
     </body>
 </html>
