@@ -84,12 +84,12 @@
                         <br><br>
                         <textarea id="description" name="description" rows="5" placeholder="Write here your feedback (Markdown Support)..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; border-color: white; resize: none; border: none; outline: 2px rgb(92, 92, 92) solid; border-radius: 10px;"></textarea>
                         <br>
-                        <h3 style="color: white;">Mail Preview:</h3>
+                        <h3 style="color: white; display: none;" id="textPreview">Mail Preview:</h3>
                         <div id="preview"></div>
                         <br> <br>
                     </form>
                     <br> <br> <br>
-                    <button class="seeMore" onclick="SendEmail()">Submit</button>
+                    <button id="sbButton" class="seeMore" onclick="SendEmail()" style="display: none;">Submit</button>
                     <p id="responseMessage" style="color: white; font-family: 'Clash Display', sans-serif; font-size: 50px;"></p>
                 </div>
                 <footer>
@@ -116,6 +116,14 @@
                 const markdownText = this.value;
                 const html = marked.parse(markdownText);
                 document.getElementById('preview').innerHTML = html;
+                if(document.getElementById('description').value.trim() == ""){
+                    document.getElementById('sbButton').style.display = "none";
+                    document.getElementById('textPreview').style.display = "none";
+                }
+                else{
+                    document.getElementById('sbButton').style.display = "block";
+                    document.getElementById('textPreview').style.display = "block";
+                }
             });
         </script>
         <!--EmailJS-->
