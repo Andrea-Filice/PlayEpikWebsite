@@ -62,3 +62,11 @@ button:hover {
     background-color: #fff;
     color: #000;
 }
+
+.default{display: block;}
+.smartphone{display: none;}
+
+@media (max-width:600px) {
+    .default{display: none;}
+    .smartphone{display: block;}
+}
