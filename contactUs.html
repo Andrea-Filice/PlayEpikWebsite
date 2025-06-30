@@ -11,7 +11,7 @@
         <meta name="UTF characters" http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Clash Display-->
-        <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap" rel="preconnect">
+        <link href="https://api.fontshare.com/v2/css?f[]=clash-display@1&display=swap" rel="stylesheet">
         <!--EmailJS-->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     </head>
@@ -39,8 +39,8 @@
                     <div class="nav-links">
                       <a href="index.html">Home</a>
                       <a href="games.html">Games</a>
-                      <a href="contactUs.html">Contact us</a>
                       <a href="developers.html">Developers</a>
+                      <a href="contactUs.html">Contact us</a>
                     </div>
                 </div>
                 <!--<div class="scrollAnim">
@@ -84,12 +84,12 @@
                         <br><br>
                         <textarea id="description" name="description" rows="5" placeholder="Write here your feedback (Markdown Support)..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; border-color: white; resize: none; border: none; outline: 2px rgb(92, 92, 92) solid; border-radius: 10px;"></textarea>
                         <br>
-                        <h3 style="color: white;">Mail Preview:</h3>
+                        <h3 style="color: white; display: none;" id="textPreview">Mail Preview:</h3>
                         <div id="preview"></div>
                         <br> <br>
                     </form>
                     <br> <br> <br>
-                    <button class="seeMore" onclick="SendEmail()">Submit</button>
+                    <button id="sbButton" class="seeMore" onclick="SendEmail()" style="display: none;" title="Submit Email">Submit</button>
                     <p id="responseMessage" style="color: white; font-family: 'Clash Display', sans-serif; font-size: 50px;"></p>
                 </div>
                 <footer>
@@ -97,11 +97,11 @@
                         <h3 style="color: white;">&copy; Play Epik Incorporation</h3>
                         <h3 style="color: white;" class="license"><a href="endUserPrivacy.html" style="text-decoration: none; color: white;"><u>License</u></a></h3>
                         <div class="iconSocial" style="display: inline;">
-                            <a href="https://www.youtube.com/channel/UCRFhqL8LmWNj_4-3AdYESzA"style="color: transparent;" aria-label="Youtube"><img src="img/_iconYoutube.webp" style="height: 50px; width: 50px;" loading="lazy"></a>
-                            <a href="https://www.instagram.com/playepikinc/"style="color: transparent;" aria-label="Instagram">&nbsp; &nbsp; &nbsp;<img src="img/_iconInstagram.webp" style="height: 50px; width: 50px;" loading="lazy"></a>
-                            <a href="https://www.tiktok.com/@play.epik.inc?is_from_webapp=1&sender_device=pc"style="color: transparent;" aria-label="Tiktok">&nbsp; &nbsp; &nbsp;<img src="img/_iconTikTok.webp" style="height: 50px; width: 50px;" loading="lazy"></a>
-                            <a href="https://discord.gg/nKBrSqnNuD" style="color: transparent;" aria-label="Discord">&nbsp; &nbsp; &nbsp;<img src="img/_iconDiscord.webp" style="height: 50px; width: 50px;" loading="lazy"></a>
-                            <a href="https://x.com/play_epikinc" style="color: transparent;" aria-label="X">&nbsp; &nbsp; &nbsp;<img src="img/_iconX.webp" style="height: 50px; width: 50px;" loading="lazy"></a>
+                            <a href="https://www.youtube.com/channel/UCRFhqL8LmWNj_4-3AdYESzA"style="color: transparent;" aria-label="Youtube"><img src="img/_iconYoutube.webp" style="height: 50px; width: 50px;" loading="lazy" draggable="false"</a>
+                            <a href="https://www.instagram.com/playepikinc/"style="color: transparent;" aria-label="Instagram">&nbsp; &nbsp; &nbsp;<img src="img/_iconInstagram.webp" style="height: 50px; width: 50px;" loading="lazy" draggable="false"></a>
+                            <a href="https://www.tiktok.com/@play.epik.inc?is_from_webapp=1&sender_device=pc"style="color: transparent;" aria-label="Tiktok">&nbsp; &nbsp; &nbsp;<img src="img/_iconTikTok.webp" style="height: 50px; width: 50px;" loading="lazy" draggable="false"></a>
+                            <a href="https://discord.gg/nKBrSqnNuD" style="color: transparent;" aria-label="Discord">&nbsp; &nbsp; &nbsp;<img src="img/_iconDiscord.webp" style="height: 50px; width: 50px;" loading="lazy" draggable="false"></a>
+                            <a href="https://x.com/play_epikinc" style="color: transparent;" aria-label="X">&nbsp; &nbsp; &nbsp;<img src="img/_iconX.webp" style="height: 50px; width: 50px;" loading="lazy" draggable="false"></a>
                         </div>
                         <br> <br> <br>
                     </div>
@@ -109,16 +109,22 @@
                 <button id="backToTopBtn" onclick="BackToTop()">↑</button>
             </div>
         </center>
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script><script src="https://playepikservercontents.netlify.app/Lz8#rW1k!q9V@ePf/emailJSLocal.js"></script>
         <script src="js/home.js"></script>
         <script>
             document.getElementById('description').addEventListener('input', function() {
                 const markdownText = this.value;
                 const html = marked.parse(markdownText);
                 document.getElementById('preview').innerHTML = html;
+                if(document.getElementById('description').value.trim() == ""){
+                    document.getElementById('sbButton').style.display = "none";
+                    document.getElementById('textPreview').style.display = "none";
+                }
+                else{
+                    document.getElementById('sbButton').style.display = "block";
+                    document.getElementById('textPreview').style.display = "block";
+                }
             });
         </script>
-        <!--EmailJS-->
-        <script src="https://playepikservercontents.netlify.app/Lz8#rW1k!q9V@ePf/emailJSLocal.js"></script>
     </body>
 </html>

@@ -10,7 +10,7 @@
         <meta name="UTF characters" http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Clash Display-->
-        <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap" rel="preconnect">
+        <link href="https://api.fontshare.com/v2/css?f[]=clash-display@1&display=swap" rel="stylesheet">
     </head>
     <body style="background-color: black;" onload="OnLoad(), Load()">
         <center>
@@ -36,8 +36,8 @@
                     <div class="nav-links">
                       <a href="index.html">Home</a>
                       <a href="games.html">Games</a>
-                      <a href="contactUs.html">Contact us</a>
                       <a href="developers.html">Developers</a>
+                      <a href="contactUs.html">Contact us</a>
                     </div>
                 </div>
                 <!--<div class="scrollAnim">
@@ -65,19 +65,27 @@
                 <div class="notAvaible">
                     <h2 style="color: white;">Not avaible on smartphones.</h2>
                 </div>
-                <div class="card">
-                    <div class="card_part card_part-one">
-                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide1.png" width="900px" height="500px" loading="lazy">
+                <div class="slideshow-container">
+                    <button class="slide-arrow left-arrow" onclick="plusSlide(-1)">&#10094;</button>
+                    <div class="slide fade">
+                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide1.png" width="900" height="500" loading="lazy">
                     </div>
-                    <div class="card_part card_part-two">
-                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide2.png"  width="900px" height="500px" loading="lazy">
+                    <div class="slide fade">
+                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide2.png" width="900" height="500" loading="lazy">
                     </div>
-                    <div class="card_part card_part-three">
-                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide3.png"  width="900px" height="500px" loading="lazy">
+                    <div class="slide fade">
+                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide3.png" width="900" height="500" loading="lazy">
                     </div>
-                    <div class="card_part card_part-four">
-                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide4.png"  width="900px" height="500px" loading="lazy">
+                    <div class="slide fade">
+                        <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide4.png" width="900" height="500" loading="lazy">
                     </div>
+                    <button class="slide-arrow right-arrow" onclick="plusSlide(1)">&#10095;</button>
+                </div>
+                <div style="text-align:center; margin-top:10px;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
                 <br>
                 <h1 style="color: white; font-family: 'Clash Display', sans-serif;">Downloads</h1>
@@ -85,32 +93,32 @@
                     <h2 style="color: white;">Not avaible on smartphones.</h2>
                 </div>
                 <div class="downloads">
-                    <img src="img/_windowsIcon.webp" height="70px" width="70px" onclick="showOS('Windows')" draggable="false" loading="lazy">
-                    <img src="img/_macIcon.webp" height="70px" width="70px" onclick="showOS('MacOS')" draggable="false" loading="lazy">
-                    <img src="img/_linuxIcon.webp" height="70px" width="70px" onclick="showOS('Linux')" draggable="false" loading="lazy">
+                    <img src="img/_windowsIcon.webp" height="70px" width="70px" onclick="ShowOS('Windows')" draggable="false" loading="lazy">
+                    <img src="img/_macIcon.webp" height="70px" width="70px" onclick="ShowOS('MacOS')" draggable="false" loading="lazy">
+                    <img src="img/_linuxIcon.webp" height="70px" width="70px" onclick="ShowOS('Linux')" draggable="false" loading="lazy">
                 </div>
                 <div class="windows" id="Windows">
                     <h1 style="font-family: 'Clash Display'; color: white;">Windows (7 and later):</h1>
-                    <button class="seeMore" onclick="DownloadFile()">Download Now</button>
+                    <button class="seeMore" onclick="DownloadFile()" title="Download for Windows">Download Now</button>
                 </div>
                 <div class="macOS" id="MacOS">
                     <h1 style="font-family: 'Clash Display'; color: white;">macOS (Big Sur and later): </h1>
-                    <button class="seeMore" onclick="DownloadFile()">Download Now</button>
+                    <button class="seeMore" onclick="DownloadFile()" title="Download for macOS">Download Now</button>
                 </div>
                 <div class="linux" id="Linux">
                     <h1 style="font-family: 'Clash Display'; color: white;">Linux (.appImage format): </h1>
-                    <button class="seeMore" onclick="DownloadFile()">Download Now</button>
+                    <button class="seeMore" onclick="DownloadFile()" title="Download for Linux">Download Now</button>
                 </div> <br>
                 <br> <br>
                 <h1 style="color: white; font-family: 'Clash Display', sans-serif;">Open Source</h1>
                 <h2 style="color: white; font-weight: 300;">Taskify Business is an <b style="font-weight: 800;">Open Source</b> project, open the source code from the repository on GitHub!</h2>
                 <div class="github" style="display: inline-flex; gap: 10px;">
-                    <img src="img/_githubIcon.webp" height="50px" width="50px" onclick="OpenRepository()" draggable="false" loading="lazy">
-                    <h3 style="color: white;" class="deps" onclick="OpenRepository()">Open GitHub Repository</h3>
+                    <img src="img/_githubIcon.webp" height="50px" width="50px" onclick="OpenRepository()" draggable="false" loading="lazy" title="Open GitHub">
+                    <h3 style="color: white;" class="deps" onclick="OpenRepository()" title="Open GitHub">Open GitHub Repository</h3>
                 </div>
                 <div class="github" style="display: inline-flex; gap: 10px; margin-left: 20px;">
-                    <img src="img/_licenseIcon.webp" height="50px" width="50px" onclick="OpenRepository()" draggable="false" loading="lazy">
-                    <h3 style="color: white;" class="deps" onclick="OpenRepository()">Open License</h3>
+                    <img src="img/_licenseIcon.webp" height="50px" width="50px" onclick="OpenLicense()" draggable="false" loading="lazy" title="Open License">
+                    <h3 style="color: white;" class="deps" onclick="OpenLicense()" title="Open License">Open License</h3>
                 </div>
                 <br> <br> <br> 
                 <footer>
@@ -118,11 +126,11 @@
                         <h3 style="color: white;">&copy; Play Epik Incorporation</h3>
                         <h3 style="color: white;" class="license"><a href="endUserPrivacy.html" style="text-decoration: none; color: white;"><u>License</u></a></h3>
                         <div class="iconSocial" style="display: inline;">
-                            <a href="https://www.youtube.com/channel/UCRFhqL8LmWNj_4-3AdYESzA"style="color: transparent;" aria-label="Youtube"><img src="img/_iconYoutube.webp" style="height: 50px; width: 50px;"></a>
-                            <a href="https://www.instagram.com/playepikinc/"style="color: transparent;" aria-label="Instagram">&nbsp; &nbsp; &nbsp;<img src="img/_iconInstagram.webp" style="height: 50px; width: 50px;"></a>
-                            <a href="https://www.tiktok.com/@play.epik.inc?is_from_webapp=1&sender_device=pc"style="color: transparent;" aria-label="Tiktok">&nbsp; &nbsp; &nbsp;<img src="img/_iconTikTok.webp" style="height: 50px; width: 50px;"></a>
-                            <a href="https://discord.gg/nKBrSqnNuD" style="color: transparent;" aria-label="Discord">&nbsp; &nbsp; &nbsp;<img src="img/_iconDiscord.webp" style="height: 50px; width: 50px;"></a>
-                            <a href="https://x.com/play_epikinc" style="color: transparent;" aria-label="X">&nbsp; &nbsp; &nbsp;<img src="img/_iconX.webp" style="height: 50px; width: 50px;"></a>
+                            <a href="https://www.youtube.com/channel/UCRFhqL8LmWNj_4-3AdYESzA"style="color: transparent;" aria-label="Youtube"><img src="img/_iconYoutube.webp" style="height: 50px; width: 50px;" loading="lazy" draggable="false"</a>
+                            <a href="https://www.instagram.com/playepikinc/"style="color: transparent;" aria-label="Instagram">&nbsp; &nbsp; &nbsp;<img src="img/_iconInstagram.webp" style="height: 50px; width: 50px;" loading="lazy" draggable="false"></a>
+                            <a href="https://www.tiktok.com/@play.epik.inc?is_from_webapp=1&sender_device=pc"style="color: transparent;" aria-label="Tiktok">&nbsp; &nbsp; &nbsp;<img src="img/_iconTikTok.webp" style="height: 50px; width: 50px;" loading="lazy" draggable="false"></a>
+                            <a href="https://discord.gg/nKBrSqnNuD" style="color: transparent;" aria-label="Discord">&nbsp; &nbsp; &nbsp;<img src="img/_iconDiscord.webp" style="height: 50px; width: 50px;" loading="lazy" draggable="false"></a>
+                            <a href="https://x.com/play_epikinc" style="color: transparent;" aria-label="X">&nbsp; &nbsp; &nbsp;<img src="img/_iconX.webp" style="height: 50px; width: 50px;" loading="lazy" draggable="false"></a>
                         </div>
                         <br> <br> <br>
                     </div>
@@ -131,5 +139,28 @@
         </center>
         <button id="backToTopBtn" onclick="BackToTop()">↑</button>
         <script src="js/home.js"></script><script src="js/downloadDevTools.js"></script>
+        <script>
+            let slideIndex = 1;
+
+            showSlides(slideIndex);
+            function plusSlide(n) {showSlides(slideIndex += n);}
+            function currentSlide(n) {showSlides(slideIndex = n);}
+
+            function showSlides(n) {
+                let i;
+                const slides = document.getElementsByClassName("slide");
+                const dots = document.getElementsByClassName("dot");
+                if (n > slides.length) slideIndex = 1
+                if (n < 1) slideIndex = slides.length
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].classList.remove("active");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].classList.add("active");
+            }
+        </script>
     </body>
 </html>
