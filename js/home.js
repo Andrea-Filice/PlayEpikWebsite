@@ -55,3 +55,17 @@ window.onscroll = () => {
     if (scrollTop > 600 && article2) 
         article2.style.animation = "scaleIn 0.5s forwards";
 };
+
+function toggleVideoPlayback(value){
+    const video = document.getElementById('mainVideo');
+    const playButton = document.getElementById("playBtn")
+    const pauseButton = document.getElementById("pauseBtn")
+
+    if(value)
+        video.play();
+    else
+        video.pause();
+
+    playButton.style.display = (value) ? "none" : "block";
+    pauseButton.style.display = (value) ? "block" : "none";
+}

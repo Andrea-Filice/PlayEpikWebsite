@@ -58,10 +58,14 @@
                 <br> <br> 
                 <div class="trailer">
                     <h1 style="color: white;" class="deps">LATEST VIDEO</h1>
-                    <video muted loop autoplay>
-                        <source src="videos/TRAILER - Square Royale Weapons.mp4">
-                        Your browser does not support Video Rendering.
-                    </video>
+                    <div style="position: relative; display: inline-block;">
+                        <button id="pauseBtn" class="videoBtn" title="Stop Video" onclick="toggleVideoPlayback(false)"><img src="img/_pause.png" alt="Pause Button" title="Pause" width="25px" height="25px" draggable="false" class="icon"></button>
+                        <button id="playBtn" class="videoBtn" title="Play Video" style="display: none;" onclick="toggleVideoPlayback(true)"><img src="img/_play.png" alt="Play Button" title="Play" width="25px" height="25px" draggable="false" class="icon"></button>
+                        <video id="mainVideo" muted loop autoplay class="gif" style="display: block;">
+                            <source src="videos/TRAILER - Square Royale Weapons.mp4">
+                            Your browser does not support Video Rendering.
+                        </video>
+                    </div>
                     <br>
                     <br>
                     <div style="display: flex; justify-content: center; gap: 100px; transform: scale(1.2);">

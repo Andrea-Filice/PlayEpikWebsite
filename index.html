@@ -94,10 +94,15 @@
                     <h1 style="color: white; font-family: 'Space Grotesk', sans-serif;" class="newsIndex">
                         ✳︎ MORE ABOUT<span style="font-style: oblique;"> US</span>
                     </h1>
-                    <video muted loop autoplay class="gif">
-                        <source src="videos/_intro.mp4">
-                        Your browser does not support Video Rendering.
-                    </video>
+                    <div style="position: relative; display: inline-block;">
+                        <button id="pauseBtn" class="videoBtn" title="Stop Video" onclick="toggleVideoPlayback(false)"><img src="img/_pause.png" alt="Pause Button" title="Pause" width="25px" height="25px" draggable="false"></button>
+                        <button id="playBtn" class="videoBtn" title="Play Video" style="display: none;" onclick="toggleVideoPlayback(true)"><img src="img/_play.png" alt="Play Button" title="Play" width="25px" height="25px" draggable="false"></button>
+                        <video id="mainVideo" muted loop autoplay class="gif" style="display: block;">
+                            <source src="videos/_intro.mp4">
+                            Your browser does not support Video Rendering.
+                        </video>
+                    </div>
+                    <br> <br>
                     <h2 style="color: white; font-family: 'Clash Display', sans-serif;">Explore our games and beat the scores!</h2>
                     <button class="seeMore" onclick="window.location.href = '/games'" title="Explore">Explore more</button>
                 </div>
