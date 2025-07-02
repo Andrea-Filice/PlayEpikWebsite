@@ -151,7 +151,7 @@ img:hover::after, .deps:hover::after, .iconTaskify:hover{cursor: default;}
   .slide img {max-height: 60vw;}
 }
 
-.points .img{display: block;}
+.points .img, .dots{display: block;}
 
 .specialAI, .header{
   font-size: 65px;
@@ -163,7 +163,7 @@ img:hover::after, .deps:hover::after, .iconTaskify:hover{cursor: default;}
 @media (max-width: 600px) {
   .slideshow-container { display: none; }
   .notAvaible { display: block; }
-  .headerImg{display: none;}
+  .headerImg, .dots{display: none;}
   .points h2{margin-left: 0px;}
   .specialAI, .header{
     font-size: 45px;
