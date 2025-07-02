@@ -245,9 +245,12 @@ body {
     .hereText{font-size: 105px;}
     .smallDeps{font-size: 25px;}
     #limits{font-size: 95px;}
-    #contact, #ideas, #devsPhone, .licenseText{font-size: 75px;}
+    #contact, #ideas, .licenseText{font-size: 75px;}
     #devs{display: none;}
-    #devsPhone{display: block;}
+    #devsPhone{
+        display: block;
+        font-size: 71px;
+    }
     #team{font-size: 120px;}
     .antiCheat{font-size: 20px;}
     .newsIndex{font-size: 60px;}
