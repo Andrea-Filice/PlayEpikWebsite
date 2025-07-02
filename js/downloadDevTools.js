@@ -29,8 +29,7 @@ function ShowOS(osName){
 }
 
 function DownloadFile() {window.location.href = `https://github.com/${downloadLink}`;}
-function OpenRepository() {window.location.href = "https://github.com/Play-Epik-Inc/Taskify-Business";}
-function OpenLicense() {window.location.href = "https://github.com/Play-Epik-Inc/Taskify-Business/blob/main/LICENSE";}
+function OpenGitHubLink(link) {window.location.href = `https://github.com/Play-Epik-Inc/${link}`}
 function updateVersion(value){document.getElementById('latest').innerHTML = `Latest version: ${value}`}
 
 function FetchLatestVersion(){

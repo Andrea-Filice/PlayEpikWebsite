@@ -151,7 +151,49 @@ img:hover::after, .deps:hover::after, .iconTaskify:hover{cursor: default;}
   .slide img {max-height: 60vw;}
 }
 
+.points .img{display: block;}
+
+.specialAI, .header{
+  font-size: 65px;
+  margin-left: 20px;
+}
+
+.points h2{margin-left: 20px;}
+
 @media (max-width: 600px) {
   .slideshow-container { display: none; }
   .notAvaible { display: block; }
+  .headerImg{display: none;}
+  .points h2{margin-left: 0px;}
+  .specialAI, .header{
+    font-size: 45px;
+    margin-left: 0px;
+  }
+}
+
+.specialAI{
+  -webkit-text-fill-color: transparent; 
+  background-image: linear-gradient(to right,#ffc400, #ff9100, #ff530f, #e62c6d, #b25aff, #b25aff, #e62c6d, #ff530f, #ff9100, #ffc400);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  animation: gradient 8s linear infinite;
+}
+
+@keyframes gradient {
+    to {background-position: 200% center}
+}
+
+.points .img{
+  position: relative;
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+  height: 600px;
+  max-height: 60vw;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
