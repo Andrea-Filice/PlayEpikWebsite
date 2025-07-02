@@ -76,16 +76,21 @@ body {
     display: inline-block;
     padding: 20px 10px 13px 10px;
     text-decoration: none;
+    font-family: 'Clash Display', sans-serif;
     color: #efefef;
 }
   
 .nav > .nav-links > a:hover {
-    font-weight: 800;
     -webkit-text-fill-color: transparent; 
     background-image: linear-gradient(to right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8);
     background-size: 200% auto;
     -webkit-background-clip: text;
-    animation: gradient 8s linear infinite;
+    animation: gradient 8s linear infinite, modifyFontWeight 0.3s ease-in-out forwards;
+}
+
+@keyframes modifyFontWeight{
+    0%{font-weight: 500;}
+    100%{font-weight: 800;}
 }
   
 .nav > #nav-check {display: none;}
