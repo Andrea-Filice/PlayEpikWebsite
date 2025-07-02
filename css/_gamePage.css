@@ -80,6 +80,7 @@ img:not(.icon):not(#imgModal)
     display: block;
     width: 965px;
     height: 530px;
+    border-radius: 10px;
 }
 
 .close {
