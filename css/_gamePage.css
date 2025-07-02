@@ -7,8 +7,7 @@ ul{
     padding-right: 200px;
 }
 
-img:not(.icon):not(#imgModal)
-{height: 400px;}
+img{height: 400px;}
 
 .hereText{
     display: inline;
