@@ -25,6 +25,13 @@ img{height: 400px;}
     padding-right: 40px;
 }
 
+.ytButtons{
+    gap: 100px; 
+    transform: scale(1.2);
+}
+
+#pauseBtn, #playBtn{right: 45px;}
+
 @media (max-width:600px){
     body{overflow-x: hidden;}
     .smartPhone{display: block;}
@@ -50,6 +57,11 @@ img{height: 400px;}
         padding-left: 0px;
         padding-right: 0px;
     }
+    .ytButtons{
+        gap: 85px; 
+        transform: scale(0.9);
+    }
+    #pauseBtn, #playBtn{right: 10px;}
 }
 
 .images img{
