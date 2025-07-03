@@ -2,30 +2,35 @@
     -webkit-text-fill-color: transparent; 
     background: linear-gradient(20deg, red, rgb(241, 97, 97)); 
     -webkit-background-clip: text;
+    text-decoration: none;
 }
 
 .gamejolt{
     -webkit-text-fill-color: transparent; 
     background: linear-gradient(20deg, rgb(43, 255, 28), rgb(2, 97, 11)); 
     -webkit-background-clip: text;
+    text-decoration: none;
 }
 
 .tiktok{
     -webkit-text-fill-color: transparent; 
     background: linear-gradient(20deg, #69C9D0, #EE1D52); 
     -webkit-background-clip: text;
+    text-decoration: none;
 }
 
 .instagram{
     -webkit-text-fill-color: transparent; 
     background: linear-gradient(20deg, rgb(251, 255, 0), rgb(255, 6, 168)); 
     -webkit-background-clip: text;
+    text-decoration: none;
 }
 
 .discord{
     -webkit-text-fill-color: transparent; 
     background: linear-gradient(20deg, rgb(0, 238, 255), rgb(35, 6, 255)); 
     -webkit-background-clip: text;
+    text-decoration: none;
 }
 
 /*MARKDOWN SUPPORT*/
@@ -37,13 +42,9 @@
 
 #email, #description{width: 25%;}
 
-.headerContactUs{
-    font-size: 80px;
-}
+.headerContactUs{font-size: 80px;}
 
 @media (max-width: 768px) {
     #email, #description{width: 45%;}
-    .headerContactUs{
-        font-size: 70px;
-    }
+    .headerContactUs{font-size: 70px;}
 }

@@ -63,6 +63,8 @@ img:hover::after, .deps:hover::after, .iconTaskify:hover{cursor: default;}
 
 .notAvaible{display: none;}
 
+.titleDI{font-size: 80px;}
+
 @media (max-width: 600px) {
   .card, .downloads{display: none;}
   .notAvaible{display: block;}
@@ -70,6 +72,7 @@ img:hover::after, .deps:hover::after, .iconTaskify:hover{cursor: default;}
     margin-left: 10px;
     margin-right: 10px;
   }
+  .titleDI{font-size: 50px;}
 }
 
 .slideshow-container {
