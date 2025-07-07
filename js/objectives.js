@@ -1,5 +1,6 @@
 document.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+  const isMobile = window.innerWidth <= 600;
   const animations = [
     { id: "counter", position: 400, animation: "counter 3s forwards" },
     { id: "counter2", position: 500, animation: "counter2 3s forwards" },
@@ -9,7 +10,8 @@ document.addEventListener("scroll", () => {
   ];
 
   animations.forEach(({ id, position, animation }) => {
-    if (scrollPosition >= position) {
+    const triggerPosition = isMobile ? position - 300 : position;
+    if (scrollPosition >= triggerPosition) {
       const el = document.getElementById(id);
       if (el && el.style.animation !== animation) {
         el.style.animation = animation;

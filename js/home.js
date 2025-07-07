@@ -51,7 +51,21 @@ window.onscroll = () => {
         backToTopBtn.style.animation = "animationOut 0.5s linear forwards";
 
     if (scrollTop > 400 && article1) 
-        article1.style.animation = "scaleIn 0.5s forwards";
+        article1.style.animation = "scaleIn 0.7s forwards";
     if (scrollTop > 600 && article2) 
-        article2.style.animation = "scaleIn 0.5s forwards";
+        article2.style.animation = "scaleIn 0.7s forwards";
 };
+
+function toggleVideoPlayback(value){
+    const video = document.getElementById('mainVideo');
+    const playButton = document.getElementById("playBtn")
+    const pauseButton = document.getElementById("pauseBtn")
+
+    if(value)
+        video.play();
+    else
+        video.pause();
+
+    playButton.style.display = (value) ? "none" : "block";
+    pauseButton.style.display = (value) ? "block" : "none";
+}

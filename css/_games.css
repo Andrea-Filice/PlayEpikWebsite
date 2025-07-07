@@ -23,8 +23,11 @@
     gap: 100px;
 }
 
+.game-item img{height: 200px;}
+
 @media (max-width: 600px){
     body{overflow-x: hidden;}
+    .game-item img{height: 230px;}
     .games{
         display: block;
         justify-content: none;
