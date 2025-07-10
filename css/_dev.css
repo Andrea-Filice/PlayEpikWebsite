@@ -57,7 +57,7 @@
 
 .windows, .macOS, .linux{display: none;}
 
-img:hover, .deps:hover{cursor: pointer;}
+.github:hover, .downloadImg:hover, .deps:hover{cursor: pointer;}
 
 img:hover::after, .deps:hover::after, .iconTaskify:hover{cursor: default;}
 
@@ -183,7 +183,7 @@ img:hover::after, .deps:hover::after, .iconTaskify:hover{cursor: default;}
 }
 
 @keyframes gradient {
-    to {background-position: 200% center}
+  to {background-position: 200% center}
 }
 
 .points .img{
