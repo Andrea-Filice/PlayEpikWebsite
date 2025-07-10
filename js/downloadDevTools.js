@@ -21,9 +21,6 @@ function ShowOS(osName){
         e.style.display = (name === osName) ? "block" : "none";
     });
 
-    if(OS[osName])
-        OS[osName].scrollIntoView({behavior: "smooth"});
-
     if(extMap[osName])
         downloadLink = `Play-Epik-Inc/Taskify-Business/releases/download/v${version}/Taskify-Business-Setup-${version}.${extMap[osName]}`;
 }
