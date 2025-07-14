@@ -1,4 +1,4 @@
-END-USER LICENSE FOR PLAY EPIK GAMES USE (last update: 30/04/2025) 
+END-USER LICENSE FOR PLAY EPIK GAMES USE (last update: 10/07/2025) 
 
 SUMMARY:
 0. UPDATES AND PATCHES
@@ -9,14 +9,14 @@ SUMMARY:
 5. FEEDBACK AND SUGGESTIONS
 
 0. UPDATES AND PATCHES
-Play Epik Videogames receives updates to fix problems within the game or security patches on its servers, and that's why we would like to better explain how to update our Videogames to the latest version in the right way, below we will point out the steps.
+Play Epik's video games receive updates to fix in-game problems or security patches on their servers, which is why we would like to better explain how to update our video games to the latest version in the right way, and we will outline the steps below.
 
-1. Visit our itch or gamejolt site and download the right package for your computer, to see if your machine has a 64-bit or 32-bit processor:
-WINDOWS 11/10 : Device Settings > System > Go all the way down and find the "system information" item > find the "System Type" item and that's where you can find out if your computer has a 64-bit or 32-bit processor.
+1. Visit our itch or gamejolt site and download the right package for your computer, to see if your machine has a 64 or 32 bit processor:
+WINDOWS 11/10 : Device Settings > System > Go down to the bottom and find the ‘system information’ > find the ‘System Type’ entry and that's where you can find out if your computer has a 64 or 32 bit processor.
 
-2. If you have another version of the product installed, uninstall the previous version first and then start the installer of the new version.
+2. If you have installed another version of the product, first uninstall the previous version and then start the installer of the new version.
 
-3. If you have not installed any version prior you can proceed with opening the end named ("SetupX" or "GameNameSetupX") + device bit, following the information on the screen you will be able to install the videoGame.
+3. If no previous version has been installed, you can proceed by opening the terminal named (‘SetupX’ or ‘GameNameSetupX’) + device bit, following the information on the screen to install the video game.
 
 1. IN-GAME PURCHASES.
 Within Course of Death and Square Royale you have a store where you can buy customizations for your game profile.
@@ -29,7 +29,7 @@ Play Epik uses Third Party Services to collect data about the device with which 
 1. DATA ON THE MOTHER CARD (CPU X32 or X64, Cores) | USAGE: To improve the user experience into the videogame.
 2. DATA ABOUT THE GRAPHIC CARD (Card Type, Manufacture) | USAGE: To adapt the game for a better experience.
 3. WINDOWS VERSION (DirectX) | USAGE: Adaptation of the game concerning the code.
-4. .NET CORE VERSION | USAGE: To check if you can play the game (minimum requirements).
+4. DOT-NET CORE VERSION | USE: to check the minimum requirements
 
 GAME DATA IS FORBIDDEN FOR ONLINE SALE. 
 THE GAME DATA IS ENCRYPTED IN CHARACTERS THAT ONLY THE GAME CODE CAN DE-ENCRYPT.
