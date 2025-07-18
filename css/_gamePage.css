@@ -30,6 +30,8 @@ img{height: 400px;}
     transform: scale(1.2);
 }
 
+.smallDeps{padding: 0;}
+
 #pauseBtn, #playBtn{right: 45px;}
 
 @media (max-width:600px){
@@ -62,6 +64,7 @@ img{height: 400px;}
         transform: scale(0.9);
     }
     #pauseBtn, #playBtn{right: 10px;}
+    .smallDeps{padding: 0 7px 0 7px;}
 }
 
 .images img{
