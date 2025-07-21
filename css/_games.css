@@ -27,7 +27,10 @@
 
 @media (max-width: 600px){
     body{overflow-x: hidden;}
-    .game-item img{height: 230px;}
+    .game-item img{
+        height: 230px;
+        border-radius: 5px;
+    }
     .games{
         display: block;
         justify-content: none;
@@ -37,7 +40,6 @@
         gap: 0px;
     }
     .gamesStart{font-size: 70px;}
-    .games img{border-radius: 0px;}
 }
 
 b{font-weight: 800;}

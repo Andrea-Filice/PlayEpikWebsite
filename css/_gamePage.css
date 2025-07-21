@@ -30,6 +30,8 @@ img{height: 400px;}
     transform: scale(1.2);
 }
 
+.smallDeps{padding: 0;}
+
 #pauseBtn, #playBtn{right: 45px;}
 
 @media (max-width:600px){
@@ -45,7 +47,7 @@ img{height: 400px;}
         display: block;
         font-size: 40px;
     }
-    .deps{font-size: 60px;}
+    .deps{font-size: 57px;}
     .troubleshoot{font-size: 35px;}
     .depsTroubleshoot{
         margin-top: -0px;
@@ -62,6 +64,7 @@ img{height: 400px;}
         transform: scale(0.9);
     }
     #pauseBtn, #playBtn{right: 10px;}
+    .smallDeps{padding: 0 7px 0 7px;}
 }
 
 .images img{

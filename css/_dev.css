@@ -56,14 +56,11 @@
 }
 
 .windows, .macOS, .linux{display: none;}
-
 .github:hover, .downloadImg:hover, .deps:hover{cursor: pointer;}
-
 img:hover::after, .deps:hover::after, .iconTaskify:hover{cursor: default;}
-
 .notAvaible{display: none;}
-
 .titleDI{font-size: 80px;}
+.versionNumber{margin-top: -55px;}
 
 @media (max-width: 600px) {
   .card, .downloads{display: none;}
@@ -72,6 +69,7 @@ img:hover::after, .deps:hover::after, .iconTaskify:hover{cursor: default;}
     margin-left: 10px;
     margin-right: 10px;
   }
+  .versionNumber{margin-top: -25px;}
   .titleDI{font-size: 50px;}
 }
 
