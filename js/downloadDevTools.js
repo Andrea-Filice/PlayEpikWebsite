@@ -1,5 +1,4 @@
 let downloadLink;
-let version = "1.0.0";
 
 function Load() {FetchLatestVersion();}
 
@@ -27,13 +26,13 @@ function ShowOS(osName){
 
 function DownloadFile() {window.location.href = `https://github.com/${downloadLink}`;}
 function OpenGitHubLink(link) {window.location.href = `https://github.com/Play-Epik-Inc/${link}`}
-function updateVersion(value){document.getElementById('latest').innerHTML = `Latest version: ${value}`}
+function updateVersion(value, id){document.getElementById(id).innerHTML = `Latest version: ${value}`}
 
 function FetchLatestVersion(){
     fetch('https://playepikservercontents.netlify.app/dependecies/dependecies.json')
     .then(response => response.json())
         .then(data => {
-            version = data.versionTaskify;
-            updateVersion(data.versionTaskify);
+            updateVersion(data.versionTaskify, 'latest');
+            updateVersion(data.versionDependeciesInstaller, 'versionDI');
         })
 }
