@@ -11,14 +11,19 @@ function OnLoad() {
                   creditsSection.scrollIntoView({ behavior: 'smooth' });
             }
             if (window.location.hash === '#morehelp') {
-                const creditsSection = document.getElementById('morehelp');
-                if (creditsSection) 
+                const moreHelpSection = document.getElementById('morehelp');
+                if (moreHelpSection) 
                   creditsSection.scrollIntoView({ behavior: 'smooth' });
             }
             if(window.location.hash === "#releasenotes"){
                 const releaseNotesSection = document.getElementById('release');
                 if(releaseNotesSection)
                     releaseNotesSection.scrollIntoView({behavior: "smooth"});
+            }
+            if(window.location.hash === "#dependeciesInstaller"){
+                const DIsection = document.getElementById('dependeciesInstaller');
+                if(DIsection)
+                    DIsection.scrollIntoView({behavior: "smooth"});
             }
         }, 100)
     }, 500);
@@ -34,14 +39,16 @@ function OnLoad() {
 }
 
 function BackToTop() {window.scrollTo({ top: 0, behavior: 'smooth' });}
-function OpenServerStatus() { window.location.href = "https://serverstatus-playepik.netlify.app/"; }
+function OpenServerStatus() {window.location.href = "https://serverstatus-playepik.netlify.app/";}
 function OpenReleaseNotes(link){window.location.href = link + "#releasenotes";}
+function OpenDevsPage(section){window.location.href = "developers#" + section;}
 
 window.onscroll = () => {
     //VARIABLES
     const backToTopBtn = document.getElementById("backToTopBtn");
     const article1 = document.getElementById("article1");
     const article2 = document.getElementById("article2");
+    const article3 = document.getElementById("article3");
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
     if (scrollTop > 500) {
@@ -54,6 +61,8 @@ window.onscroll = () => {
         article1.style.animation = "scaleIn 0.7s forwards";
     if (scrollTop > 600 && article2) 
         article2.style.animation = "scaleIn 0.7s forwards";
+    if (scrollTop > 800 && article3) 
+        article3.style.animation = "scaleIn 0.7s forwards";
 };
 
 function toggleVideoPlayback(value){
