@@ -395,7 +395,12 @@ h2{font-family: 'Inter', sans-serif;}
 
 .article-text h1, .article-text h2 {margin: 10px 0;}
 
-@media (max-width: 768px) {.article {grid-template-columns: 1fr;}}
+@media (max-width: 768px) {
+    .article {
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+}
 
 /*OVERFLOW*/
 html {
@@ -408,7 +413,7 @@ html {
     animation: scaleIn 0.7s forwards;
 }
 
-#article1, #article2{transform: scale(0.8);}
+#article1, #article2, #article3{transform: scale(0.8);}
 
 .gif {
     top: 0;
