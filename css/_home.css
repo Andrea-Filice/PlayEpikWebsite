@@ -348,6 +348,7 @@ h2{font-family: 'Inter', sans-serif;}
     font-weight: 300;
     transform: scale(1.5);
     cursor: pointer;
+    border-radius: 90px;
 }
 
 @keyframes animationIn{
