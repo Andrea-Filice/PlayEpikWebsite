@@ -101,10 +101,11 @@ body {
     border: white 3px solid;
     background-color: black;
     color: white;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 300;
-    transform: scale(1.5);
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 400;
+    transform: scale(1.7);
     z-index: -1;
+    border-radius: 10px;
 }
 
 .seeMore:hover, .backToTop:hover{cursor: pointer;}
@@ -347,6 +348,7 @@ h2{font-family: 'Inter', sans-serif;}
     font-weight: 300;
     transform: scale(1.5);
     cursor: pointer;
+    border-radius: 90px;
 }
 
 @keyframes animationIn{
