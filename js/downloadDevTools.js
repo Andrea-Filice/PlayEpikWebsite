@@ -1,4 +1,5 @@
 let downloadLink;
+let versionTaskify;
 
 function Load() {FetchLatestVersion();}
 
@@ -33,6 +34,9 @@ function FetchLatestVersion(){
     .then(response => response.json())
         .then(data => {
             updateVersion(data.versionTaskify, 'latest');
+            versionTaskify = data.versionTaskify;
             updateVersion(data.versionDependeciesInstaller, 'versionDI');
         })
 }
+
+function FetchMoreDownloads() {window.location.href = `https://github.com/Play-Epik-Inc/Taskify-Business/releases/tag/v${versionTaskify}`;}

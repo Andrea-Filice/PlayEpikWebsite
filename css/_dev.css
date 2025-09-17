@@ -198,3 +198,5 @@ img:hover::after, .deps:hover::after, .iconTaskify:hover{cursor: default;}
   align-items: center;
   justify-content: center;
 }
+
+a:hover{cursor: pointer;}

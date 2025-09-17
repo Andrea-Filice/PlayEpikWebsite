@@ -64,7 +64,7 @@
                         <br> <hr>
                         <h1 style="color: white; font-family: 'Clash Display', sans-serif;">FEAUTURES</h1>
                         <h1 style="color: white; font-family: 'Clash Display', sans-serif; display: flex; justify-content: start; align-items: center;" class="header"><img src="img/_categoriesIcon.webp" alt="Categorize" draggable="false" width="40px" height="40px" class="headerImg">&nbsp; TASK CATEGORIES</h1>
-                        <h2 style="color: white; font-family: 'Clash Display', sans-serif; display: flex; justify-content: start; align-items: center; font-size: 25px; font-weight: 300; margin-top: -30px;">Categorize your activity. Select from 2 categories available, "Maintenance Task" or out.</h2>
+                        <h2 style="color: white; font-family: 'Clash Display', sans-serif; display: flex; justify-content: start; align-items: center; font-size: 25px; font-weight: 300; margin-top: -30px;">Categorize your activity, select from 2 categories available: "Maintenance Task" or out.</h2>
                         <img src="https://raw.githubusercontent.com/Play-Epik-Inc/Taskify-Business/refs/heads/main/src/assets/gitImages/git_slide1.png" width="900" height="500" loading="lazy" style="border-radius: 10px;" class="img" draggable="false">
                         <h1 style="color: white; font-family: 'Clash Display', sans-serif; display: flex; justify-content: start; align-items: center;" class="header"><img src="img/_versionIcon.webp" alt="Version" draggable="false" width="40px" height="40px" class="headerImg">&nbsp; VERSION TRACKING</h1>
                         <h2 style="color: white; font-family: 'Clash Display', sans-serif; display: flex; justify-content: start; align-items: center; font-size: 25px; font-weight: 300; margin-top: -30px;">Keep track of new versions of third-party tools and apps. You won't forget to update them.</h2>
@@ -116,17 +116,19 @@
                         <img src="img/_linuxIcon.webp" height="70px" width="70px" onclick="ShowOS('Linux')" draggable="false" loading="lazy" alt="Linux Icon" class="downloadImg">
                     </div>
                     <div class="windows" id="Windows">
-                        <h1 style="font-family: 'Clash Display'; color: white;">Windows (8 and later):</h1>
+                        <h1 style="font-family: 'Clash Display', sans-serif; color: white;">Windows (10 or later):</h1>
+                        <h2 style="font-family: 'Clash Display', sans-serif; color: white; font-weight: 300; margin-top: -10px; font-style: italic;">Require a machine with an <b>ARM64</b> or <b>X64 bit </b> processor.</h2>
                         <button class="seeMore" onclick="DownloadFile()" title="Download for Windows">Download Now</button>
                     </div>
                     <div class="macOS" id="MacOS">
                         <h1 style="font-family: 'Clash Display'; color: white;">macOS (Big Sur and later): </h1>
+                        <h2 style="font-family: 'Clash Display', sans-serif; color: white; font-weight: 300; margin-top: -10px; font-style: italic;">Require a Mac with <b>M1</b> chip or later.</h2>
                         <button class="seeMore" onclick="DownloadFile()" title="Download for macOS">Download Now</button>
                     </div>
                     <div class="linux" id="Linux">
                         <h1 style="font-family: 'Clash Display'; color: white;">Linux (.appImage format): </h1>
                         <button class="seeMore" onclick="DownloadFile()" title="Download for Linux">Download Now</button> <br> <br>
-                        <a href="https://github.com/Play-Epik-Inc/Taskify-Business/releases" style="color: white; margin-top: 20px;">Other formats</a>
+                        <a onclick="FetchMoreDownloads()" style="color: white; text-decoration: underline;">Other formats</a>
                     </div>
                     <br> <br>
                     <h1 style="color: white; font-family: 'Clash Display', sans-serif;">OPEN SOURCE</h1>
