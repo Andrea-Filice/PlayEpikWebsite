@@ -48,3 +48,21 @@
     #email, #description{width: 45%;}
     .headerContactUs{font-size: 70px;}
 }
+
+/*EMAIL US ANIMATIONS*/
+
+.form__field:focus{
+    border: 2.5px solid transparent;
+    background: 
+        linear-gradient(#292929, #292929) padding-box,
+        linear-gradient(to right, #818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8) border-box;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    width: 80%;
+    background-size: 400% auto;
+    animation: gradient 15s linear infinite;
+}
+
+@keyframes gradient {
+    to {background-position: 400% center}
+}

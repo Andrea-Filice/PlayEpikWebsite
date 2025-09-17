@@ -67,14 +67,14 @@
                 <h2 style="color: white; font-weight: 300; margin-top: -50px; font-family: 'Clash Display', sans-serif;">Write an <b style="font-weight: 800;">email</b> to our support team.</h2>
                 <br> <br> <br> <br> <br> <br>
                 <div class="form">
-                    <form id="feedbackForm" style="scale: 2;">
+                    <form id="feedbackForm" style="scale: 2;" class="form__group">
                         <label for="email" style="color: white; font-family: 'Clash Display', sans-serif;">Email:</label>
                         <br>
-                        <input type="email" id="email" name="email" placeholder="Insert your email here..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; border: none; outline: 2px rgb(188, 188, 188) solid; border-radius: 5px;">
+                        <input type="email" id="email" name="email" placeholder="Insert your email here..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; border-radius: 5px; outline: none; offset: none;" class="form__field">
                         <br> <br>
                         <label for="description" style="color: white; font-family: 'Clash Display', sans-serif;">Message: </label>
                         <br><br>
-                        <textarea id="description" name="description" rows="5" placeholder="Write here your feedback (Markdown Support)..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; border-color: white; resize: none; border: none; outline: 2px rgb(188, 188, 188) solid; border-radius: 10px;"></textarea>
+                        <textarea id="description" name="description" rows="5" placeholder="Write here your feedback (Markdown Support)..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; resize: none; outline: none; border-radius: 5px;" class="form__field"></textarea>
                         <br>
                         <h3 style="color: white; display: none;" id="textPreview">Mail Preview:</h3>
                         <div id="preview"></div>
