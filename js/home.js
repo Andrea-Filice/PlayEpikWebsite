@@ -13,7 +13,7 @@ function OnLoad() {
             if (window.location.hash === '#morehelp') {
                 const moreHelpSection = document.getElementById('morehelp');
                 if (moreHelpSection) 
-                  creditsSection.scrollIntoView({ behavior: 'smooth' });
+                  moreHelpSection.scrollIntoView({ behavior: 'smooth' });
             }
             if(window.location.hash === "#releasenotes"){
                 const releaseNotesSection = document.getElementById('release');
