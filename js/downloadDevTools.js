@@ -1,7 +1,23 @@
 let downloadLink;
 let versionTaskify;
 
-function Load() {FetchLatestVersion();}
+function Load() {
+    FetchLatestVersion();
+
+    //HASH LOCATIONS
+    setTimeout(() => {
+            if (window.location.hash === '#taskifyBusiness') {
+                const taskify = document.getElementById('taskify');
+                if (taskify) 
+                  taskify.scrollIntoView({ behavior: 'smooth' });
+            }
+            if (window.location.hash === '#dependeciesInstaller') {
+                const di = document.getElementById('dependeciesInstaller');
+                if (di) 
+                  di.scrollIntoView({ behavior: 'smooth' });
+            }
+    }, 1000)
+}
 
 function ShowOS(osName){
     //VARIABLES
