@@ -43,3 +43,8 @@
 }
 
 b{font-weight: 800;}
+
+.game-image{
+    border: 5px solid rgb(114, 113, 113);
+    border-radius: 10px;
+}

@@ -1,6 +1,23 @@
 let downloadLink;
+let versionTaskify;
 
-function Load() {FetchLatestVersion();}
+function Load() {
+    FetchLatestVersion();
+
+    //HASH LOCATIONS
+    setTimeout(() => {
+            if (window.location.hash === '#taskifyBusiness') {
+                const taskify = document.getElementById('taskify');
+                if (taskify) 
+                  taskify.scrollIntoView({ behavior: 'smooth' });
+            }
+            if (window.location.hash === '#dependeciesInstaller') {
+                const di = document.getElementById('dependeciesInstaller');
+                if (di) 
+                  di.scrollIntoView({ behavior: 'smooth' });
+            }
+    }, 1000)
+}
 
 function ShowOS(osName){
     //VARIABLES
@@ -33,6 +50,9 @@ function FetchLatestVersion(){
     .then(response => response.json())
         .then(data => {
             updateVersion(data.versionTaskify, 'latest');
+            versionTaskify = data.versionTaskify;
             updateVersion(data.versionDependeciesInstaller, 'versionDI');
         })
 }
+
+function FetchMoreDownloads() {window.location.href = `https://github.com/Play-Epik-Inc/Taskify-Business/releases/tag/v${versionTaskify}`;}
