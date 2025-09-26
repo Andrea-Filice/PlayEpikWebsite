@@ -17,7 +17,8 @@
         <center>
             <div id="loaderLayer" style="display: block; margin-top: 370px;">
                 <span class="loader"></span>
-                <p style="color: white; font-family: 'Clash Display'; font-style: italic;">Loading...</p>
+                <p style="color: white; font-family: 'Clash Display'; font-style: italic;">Loading...</p><br>
+                <p style="color: rgb(255, 191, 0); font-family: 'Clash Display'; font-style: italic; display: none;" id="stuckSignal">Stuck here? Check your Wi-Fi connection.</p>
             </div>
         </center>
         <center>
@@ -159,5 +160,16 @@
             </div>
         </center>
         <script src="js/home.js"></script><script src="js/imageModal.js"></script><script src="js/gameNameManager.js"></script>
+        <script>
+            const stuckText = document.getElementById('stuckSignal');
+
+            function onLoad(){
+                setTimeout(() => {
+                    stuckText.style.display = "block";
+                }, 5000);
+            }
+
+            document.onload = onLoad();
+        </script>
     </body>
 </html>
