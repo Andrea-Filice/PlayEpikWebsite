@@ -20,8 +20,8 @@ function OnLoad() {
                 if(releaseNotesSection)
                     releaseNotesSection.scrollIntoView({behavior: "smooth"});
             }
-            if(window.location.hash === "#dependeciesInstaller"){
-                const DIsection = document.getElementById('dependeciesInstaller');
+            if(window.location.hash === "#dependenciesInstaller"){
+                const DIsection = document.getElementById('dependenciesInstaller');
                 if(DIsection)
                     DIsection.scrollIntoView({behavior: "smooth"});
             }
