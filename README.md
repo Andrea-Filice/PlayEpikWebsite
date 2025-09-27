@@ -1,6 +1,6 @@
 # **Play Epik Website**
 
-![alt text](https://raw.githubusercontent.com/Play-Epik-Inc/PlayEpikWebsite/refs/heads/main/img/presentation_image.png "Home of the Website")
+![alt text](img/presentation_image.png "Home of the Website")
 
 A modern, responsive website for our company (Play Epik, Incorporation) deployed on Netlify.
 
