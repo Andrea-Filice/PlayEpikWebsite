@@ -11,8 +11,8 @@ function Load() {
                 if (taskify) 
                   taskify.scrollIntoView({ behavior: 'smooth' });
             }
-            if (window.location.hash === '#dependeciesInstaller') {
-                const di = document.getElementById('dependeciesInstaller');
+            if (window.location.hash === '#dependenciesInstaller') {
+                const di = document.getElementById('dependenciesInstaller');
                 if (di) 
                   di.scrollIntoView({ behavior: 'smooth' });
             }
@@ -46,12 +46,12 @@ function OpenGitHubLink(link) {window.location.href = `https://github.com/Play-E
 function updateVersion(value, id){document.getElementById(id).innerHTML = `Latest version: ${value}`}
 
 function FetchLatestVersion(){
-    fetch('https://playepikservercontents.netlify.app/dependecies/dependecies.json')
+    fetch('https://playepikservercontents.netlify.app/dependencies/dependencies.json')
     .then(response => response.json())
         .then(data => {
             updateVersion(data.versionTaskify, 'latest');
             versionTaskify = data.versionTaskify;
-            updateVersion(data.versionDependeciesInstaller, 'versionDI');
+            updateVersion(data.versionDependenciesInstaller, 'versionDI');
         })
 }
 

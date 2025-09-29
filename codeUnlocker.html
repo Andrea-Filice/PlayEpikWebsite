@@ -18,6 +18,7 @@
             <div id="loaderLayer" style="display: block; margin-top: 350px;">
                 <span class="loader"></span>
                 <p style="color: white; font-family: 'Clash Display'; font-style: italic;">Loading...</p>
+                <p style="color: rgb(255, 191, 0); font-family: 'Clash Display'; font-style: italic; display: none;" id="stuckSignal">Stuck here? Check your Wi-Fi connection.</p>
             </div>
         </center>
         <center>
@@ -51,7 +52,7 @@
                 <hr color="white" style="border: white 1px solid;">-->
                 <div class="start">
                     <h1 style="color: white; font-family: 'Clash Display', sans-serif; font-size: 120px;"><br><p class="gameTitle" id="codeUnlocker">CODE UNLOCKER.</p></h1>
-                    <h2 style="color: white; font-family: 'Clash Display', sans-serif; font-weight: 300; margin-top: -25px;" class="smallDeps">A game where the <img src="img/icons/_padlock.webp" style="height: 50px;" draggable="false" alt="PadLock"><i> <b>password</b></i> &nbsp;is imporant.</h2>
+                    <h2 style="color: white; font-family: 'Clash Display', sans-serif; font-weight: 300; margin-top: -25px;" class="smallDeps">A game where the <img src="img/icons/_padlock.webp" style="height: 50px;" draggable="false" alt="PadLock"><i> <b>password</b></i> &nbsp;is important.</h2>
                 </div>
                 <br> <br> <br> <br> <br>
                 <hr color="white" style="border: white 3px solid;">
@@ -59,7 +60,7 @@
                 <div class="depscription">
                     <h1 style="color: white; font-family: 'Clash Display', sans-serif;" class="deps">A SHORT DESCRIPTION</h1>
                     <h2 style="color: white; font-weight: 300; text-align: center; padding-left: 40px; padding-right: 40px;"><b>CODE UNLOCKER</b> is a <b>BRAINSTORMING GAME</b>, where the goal is to <b>find the right combination of numbers</b> by observing very carefully the question that the level requires.
-                        Each level is different and more difficult than the previous one! until you get to level max.
+                        Each level is different and more difficult than the previous one! Until you get to level max.
                         If you have <b>finished all 110 levels</b> and want to play again, rest assured that you will earn <b>UNLIMITED PLAY</b>, a reward with which you can choose the level and play it without limits!</h2>
                 </div>
                 <div class="whereplayit">
@@ -94,7 +95,7 @@
                     <h2 style="color: white; font-weight: 300; font-style: italic;">Latest version: 2.6.0 (16 October 2024)</h2>
                     <div class="release">
                         <h1 style="color: white; font-family: 'Clash Display', sans-serif;">WELCOME BACK PLAYERS!</h1>
-                        <h2 style="color: white; font-weight: 300;" class="releaseDeps">In this release, we add <b>Some Feautures</b> and there are some <b>Bug Fixes</b>, but let's into details: </h2>
+                        <h2 style="color: white; font-weight: 300;" class="releaseDeps">In this release, we add <b>some features</b> and there are some <b>bug fixes</b>, but lets go into details: </h2>
                         <ul style="color: white; font-weight: 300; font-size: larger; font-family: 'Clash Display'">
                             <li><b>[ADD]</b> ADDED 10 NEW LEVELS!</li>
                             <li><b>[FIX]</b> Fixed a bug when the buttons under the layer are playable.</li>
@@ -124,5 +125,16 @@
             </div>
         </center>
         <script src="js/home.js"></script><script src="js/imageModal.js"></script>
+        <script>
+            const stuckText = document.getElementById('stuckSignal');
+
+            function onLoad(){
+                setTimeout(() => {
+                    stuckText.style.display = "block";
+                }, 5000);
+            }
+
+            document.onload = onLoad();
+        </script>
     </body>
 </html>
