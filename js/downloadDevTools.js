@@ -1,5 +1,5 @@
 let downloadLink;
-let versionTaskify;
+let versionTaskify = "1.9.0";
 
 function Load() {
     FetchLatestVersion();
@@ -27,18 +27,21 @@ function ShowOS(osName){
         Linux: document.getElementById('Linux')
     }
 
-    const extMap = {
-        Windows: "exe",
-        MacOS: "dmg",
-        Linux: "AppImage"
-    }
-
     Object.entries(OS).forEach(([name, e]) =>{
         e.style.display = (name === osName) ? "block" : "none";
     });
 
-    if(extMap[osName])
-        downloadLink = `Play-Epik-Inc/Taskify-Business/releases/download/v${version}/Taskify-Business-Setup-${version}.${extMap[osName]}`;
+    switch(osName){
+        case "Windows":
+            downloadLink = `Andrea-Filice/Taskify-Business/releases/download/v${versionTaskify}/TaskifyBusiness-${versionTaskify}-x64.exe`;
+            break;
+        case "MacOS":
+            downloadLink = `Andrea-Filice/Taskify-Business/releases/download/v${versionTaskify}/Taskify-Business-${versionTaskify}.dmg`;
+            break;
+        case "Linux":
+            downloadLink = `Andrea-Filice/Taskify-Business/releases/download/v${versionTaskify}/TaskifyBusiness-${versionTaskify}-amd64.deb`;
+            break;
+    }
 }
 
 function DownloadFile() {window.location.href = `https://github.com/${downloadLink}`;}
