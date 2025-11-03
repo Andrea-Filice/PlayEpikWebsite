@@ -29,7 +29,6 @@ body {
 }
 
 h1{font-size: 100px;}
-
 p{font-size: 30px;}
 
 .separator {
@@ -64,9 +63,9 @@ button:hover {
 }
 
 .default{display: block;}
-.smartphone{display: none;}
+.mobile{display: none;}
 
 @media (max-width:600px) {
     .default{display: none;}
-    .smartphone{display: block;}
+    .mobile{display: block;}
 }
