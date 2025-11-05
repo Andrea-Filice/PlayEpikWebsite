@@ -5,25 +5,29 @@ function OnLoad() {
         document.getElementById("loaderLayer").style.display = "none";
         document.getElementById("mainLayer").style.display = "block";
         setTimeout(() => {
-            if (window.location.hash === '#credits') {
-                const creditsSection = document.getElementById('credits');
-                if (creditsSection) 
-                  creditsSection.scrollIntoView({ behavior: 'smooth' });
-            }
-            if (window.location.hash === '#morehelp') {
-                const moreHelpSection = document.getElementById('morehelp');
-                if (moreHelpSection) 
-                  moreHelpSection.scrollIntoView({ behavior: 'smooth' });
-            }
-            if(window.location.hash === "#releasenotes"){
-                const releaseNotesSection = document.getElementById('release');
-                if(releaseNotesSection)
-                    releaseNotesSection.scrollIntoView({behavior: "smooth"});
-            }
-            if(window.location.hash === "#dependenciesInstaller"){
-                const DIsection = document.getElementById('dependenciesInstaller');
-                if(DIsection)
-                    DIsection.scrollIntoView({behavior: "smooth"});
+            //LOCAL VARIABLES
+            const creditsSection = document.getElementById('credits');
+            const moreHelpSection = document.getElementById('morehelp');
+            const releaseNotesSection = document.getElementById('release');
+            const DIsection = document.getElementById('dependenciesInstaller');
+
+            switch(window.location.hash){
+                case "#credits":
+                    if (creditsSection) 
+                        creditsSection.scrollIntoView({ behavior: 'smooth' });
+                    break;
+                case "#morehelp":
+                    if (moreHelpSection) 
+                        moreHelpSection.scrollIntoView({ behavior: 'smooth' });
+                    break;
+                case "#releasenotes":
+                    if(releaseNotesSection)
+                        releaseNotesSection.scrollIntoView({behavior: "smooth"});
+                    break;
+                case "#dependenciesInstaller":
+                    if(DIsection)
+                        DIsection.scrollIntoView({behavior: "smooth"});
+                    break;
             }
         }, 100)
     }, 500);

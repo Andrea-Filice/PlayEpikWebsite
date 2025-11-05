@@ -1,18 +1,17 @@
-let downloadLink;
-let versionTaskify = "1.9.0";
+let versionTaskify, downloadLink;
 
 function Load() {
     FetchLatestVersion();
 
     //HASH LOCATIONS
     setTimeout(() => {
+            const di = document.getElementById('dependenciesInstaller');
+            const taskify = document.getElementById('taskify');
             if (window.location.hash === '#taskifyBusiness') {
-                const taskify = document.getElementById('taskify');
                 if (taskify) 
                   taskify.scrollIntoView({ behavior: 'smooth' });
             }
             if (window.location.hash === '#dependenciesInstaller') {
-                const di = document.getElementById('dependenciesInstaller');
                 if (di) 
                   di.scrollIntoView({ behavior: 'smooth' });
             }
