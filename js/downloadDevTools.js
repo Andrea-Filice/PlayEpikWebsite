@@ -1,18 +1,17 @@
-let downloadLink;
-let versionTaskify;
+let versionTaskify, downloadLink;
 
 function Load() {
     FetchLatestVersion();
 
     //HASH LOCATIONS
     setTimeout(() => {
+            const di = document.getElementById('dependenciesInstaller');
+            const taskify = document.getElementById('taskify');
             if (window.location.hash === '#taskifyBusiness') {
-                const taskify = document.getElementById('taskify');
                 if (taskify) 
                   taskify.scrollIntoView({ behavior: 'smooth' });
             }
             if (window.location.hash === '#dependenciesInstaller') {
-                const di = document.getElementById('dependenciesInstaller');
                 if (di) 
                   di.scrollIntoView({ behavior: 'smooth' });
             }
@@ -27,18 +26,21 @@ function ShowOS(osName){
         Linux: document.getElementById('Linux')
     }
 
-    const extMap = {
-        Windows: "exe",
-        MacOS: "dmg",
-        Linux: "AppImage"
-    }
-
     Object.entries(OS).forEach(([name, e]) =>{
         e.style.display = (name === osName) ? "block" : "none";
     });
 
-    if(extMap[osName])
-        downloadLink = `Play-Epik-Inc/Taskify-Business/releases/download/v${version}/Taskify-Business-Setup-${version}.${extMap[osName]}`;
+    switch(osName){
+        case "Windows":
+            downloadLink = `Andrea-Filice/Taskify-Business/releases/download/v${versionTaskify}/TaskifyBusiness-${versionTaskify}-x64.exe`;
+            break;
+        case "MacOS":
+            downloadLink = `Andrea-Filice/Taskify-Business/releases/download/v${versionTaskify}/Taskify-Business-${versionTaskify}.dmg`;
+            break;
+        case "Linux":
+            downloadLink = `Andrea-Filice/Taskify-Business/releases/download/v${versionTaskify}/TaskifyBusiness-${versionTaskify}-amd64.deb`;
+            break;
+    }
 }
 
 function DownloadFile() {window.location.href = `https://github.com/${downloadLink}`;}
