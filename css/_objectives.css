@@ -4,40 +4,12 @@
   inherits: false;
 }
 
-.counter {
+.counter, .counter2, .counter3, .counter4, .counter5{
   counter-reset: num var(--num);
   padding: 2rem;
 }
-
-.counter::after {content: counter(num);}
-
-.counter2 {
-  counter-reset: num var(--num);
-  padding: 2rem;
-}
-
-.counter2::after {content: counter(num);}
-
-.counter3 {
-  counter-reset: num var(--num);
-  padding: 2rem;
-}
-
-.counter3::after {content: counter(num);}
-
-.counter4 {
-  counter-reset: num var(--num);
-  padding: 2rem;
-}
-
-.counter4::after {content: counter(num);}
-
-.counter5{
-  counter-reset: num var(--num);
-  padding: 2rem;
-}
-
-.counter5::after {content: counter(num);}
+.counter::after, .counter2::after, .counter3::after, .counter5::after{content: counter(num);}
+.counter, .counter2, .counter3, .counter4, .counter5{font-size: 165px;}
 
 @keyframes counter {
   from {--num: 0;}
@@ -98,9 +70,6 @@ span{
 }
 
 h2{font-weight: 300;}
-
-.counter, .counter2, .counter3, .counter4, .counter5{font-size: 165px;}
-
 .numbersText{font-size: 85px;}
 
 .letter{

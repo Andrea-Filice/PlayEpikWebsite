@@ -42,7 +42,7 @@
   
 body {
     margin: 0px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;  /*BASE FONT*/
     overflow-x: hidden;
 }
   
@@ -56,16 +56,13 @@ body {
 }
   
 .nav > .nav-header {display: inline;}
-  
 .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 22px;
     color: #fff;
     padding: 10px 10px 10px 10px;
 }
-  
-.nav > .nav-btn {display: none;}
-  
+.nav > .nav-btn {display: none;} 
 .nav > .nav-links {
     display: inline;
     float: right;
@@ -86,6 +83,7 @@ body {
     background-size: 200% auto;
     -webkit-background-clip: text;
     animation: gradient 8s linear infinite, modifyFontWeight 0.3s ease-in-out forwards;
+    background-clip: text;
 }
 
 @keyframes modifyFontWeight{
@@ -109,7 +107,6 @@ body {
 }
 
 .seeMore:hover, .backToTop:hover{cursor: pointer;}
-
 .seeMore:hover::after, .backToTop:hover::after{cursor: default;}
 
 @keyframes AnimationButtonOn {
@@ -156,25 +153,15 @@ body {
     margin-right: 0pxx;
 }
 
-.iconGame{float: left;
-}
-
+.iconGame{float: left;}
 .iconGame2{float: right;}
-
 .S3{padding-left: 100px;}
-
 .depsS3{padding-left: 70px;}
-
 .troubleshoot, .newsIndex{font-size: 80px;}
-
 .smallDeps{font-size: 50px;}
-
 #limits, #contact, #team, #ideas, #devs, .startText{font-size: 120px;}
-
 .antiCheat{font-size: 24px;}
-
 .licenseText{font-size: 100px;}
-
 #devsPhone{display: none;}
   
 @media (max-width:600px) {
@@ -212,13 +199,9 @@ body {
       top: 50px;
       left: 0px;
     }
-    .nav > .nav-links > a {
+    .nav > .nav-links > a, .nav > .nav-links > img{
       display: block;
       width: 100%;
-    }
-    .nav > .nav-links > img {
-        display: block;
-        width: 100%;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {height: 0px;}
     .nav > #nav-check:checked ~ .nav-links {
@@ -241,11 +224,10 @@ body {
         text-align: center;
     }
     .gift{padding-left: 0px;}
-    .startText{font-size: 90px;}
     .troubleshoot{font-size: 40px;}
     .hereText{font-size: 105px;}
     .smallDeps{font-size: 25px;}
-    #limits{font-size: 95px;}
+    #limits, .startText{font-size: 90px;}
     #contact, #ideas{font-size: 75px;}
     .licenseText{font-size: 70px;}
     #devs{display: none;}
@@ -260,40 +242,23 @@ body {
 
 .start{margin-top: -150px;}
 
-.releaseNotes:hover{
+.releaseNotes:hover, .releaseNotes2:hover{
     animation: AnimationButtonOn 500ms forwards;
     cursor: pointer;
 }
 
-.releaseNotes:hover::after{
+.releaseNotes:hover::after, .releaseNotes2:hover::after{
     animation: AnimationButtonOff 500ms linear;
     cursor: default;
 }
 
-.releaseNotes2:hover{
-    animation: AnimationButtonOn 500ms forwards;
-    cursor: pointer;
-}
-
-.releaseNotes2:hover::after{
-    animation: AnimationButtonOff 500ms linear;
-    cursor: default;
-}
-
-.hereText{
+.hereText, .gameTitle {
     -webkit-text-fill-color: transparent; 
     background-image: linear-gradient(to right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8);
     background-size: 200% auto;
     -webkit-background-clip: text;
     animation: gradient 8s linear infinite;
-}
-
-.gameTitle{
-    -webkit-text-fill-color: transparent; 
-    background-image: linear-gradient(to right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    animation: gradient 8s linear infinite;
+    background-clip: text;
 }
 
 @keyframes gradient {
@@ -312,9 +277,7 @@ body {
     overflow: hidden;
     height: 10vh;
 }
-
 .scroll{white-space: nowrap;}
-
 .scroll div{
     display: flex;
     gap: 2em;
