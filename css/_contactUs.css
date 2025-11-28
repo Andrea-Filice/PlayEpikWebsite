@@ -1,37 +1,23 @@
-.itch{
-    -webkit-text-fill-color: transparent; 
-    background: linear-gradient(20deg, red, rgb(241, 97, 97)); 
+:root{
+    --gradient-itch: linear-gradient(20deg, red, rgb(241, 97, 97));
+    --gradient-gamejolt: linear-gradient(20deg, rgb(43, 255, 28), rgb(2, 97, 11));
+    --gradient-tiktok: linear-gradient(20deg, #69C9D0, #EE1D52);
+    --gradient-instagram: linear-gradient(20deg, rgb(251, 255, 0), rgb(255, 6, 168));
+    --gradient-discord: linear-gradient(20deg, rgb(0, 238, 255), rgb(35, 6, 255));
+}
+
+.itch, .gamejolt, .tiktok, .discord, .instagram{
+    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     text-decoration: none;
 }
 
-.gamejolt{
-    -webkit-text-fill-color: transparent; 
-    background: linear-gradient(20deg, rgb(43, 255, 28), rgb(2, 97, 11)); 
-    -webkit-background-clip: text;
-    text-decoration: none;
-}
-
-.tiktok{
-    -webkit-text-fill-color: transparent; 
-    background: linear-gradient(20deg, #69C9D0, #EE1D52); 
-    -webkit-background-clip: text;
-    text-decoration: none;
-}
-
-.instagram{
-    -webkit-text-fill-color: transparent; 
-    background: linear-gradient(20deg, rgb(251, 255, 0), rgb(255, 6, 168)); 
-    -webkit-background-clip: text;
-    text-decoration: none;
-}
-
-.discord{
-    -webkit-text-fill-color: transparent; 
-    background: linear-gradient(20deg, rgb(0, 238, 255), rgb(35, 6, 255)); 
-    -webkit-background-clip: text;
-    text-decoration: none;
-}
+.itch{background-image:var(--gradient-itch);}
+.gamejolt{background-image:var(--gradient-gamejolt);}
+.tiktok{background-image:var(--gradient-tiktok);}
+.discord{background-image:var(--gradient-discord);}
+.instagram{background-image: var(--gradient-instagram);}
 
 /*MARKDOWN SUPPORT*/
 #preview {
