@@ -1,5 +1,4 @@
 .smartPhone{display: none;}
-
 .buttons{display: block;}
 
 ul{
@@ -15,7 +14,6 @@ img{height: 400px;}
 }
 
 .deps, .troubleshoot{font-size: 80px;}
-
 .depsTroubleshoot{margin-top: -40px;}
 
 #codeUnlocker{font-size: 120px;}
@@ -67,10 +65,7 @@ img{height: 400px;}
     .smallDeps{padding: 0 7px 0 7px;}
 }
 
-.images img{
-    border-radius: 10px;
-}
-
+.images img{border-radius: 10px;}
 .images img:hover, .tps:hover{cursor: pointer;}
 
 /*MODAL*/
@@ -123,10 +118,7 @@ img{height: 400px;}
 
 .prev{left: 0;}
 .next{right: 0;}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
+.prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);}
 
 #caption {
     text-align: center;

@@ -7,13 +7,12 @@ function Load() {
     setTimeout(() => {
             const di = document.getElementById('dependenciesInstaller');
             const taskify = document.getElementById('taskify');
-            if (window.location.hash === '#taskifyBusiness') {
-                if (taskify) 
-                  taskify.scrollIntoView({ behavior: 'smooth' });
+
+            if (window.location.hash === '#taskifyBusiness' && taskify) {
+                taskify.scrollIntoView({ behavior: 'smooth' });
             }
-            if (window.location.hash === '#dependenciesInstaller') {
-                if (di) 
-                  di.scrollIntoView({ behavior: 'smooth' });
+            if (window.location.hash === '#dependenciesInstaller' && di) {
+                di.scrollIntoView({ behavior: 'smooth' });
             }
     }, 1000)
 }
@@ -44,7 +43,7 @@ function ShowOS(osName){
 }
 
 function DownloadFile() {window.location.href = `https://github.com/${downloadLink}`;}
-function OpenGitHubLink(link) {window.location.href = `https://github.com/Play-Epik-Inc/${link}`}
+function OpenGitHubLink(link) {window.location.href = `https://github.com/Andrea-Filice/${link}`}
 function updateVersion(value, id){document.getElementById(id).innerHTML = `Latest version: ${value}`}
 
 function FetchLatestVersion(){
@@ -57,4 +56,4 @@ function FetchLatestVersion(){
         })
 }
 
-function FetchMoreDownloads() {window.location.href = `https://github.com/Play-Epik-Inc/Taskify-Business/releases/tag/v${versionTaskify}`;}
+function FetchMoreDownloads() {window.location.href = `https://github.com/Andrea-Filice/Taskify-Business/releases/tag/v${versionTaskify}`;}
