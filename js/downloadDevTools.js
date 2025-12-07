@@ -8,13 +8,11 @@ function Load() {
             const di = document.getElementById('dependenciesInstaller');
             const taskify = document.getElementById('taskify');
 
-            if (window.location.hash === '#taskifyBusiness' && taskify) {
+            if (window.location.hash === '#taskifyBusiness' && taskify) 
                 taskify.scrollIntoView({ behavior: 'smooth' });
-            }
-            if (window.location.hash === '#dependenciesInstaller' && di) {
+            if (window.location.hash === '#dependenciesInstaller' && di) 
                 di.scrollIntoView({ behavior: 'smooth' });
-            }
-    }, 1000)
+    }, 1000) //TIMEOUT FOR THE ANIMATION OF LOADING
 }
 
 function ShowOS(osName){
@@ -54,6 +52,9 @@ function FetchLatestVersion(){
             versionTaskify = data.versionTaskify;
             updateVersion(data.versionDependenciesInstaller, 'versionDI');
         })
+    
+    //INITIALIZE THE DOWNLOAD LINK TO WINDOWS OS
+    downloadLink = `Andrea-Filice/Taskify-Business/releases/download/v${versionTaskify}/TaskifyBusiness-${versionTaskify}-x64.exe`;
 }
 
 function FetchMoreDownloads() {window.location.href = `https://github.com/Andrea-Filice/Taskify-Business/releases/tag/v${versionTaskify}`;}

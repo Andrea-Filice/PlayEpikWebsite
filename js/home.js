@@ -11,24 +11,19 @@ function OnLoad() {
             const releaseNotesSection = document.getElementById('release');
             const DIsection = document.getElementById('dependenciesInstaller');
 
-            switch(window.location.hash){
-                case "#credits":
-                    if (creditsSection) 
-                        creditsSection.scrollIntoView({ behavior: 'smooth' });
-                    break;
-                case "#morehelp":
-                    if (moreHelpSection) 
-                        moreHelpSection.scrollIntoView({ behavior: 'smooth' });
-                    break;
-                case "#releasenotes":
-                    if(releaseNotesSection)
-                        releaseNotesSection.scrollIntoView({behavior: "smooth"});
-                    break;
-                case "#dependenciesInstaller":
-                    if(DIsection)
-                        DIsection.scrollIntoView({behavior: "smooth"});
-                    break;
-            }
+            const map = [
+                {id: "#credits", obj: creditsSection},
+                {id: "#morehelp", obj: moreHelpSection},
+                {id: "#releasenotes", obj: releaseNotesSection},
+                {id:"#dependenciesInstaller", obj: DIsection}
+            ]
+
+            map.forEach(({id, obj}) => {
+                if(window.location.hash == id){
+                    if(obj)
+                        obj.scrollIntoView({ behavior: 'smooth' });
+                }
+            })
         }, 100)
     }, 500);
     const seeMoreButtons = document.querySelectorAll('.seeMore');
