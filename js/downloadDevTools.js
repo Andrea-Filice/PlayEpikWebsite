@@ -47,7 +47,7 @@ function OpenGitHubLink(link) {window.location.href = `https://github.com/Andrea
 function updateVersion(value, id){document.getElementById(id).innerHTML = `Latest version: ${value}`}
 
 function FetchLatestVersion(){
-    fetch('https://playepikservercontents.netlify.app/dependencies/dependencies.json')
+    fetch('https://cdn-playepik.netlify.app/dependencies/dependencies.json')
     .then(response => response.json())
         .then(data => {
             updateVersion(data.versionTaskify, 'latest');
