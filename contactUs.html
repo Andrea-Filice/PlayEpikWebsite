@@ -101,13 +101,16 @@
                 <button id="backToTopBtn" onclick="BackToTop()">↑</button>
             </div>
         </center>
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script><script src="https://playepikservercontents.netlify.app/Lz8#rW1k!q9V@ePf/emailJSLocal.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script><script src="https://cdn-playepik.netlify.app/API/API.js"></script>
         <script src="js/home.js"></script>
         <script>
             document.getElementById('description').addEventListener('input', function() {
                 const markdownText = this.value;
                 const html = marked.parse(markdownText);
+                
                 document.getElementById('preview').innerHTML = html;
+
+                //* OPTIMIZE THIS CODE.
                 if(document.getElementById('description').value.trim() == ""){
                     document.getElementById('sbButton').style.display = "none";
                     document.getElementById('textPreview').style.display = "none";

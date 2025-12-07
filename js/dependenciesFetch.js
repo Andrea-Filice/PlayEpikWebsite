@@ -1,4 +1,4 @@
-fetch('https://playepikservercontents.netlify.app/dependencies/dependencies.json')
+fetch('https://cdn-playepik.netlify.app/dependencies/dependencies.json')
   .then(response => {
     if (!response.ok) {
       throw new Error("HTTP error " + response.status);
