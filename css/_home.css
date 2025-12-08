@@ -233,7 +233,7 @@ body {
     #devs{display: none;}
     #devsPhone{
         display: block;
-        font-size: 71px;
+        font-size: 66px;
     }
     #team{font-size: 120px;}
     .antiCheat{font-size: 20px;}
@@ -358,12 +358,19 @@ h2{font-family: 'Inter', sans-serif;}
     color: white;
 }
 
-.article-text h1, .article-text h2 {margin: 10px 0;}
+.article-text h2 {margin: 10px 0;}
+.article-text h1{
+    font-size: 50px;
+    margin: 10px 0;
+}
 
 @media (max-width: 768px) {
     .article {
         grid-template-columns: 1fr;
         padding: 0px;
+    }
+    .article-text h1{
+        font-size: 45px;
     }
 }
 

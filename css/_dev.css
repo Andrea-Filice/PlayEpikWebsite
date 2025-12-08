@@ -70,7 +70,7 @@ img:hover::after, .deps:hover::after, .iconTaskify:hover{cursor: default;}
     margin-right: 10px;
   }
   .versionNumber{margin-top: -25px;}
-  .titleDI{font-size: 50px;}
+  .titleDI{font-size: 45px;}
 }
 
 .slideshow-container {
