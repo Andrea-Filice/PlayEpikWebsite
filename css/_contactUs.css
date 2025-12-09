@@ -49,15 +49,6 @@
     animation: gradient 15s linear infinite;
 }
 
-/*NOT ALLOWED FOR A SHORT PERIOD OF TIME*/
-.form__field:hover{
-    cursor: not-allowed;
-}
-
-.form__field:hover::after{
-    cursor: default;
-}
-
 @keyframes gradient {
     to {background-position: 400% center}
 }

@@ -65,18 +65,16 @@
                 <br>
                 <h1 style="color: white; font-size: 80px; font-family: 'Clash Display', sans-serif;" id="morehelp">STILL NEED<p style="display: inline; font-style: italic;"> HELP?</p></h1>
                 <h2 style="color: white; font-weight: 300; margin-top: -50px; font-family: 'Clash Display', sans-serif;">Write an <b style="font-weight: 800;">email</b> to our support team.</h2>
-                <h1 style="color: white; font-family: 'Clash Display', sans-serif; font-weight: 400;">AT THE MOMENT, <b style="font-weight: 600;">YOU CANNOT SEND FEEDBACK.</b> SORRY FOR THE INCONVENIENCE.</h1>
-                <h2 style="color: white; font-family: 'Clash Display', sans-serif; font-weight: 400; font-style: italic; margin-top: -10px;">You can read more <a href="https://serverstatus-playepik.netlify.app/#incidentdetail" style="color: white; font-family: 'Clash Display', sans-serif; font-weight: 400;">here.</a></h2>
                 <br> <br> <br> <br> <br> <br> <br>
                 <div class="form">
                     <form id="feedbackForm" style="scale: 2;" class="form__group" >
                         <label for="email" style="color: white; font-family: 'Clash Display', sans-serif;">Email:</label>
                         <br>
-                        <input type="email" id="email" name="email" placeholder="Insert your email here..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; border-radius: 5px; outline: none; offset: none;" class="form__field" disabled title="Currently not available.">
+                        <input type="email" id="email" name="email" placeholder="Insert your email here..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; border-radius: 5px; outline: none; offset: none;" class="form__field">
                         <br> <br>
                         <label for="description" style="color: white; font-family: 'Clash Display', sans-serif;">Message: </label>
                         <br><br>
-                        <textarea id="description" name="description" rows="5" placeholder="Write here your feedback..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; resize: none; outline: none; border-radius: 5px;" class="form__field" disabled title="Currently not available."></textarea>
+                        <textarea id="description" name="description" rows="5" placeholder="Write here your feedback..." required style="font-family: 'Clash Display', sans-serif; background-color: black; color: white; resize: none; outline: none; border-radius: 5px;" class="form__field"></textarea>
                         <br>
                         <h3 style="color: white; display: none;" id="textPreview">Mail Preview:</h3>
                         <div id="preview"></div>
@@ -103,13 +101,16 @@
                 <button id="backToTopBtn" onclick="BackToTop()">↑</button>
             </div>
         </center>
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script><script src="https://cdn-playepik.netlify.app/Lz8#rW1k!q9V@ePf/emailJSLocal.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script><script src="https://cdn-playepik.netlify.app/API/API.js"></script>
         <script src="js/home.js"></script>
         <script>
             document.getElementById('description').addEventListener('input', function() {
                 const markdownText = this.value;
                 const html = marked.parse(markdownText);
+                
                 document.getElementById('preview').innerHTML = html;
+
+                //* OPTIMIZE THIS CODE.
                 if(document.getElementById('description').value.trim() == ""){
                     document.getElementById('sbButton').style.display = "none";
                     document.getElementById('textPreview').style.display = "none";

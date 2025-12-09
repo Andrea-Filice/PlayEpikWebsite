@@ -1,6 +1,8 @@
 # **Play Epik Website**
+[![Netlify Status](https://api.netlify.com/api/v1/badges/74a71df7-7af2-45e7-afd0-aec98a9c4082/deploy-status)](https://app.netlify.com/projects/play-epik-incorporation/deploys)
 
-![alt text](img/presentation_image.png "Home of the Website")
+
+![alt text](img/presentation_image.png "Website")
 
 A modern, responsive website for our company (Play Epik, Incorporation) deployed on Netlify.
 
