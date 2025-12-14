@@ -228,14 +228,14 @@ body {
     .hereText{font-size: 105px;}
     .smallDeps{font-size: 25px;}
     #limits, .startText{font-size: 90px;}
-    #contact, #ideas{font-size: 75px;}
+    #contact, #ideas{font-size: 70px;}
     .licenseText{font-size: 70px;}
     #devs{display: none;}
     #devsPhone{
         display: block;
         font-size: 66px;
     }
-    #team{font-size: 120px;}
+    #team{font-size: 100px;}
     .antiCheat{font-size: 20px;}
     .newsIndex{font-size: 50px;}
 }
