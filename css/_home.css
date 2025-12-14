@@ -225,9 +225,9 @@ body {
     }
     .gift{padding-left: 0px;}
     .troubleshoot{font-size: 40px;}
-    .hereText{font-size: 105px;}
+    .hereText{font-size: 88px;}
     .smallDeps{font-size: 25px;}
-    #limits, .startText{font-size: 90px;}
+    #limits, .startText{font-size: 80px;}
     #contact, #ideas{font-size: 70px;}
     .licenseText{font-size: 70px;}
     #devs{display: none;}
