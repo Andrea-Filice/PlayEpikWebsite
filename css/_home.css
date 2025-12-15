@@ -225,17 +225,17 @@ body {
     }
     .gift{padding-left: 0px;}
     .troubleshoot{font-size: 40px;}
-    .hereText{font-size: 105px;}
+    .hereText{font-size: 88px;}
     .smallDeps{font-size: 25px;}
-    #limits, .startText{font-size: 90px;}
-    #contact, #ideas{font-size: 75px;}
+    #limits, .startText{font-size: 80px;}
+    #contact, #ideas{font-size: 70px;}
     .licenseText{font-size: 70px;}
     #devs{display: none;}
     #devsPhone{
         display: block;
         font-size: 66px;
     }
-    #team{font-size: 120px;}
+    #team{font-size: 100px;}
     .antiCheat{font-size: 20px;}
     .newsIndex{font-size: 50px;}
 }
@@ -364,14 +364,28 @@ h2{font-family: 'Inter', sans-serif;}
     margin: 10px 0;
 }
 
+/*VIDEO CONTROLLERs*/
+.videoBtn{
+    position: absolute;
+    bottom: 7px;
+    right: 45px;
+    z-index: 2;
+    background: rgba(66, 66, 66, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .article {
         grid-template-columns: 1fr;
         padding: 0px;
     }
-    .article-text h1{
-        font-size: 45px;
-    }
+    .article-text h1{font-size: 45px;}
+    .videoBtn{right:17px}
 }
 
 /*OVERFLOW*/
@@ -396,19 +410,3 @@ html {
 }
 
 .gif video {object-fit: cover;}
-
-/*VIDEO CONTROLLERs*/
-
-.videoBtn{
-    position: absolute;
-    bottom: 7px;
-    right: 45px;
-    z-index: 2;
-    background: rgba(66, 66, 66, 0.5);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 58px;
-    height: 58px;
-    cursor: pointer;
-}

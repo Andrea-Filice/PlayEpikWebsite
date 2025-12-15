@@ -8,28 +8,29 @@
     gap: 20px;
 }
 
-.game-item {text-align: center;}
-
 .games img{
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.gamesStart{font-size: 120px;}
-
 .buttons{
     display: inline-flex;
     gap: 100px;
 }
 
-.game-item img{height: 200px;}
+.gamesStart{font-size: 120px;}
+.game-item img{
+    height: 200px;
+    text-align: center;
+}
 
 @media (max-width: 600px){
     body{overflow-x: hidden;}
     .game-item img{
         height: 230px;
         border-radius: 5px;
+        border: none;
     }
     .games{
         display: block;
