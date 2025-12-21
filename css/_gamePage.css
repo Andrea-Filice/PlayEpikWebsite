@@ -31,9 +31,11 @@ img{height: 400px;}
 .smallDeps{padding: 0;}
 
 #pauseBtn, #playBtn{right: 45px;}
+#giftImages{display: block;}
 
 @media (max-width:600px){
     body{overflow-x: hidden;}
+    #giftImages{display: none;}
     .smartPhone{display: block;}
     .buttons{display: none;}
     ul{
