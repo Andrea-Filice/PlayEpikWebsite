@@ -410,3 +410,11 @@ html {
 }
 
 .gif video {object-fit: cover;}
+
+.images-Gifts, .rarity{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.gift{padding-left: 20px;}
