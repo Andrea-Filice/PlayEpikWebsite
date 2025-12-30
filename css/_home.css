@@ -77,9 +77,18 @@ body {
     color: #efefef;
 }
   
-.nav > .nav-links > a:hover {
+.nav > .nav-links > a:hover:not(#epikLink){
     -webkit-text-fill-color: transparent; 
     background-image: linear-gradient(to right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    animation: gradient 8s linear infinite, modifyFontWeight 0.3s ease-in-out forwards;
+    background-clip: text;
+}
+
+.nav > .nav-links > #epikLink:hover{
+    -webkit-text-fill-color: transparent; 
+   background-image: linear-gradient(to right,#ffc400, #ff9100, #ff530f, #e62c6d, #b25aff, #b25aff, #e62c6d, #ff530f, #ff9100, #ffc400);
     background-size: 200% auto;
     -webkit-background-clip: text;
     animation: gradient 8s linear infinite, modifyFontWeight 0.3s ease-in-out forwards;
