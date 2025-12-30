@@ -135,7 +135,6 @@ body {
     cursor: default;
 }
 
-
 @keyframes AnimationButtonOn {
     0% {
         background-color: black;
@@ -190,6 +189,11 @@ body {
 .antiCheat{font-size: 24px;}
 .licenseText{font-size: 100px;}
 #devsPhone{display: none;}
+
+#featureIcon{
+    margin-left: 55px; 
+    max-width: 200px;
+}
   
 @media (max-width:600px) {
     body{overflow-x: hidden;}
@@ -265,6 +269,7 @@ body {
     #team{font-size: 100px;}
     .antiCheat{font-size: 20px;}
     .newsIndex{font-size: 50px;}
+    #featureIcon{margin-left: 0px;}
 }
 
 .start{margin-top: -150px;}
