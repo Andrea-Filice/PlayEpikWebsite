@@ -2,7 +2,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/74a71df7-7af2-45e7-afd0-aec98a9c4082/deploy-status)](https://app.netlify.com/projects/play-epik-incorporation/deploys)
 
 
-![alt text](img/presentation_image.png "Website")
+![alt text](img/presentation_image.webp "Website")
 
 A modern, responsive website for our company (Play Epik, Incorporation) deployed on Netlify.
 
@@ -27,4 +27,4 @@ This project is licensed under the MIT License and the **PLAY EPIK END-USER LICE
 # Contact
 For further questions or suggestions, contact us via mail: help.playepik@gmail.com or through our social networks:
 
-![alt text](https://raw.githubusercontent.com/Play-Epik-Inc/PlayEpikWebsite/refs/heads/main/img/_bannerSocials.png "Socials")
+![alt text](img/_bannerSocials.webp "Socials")
