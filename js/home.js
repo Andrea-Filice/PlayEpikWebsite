@@ -38,7 +38,6 @@ function OnLoad() {
 }
 
 function BackToTop() {window.scrollTo({ top: 0, behavior: 'smooth' });}
-function OpenServerStatus() {window.location.href = "https://serverstatus-playepik.netlify.app/";}
 function OpenReleaseNotes(link){window.location.href = link + "#releasenotes";}
 function OpenDevsPage(section){window.location.href = "developers#" + section;}
 
