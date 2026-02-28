@@ -19,11 +19,9 @@ function GetGameNameFromURL(){
     let gameName = "";
 
     if(gameParam){
-        const map = {
-            courseofdeath: "Course Of Death",
-            squareroyale: "Square Royale"
-        }
+        const map = {courseofdeath: "Course Of Death", squareroyale: "Square Royale"}
         gameName = map[gameName] || gameParam.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/([a-z])([A-Z])/g, '$1 $2').replace(/\b\w/g, l => l.toUpperCase()); 
+        
         switch(gameName){
             case 'Courseofdeath':
                 document.getElementById("mainTitle").innerHTML = "Course Of Death uses the following third party components which are subject to separate license terms as set out below:"; 

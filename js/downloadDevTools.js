@@ -23,9 +23,7 @@ function ShowOS(osName){
         Linux: document.getElementById('Linux')
     }
 
-    Object.entries(OS).forEach(([name, e]) =>{
-        e.style.display = (name === osName) ? "block" : "none";
-    });
+    Object.entries(OS).forEach(([name, e]) =>{e.style.display = (name === osName) ? "block" : "none";});
 
     switch(osName){
         case "Windows":
