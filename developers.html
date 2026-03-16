@@ -58,11 +58,11 @@
                 <div class="taskify" id="taskify">
                     <h1 style="color: white; font-family: 'Clash Display', sans-serif;" class="newsIndex"><img src="img/_iconTaskify.webp" height="60px" width="60px" draggable="false" class="iconTaskify" loading="lazy" alt="Icon Taskify"> TASKIFY BUSINESS</h1>
                     <h2 style="color: white; font-family: 'Clash Display', sans-serif; font-weight: 500;" id="latest" class="versionNumber">Latest Version: </h2>
-                    <h3 style="color: white; font-family: 'Clash Display', sans-serif;">PLATFORMS</h3>
+                    <h3 style="color: white; font-family: 'Clash Display', sans-serif;">AVAILABLE FOR</h3>
                     <div class="availability" style="display: flex; justify-content: center; gap: 10px; margin-top: -10px;">
-                        <img src="img/_windowsIcon.webp" alt="Windows" draggable="false" height="40px" width="40px">
-                        <img src="img/_macIcon.webp" alt="macOS" draggable="false" height="40px" width="40px">
-                        <img src="img/_linuxIcon.webp" alt="Linux" draggable="false" height="40px" width="40px">
+                        <img src="img/_windowsIcon.webp" alt="Windows" title="Windows" draggable="false" height="40px" width="40px">
+                        <img src="img/_macIcon.webp" alt="macOS" title="macOS" draggable="false" height="40px" width="40px">
+                        <img src="img/_linuxIcon.webp" alt="Linux" title="Linux" draggable="false" height="40px" width="40px">
                     </div><br><br>
                     <h1 style="color: white; font-family: 'Clash Display', sans-serif;">DESCRIPTION</h1>
                     <h2 style="color: white; font-weight: 300; margin-top: -10px; padding: 0 30px 0 30px;"><b style="font-weight: 800;">Taskify Business</b> is a powerful desktop application designed to <b style="font-weight: 800;">help businesses organize, assign, and track maintenance tasks</b> for their computer software. By providing a <b style="font-weight: 800;">clear</b>, <b style="font-weight: 800;">centralized interface</b>, Maintenance Scheduler streamlines planning, reduces downtime, and ensures each component receives <b style="font-weight: 800;">timely</b> updates and checks.</h2>
@@ -105,6 +105,9 @@
                         </div>
                         <div class="slide fade">
                             <img src="img/devsImages/slide_Company.webp" width="900" height="500" loading="lazy" alt="Img4" draggable="false">
+                        </div>
+                        <div class="slide fade">
+                            <img src="img/devsImages/_ligtMode.webp" width="900" height="500" loading="lazy" alt="Img5" draggable="false">
                         </div>
                         <button class="slide-arrow right-arrow" onclick="plusSlide(1)">&#10095;</button>
                     </div>
@@ -156,8 +159,8 @@
                 <div class="dependenciesInstaller" id="dependenciesInstaller">
                     <h1 style="color: white; font-family: 'Clash Display', sans-serif;" class="titleDI"><img src="img/_logoDI.webp" alt="Icon Dependencies Installer" width="60px" height="60px" class="iconTaskify" loading="lazy"> DEPENDENCIES INSTALLER</h1>
                     <h2 style="color: white; font-family: 'Clash Display', sans-serif; font-weight: 500;" class="versionNumber" id="versionDI">Latest Version: </h2>
-                    <h3 style="color: white; font-family: 'Clash Display', sans-serif;">PLATFORMS</h3>
-                    <img src="img/_windowsIcon.webp" alt="Windows" height="40px" width="40px" draggable="false" style="margin-top: -5px;"><br><br><br>
+                    <h3 style="color: white; font-family: 'Clash Display', sans-serif;">AVAILABLE FOR</h3>
+                    <img src="img/_windowsIcon.webp" alt="Windows" title="Windows" height="40px" width="40px" draggable="false" style="margin-top: -5px;"><br><br><br>
                     <img src="https://raw.githubusercontent.com/Andrea-Filice/DependenciesInstaller/main/src/git_slide1.png" alt="Image of Dependencies Installer" draggable="false" style="border-radius: 15px;">
                     <br>
                     <h1 style="color: white; font-family: 'Clash Display', sans-serif;">DESCRIPTION</h1>
@@ -203,14 +206,13 @@
                 let i;
                 const slides = document.getElementsByClassName("slide");
                 const dots = document.getElementsByClassName("dot");
+
                 if (n > slides.length) slideIndex = 1
                 if (n < 1) slideIndex = slides.length
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].classList.remove("active");
-                }
+
+                for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+                for (i = 0; i < dots.length; i++) {dots[i].classList.remove("active");}
+
                 slides[slideIndex-1].style.display = "block";
                 slides[slideIndex-1].style.animation = "FadeIn 0.5s linear forwards";
                 dots[slideIndex-1].classList.add("active");
