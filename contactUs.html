@@ -103,15 +103,10 @@
                 
                 document.getElementById('preview').innerHTML = html;
 
-                //* OPTIMIZE THIS CODE.
-                if(document.getElementById('description').value.trim() == ""){
-                    document.getElementById('sbButton').style.display = "none";
-                    document.getElementById('textPreview').style.display = "none";
-                }
-                else{
-                    document.getElementById('sbButton').style.display = "block";
-                    document.getElementById('textPreview').style.display = "block";
-                }
+                let isDescriptionEmpty = document.getElementById('description').value.trim() == "";
+                
+                document.getElementById('sbButton').style.display = (isDescriptionEmpty) ? "none" : "block";
+                document.getElementById('textPreview').style.display = (isDescriptionEmpty) ? "none" : "block";
             });
         </script>
     </body>
